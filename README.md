@@ -112,7 +112,7 @@ Para mais detalhes, consulte o tópico no fórum:
 
 Na [plataforma de cursos do Projeto ACBr](https://www.projetoacbr.com.br/cursos/) há um **curso completo** com todos os passos do roteiro de homologação. Recomendamos assistir a esse conteúdo **antes** de iniciar os testes:
 
-- **[Roteiro Pré Homologação CliSitef - Windows](https://acbr.nutror.com/curso/2561928d2d0381ba19afa98908a21252ba2603a4)**
+- **[Roteiro Pré Homologação CliSiTef - Windows](https://acbr.nutror.com/curso/2561928d2d0381ba19afa98908a21252ba2603a4)**
 
 ---
 
