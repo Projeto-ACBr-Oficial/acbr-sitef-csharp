@@ -1,0 +1,45 @@
+## Build / IDE
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+.vs/
+*.user
+*.suo
+*.cache
+*.dtbcache.json
+Thumbs.db
+Desktop.ini
+
+## Logs e artefatos de execução (gerados ao lado do .exe)
+Logs/
+**/Logs/
+*.log
+**/TefRetorno/
+**/imp/
+comprovante_simulado.txt
+ACBrLib.ini
+CliSiTef.ini
+
+## NuGet (legado packages/ + lock files locais)
+packages/
+project.lock.json
+**/project.lock.json
+
+## DLLs CliSiTef — copiar manualmente na pasta do executável (não versionar)
+CliSiTef32I.dll
+libcurl32.dll
+libemv.dll
+QREncode32.dll
+RechargeRPC.dll
+
+## Pastas legadas (removidas do repositório)
+src/ExternalLibraries/
+Documentos/
+**/TEF_Demo_DLLs/
+
+## DLLs nativas ACBrLib PosPrinter — copiar manualmente em ACBrLib\x86\ (saída do build)
+ACBrLib*.dll
+ACBrPosPrinter32.dll
+libACBr*.dll
+**/ACBrLib/
