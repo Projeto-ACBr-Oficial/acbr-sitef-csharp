@@ -1,0 +1,15 @@
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\bin\Debug\net6.0\Lib.CliSitef.deps.json
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\bin\Debug\net6.0\Lib.CliSitef.dll
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\bin\Debug\net6.0\Lib.CliSitef.pdb
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\bin\Debug\net6.0\Lib.Utils.dll
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\bin\Debug\net6.0\Lib.Utils.pdb
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliSitef.csproj.AssemblyReference.cache
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliSitef.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliSitef.AssemblyInfoInputs.cache
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliSitef.AssemblyInfo.cs
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliSitef.csproj.CoreCompileInputs.cache
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliS.80B1CDF1.Up2Date
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliSitef.dll
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\refint\Lib.CliSitef.dll
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\Lib.CliSitef.pdb
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\obj\Debug\net6.0\ref\Lib.CliSitef.dll

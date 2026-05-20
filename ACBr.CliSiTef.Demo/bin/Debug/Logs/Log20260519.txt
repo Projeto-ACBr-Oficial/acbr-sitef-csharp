@@ -1,0 +1,1061 @@
+19/05/2026 15:13:19 -> InicializarTef -> 0 
+19/05/2026 15:13:19 -> TEF inicializado com sucesso.
+19/05/2026 15:13:42 -> Crt(0) doc=509205 valor=1,00 | modo=automático | CNF no Crt=sim
+19/05/2026 15:13:42 -> -------------------------------------------------------------------------------------
+19/05/2026 15:13:42 -> Fnc: 0 -> Doc: 509205 -> Vlr: 1,00
+19/05/2026 15:13:42 -> -------------------------------------------------------------------------------------
+19/05/2026 15:13:42 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+19/05/2026 15:13:44 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+19/05/2026 15:13:44 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+19/05/2026 15:13:44 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+19/05/2026 15:13:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+19/05/2026 15:13:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: ATUALIZANDO TABELAS
+19/05/2026 15:13:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 1/232
+19/05/2026 15:13:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 2/232
+19/05/2026 15:13:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 3/232
+19/05/2026 15:13:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 4/232
+19/05/2026 15:13:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 5/232
+19/05/2026 15:13:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 6/232
+19/05/2026 15:13:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 7/232
+19/05/2026 15:13:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 8/232
+19/05/2026 15:13:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 9/232
+19/05/2026 15:13:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 10/232
+19/05/2026 15:13:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 11/232
+19/05/2026 15:13:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 12/232
+19/05/2026 15:13:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 13/232
+19/05/2026 15:13:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 14/232
+19/05/2026 15:13:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 15/232
+19/05/2026 15:13:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 16/232
+19/05/2026 15:13:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 17/232
+19/05/2026 15:13:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 18/232
+19/05/2026 15:13:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 19/232
+19/05/2026 15:13:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 20/232
+19/05/2026 15:13:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 21/232
+19/05/2026 15:13:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 22/232
+19/05/2026 15:13:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 23/232
+19/05/2026 15:13:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 24/232
+19/05/2026 15:13:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 25/232
+19/05/2026 15:13:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 26/232
+19/05/2026 15:13:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 27/232
+19/05/2026 15:13:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 28/232
+19/05/2026 15:13:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 29/232
+19/05/2026 15:13:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 30/232
+19/05/2026 15:13:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 31/232
+19/05/2026 15:13:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 32/232
+19/05/2026 15:13:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 33/232
+19/05/2026 15:14:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 34/232
+19/05/2026 15:14:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 35/232
+19/05/2026 15:14:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 36/232
+19/05/2026 15:14:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 37/232
+19/05/2026 15:14:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 38/232
+19/05/2026 15:14:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 39/232
+19/05/2026 15:14:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 40/232
+19/05/2026 15:14:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 41/232
+19/05/2026 15:14:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 42/232
+19/05/2026 15:14:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 43/232
+19/05/2026 15:14:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 44/232
+19/05/2026 15:14:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 45/232
+19/05/2026 15:14:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 46/232
+19/05/2026 15:14:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 47/232
+19/05/2026 15:14:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 48/232
+19/05/2026 15:14:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 49/232
+19/05/2026 15:14:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 50/232
+19/05/2026 15:14:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 51/232
+19/05/2026 15:14:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 52/232
+19/05/2026 15:14:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 53/232
+19/05/2026 15:14:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 54/232
+19/05/2026 15:14:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 55/232
+19/05/2026 15:14:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 56/232
+19/05/2026 15:14:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 57/232
+19/05/2026 15:14:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 58/232
+19/05/2026 15:14:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 59/232
+19/05/2026 15:14:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 60/232
+19/05/2026 15:14:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 61/232
+19/05/2026 15:14:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 62/232
+19/05/2026 15:14:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 63/232
+19/05/2026 15:14:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 64/232
+19/05/2026 15:14:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 65/232
+19/05/2026 15:14:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 66/232
+19/05/2026 15:14:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 67/232
+19/05/2026 15:14:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 68/232
+19/05/2026 15:14:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 69/232
+19/05/2026 15:14:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 70/232
+19/05/2026 15:14:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 71/232
+19/05/2026 15:14:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 72/232
+19/05/2026 15:14:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 73/232
+19/05/2026 15:14:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 74/232
+19/05/2026 15:14:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 75/232
+19/05/2026 15:14:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 76/232
+19/05/2026 15:14:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 77/232
+19/05/2026 15:14:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 78/232
+19/05/2026 15:14:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 79/232
+19/05/2026 15:14:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 80/232
+19/05/2026 15:14:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 81/232
+19/05/2026 15:14:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 82/232
+19/05/2026 15:14:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 83/232
+19/05/2026 15:14:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 84/232
+19/05/2026 15:14:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 85/232
+19/05/2026 15:14:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 86/232
+19/05/2026 15:14:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 87/232
+19/05/2026 15:14:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 88/232
+19/05/2026 15:14:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 89/232
+19/05/2026 15:14:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 90/232
+19/05/2026 15:14:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 91/232
+19/05/2026 15:14:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 92/232
+19/05/2026 15:14:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 93/232
+19/05/2026 15:14:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 94/232
+19/05/2026 15:14:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 95/232
+19/05/2026 15:14:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 96/232
+19/05/2026 15:14:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 97/232
+19/05/2026 15:14:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 98/232
+19/05/2026 15:14:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 99/232
+19/05/2026 15:14:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 100/232
+19/05/2026 15:14:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 101/232
+19/05/2026 15:14:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 102/232
+19/05/2026 15:14:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 103/232
+19/05/2026 15:14:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 104/232
+19/05/2026 15:14:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 105/232
+19/05/2026 15:14:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 106/232
+19/05/2026 15:14:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 107/232
+19/05/2026 15:14:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 108/232
+19/05/2026 15:14:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 109/232
+19/05/2026 15:14:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 110/232
+19/05/2026 15:14:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 111/232
+19/05/2026 15:14:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 112/232
+19/05/2026 15:14:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 113/232
+19/05/2026 15:14:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 114/232
+19/05/2026 15:14:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 115/232
+19/05/2026 15:14:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 116/232
+19/05/2026 15:14:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 117/232
+19/05/2026 15:14:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 118/232
+19/05/2026 15:14:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 119/232
+19/05/2026 15:14:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 120/232
+19/05/2026 15:14:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 121/232
+19/05/2026 15:14:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 122/232
+19/05/2026 15:14:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 123/232
+19/05/2026 15:14:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 124/232
+19/05/2026 15:14:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 125/232
+19/05/2026 15:14:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 126/232
+19/05/2026 15:14:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 127/232
+19/05/2026 15:14:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 128/232
+19/05/2026 15:14:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 129/232
+19/05/2026 15:14:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 130/232
+19/05/2026 15:14:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 131/232
+19/05/2026 15:14:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 132/232
+19/05/2026 15:14:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 133/232
+19/05/2026 15:14:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 134/232
+19/05/2026 15:14:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 135/232
+19/05/2026 15:14:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 136/232
+19/05/2026 15:14:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 137/232
+19/05/2026 15:14:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 138/232
+19/05/2026 15:14:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 139/232
+19/05/2026 15:14:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 140/232
+19/05/2026 15:14:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 141/232
+19/05/2026 15:14:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 142/232
+19/05/2026 15:14:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 143/232
+19/05/2026 15:14:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 144/232
+19/05/2026 15:14:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 145/232
+19/05/2026 15:14:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 146/232
+19/05/2026 15:14:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 147/232
+19/05/2026 15:14:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 148/232
+19/05/2026 15:14:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 149/232
+19/05/2026 15:14:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 150/232
+19/05/2026 15:14:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 151/232
+19/05/2026 15:14:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 152/232
+19/05/2026 15:14:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 153/232
+19/05/2026 15:14:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 154/232
+19/05/2026 15:14:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 155/232
+19/05/2026 15:14:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 156/232
+19/05/2026 15:14:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 157/232
+19/05/2026 15:14:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 158/232
+19/05/2026 15:14:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 159/232
+19/05/2026 15:14:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 160/232
+19/05/2026 15:14:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 161/232
+19/05/2026 15:14:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 162/232
+19/05/2026 15:14:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 163/232
+19/05/2026 15:14:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 164/232
+19/05/2026 15:14:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 165/232
+19/05/2026 15:14:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 166/232
+19/05/2026 15:14:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 167/232
+19/05/2026 15:14:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 168/232
+19/05/2026 15:14:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 169/232
+19/05/2026 15:14:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 170/232
+19/05/2026 15:14:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 171/232
+19/05/2026 15:14:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 172/232
+19/05/2026 15:14:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 173/232
+19/05/2026 15:14:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 174/232
+19/05/2026 15:14:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 175/232
+19/05/2026 15:14:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 176/232
+19/05/2026 15:14:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 177/232
+19/05/2026 15:14:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 178/232
+19/05/2026 15:14:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 179/232
+19/05/2026 15:14:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 180/232
+19/05/2026 15:14:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 181/232
+19/05/2026 15:14:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 182/232
+19/05/2026 15:14:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 183/232
+19/05/2026 15:14:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 184/232
+19/05/2026 15:14:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 185/232
+19/05/2026 15:14:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 186/232
+19/05/2026 15:14:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 187/232
+19/05/2026 15:14:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 188/232
+19/05/2026 15:14:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 189/232
+19/05/2026 15:14:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 190/232
+19/05/2026 15:14:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 191/232
+19/05/2026 15:14:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 192/232
+19/05/2026 15:14:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 193/232
+19/05/2026 15:14:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 194/232
+19/05/2026 15:14:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 195/232
+19/05/2026 15:14:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 196/232
+19/05/2026 15:14:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 197/232
+19/05/2026 15:14:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 198/232
+19/05/2026 15:14:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 199/232
+19/05/2026 15:14:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 200/232
+19/05/2026 15:14:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 201/232
+19/05/2026 15:14:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 202/232
+19/05/2026 15:14:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 203/232
+19/05/2026 15:14:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 204/232
+19/05/2026 15:14:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 205/232
+19/05/2026 15:14:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 206/232
+19/05/2026 15:14:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 207/232
+19/05/2026 15:14:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 208/232
+19/05/2026 15:15:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 209/232
+19/05/2026 15:15:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 210/232
+19/05/2026 15:15:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 211/232
+19/05/2026 15:15:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 212/232
+19/05/2026 15:15:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 213/232
+19/05/2026 15:15:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 214/232
+19/05/2026 15:15:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 215/232
+19/05/2026 15:15:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 216/232
+19/05/2026 15:15:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 217/232
+19/05/2026 15:15:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 218/232
+19/05/2026 15:15:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 219/232
+19/05/2026 15:15:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 220/232
+19/05/2026 15:15:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 221/232
+19/05/2026 15:15:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 222/232
+19/05/2026 15:15:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 223/232
+19/05/2026 15:15:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 224/232
+19/05/2026 15:15:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 225/232
+19/05/2026 15:15:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 226/232
+19/05/2026 15:15:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 227/232
+19/05/2026 15:15:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 228/232
+19/05/2026 15:15:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 229/232
+19/05/2026 15:15:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 230/232
+19/05/2026 15:15:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 231/232
+19/05/2026 15:15:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 232/232
+19/05/2026 15:15:11 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:15:11 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+19/05/2026 15:15:12 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+19/05/2026 15:15:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+19/05/2026 15:15:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+19/05/2026 15:15:13 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+19/05/2026 15:15:13 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+19/05/2026 15:15:13 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+19/05/2026 15:15:13 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+19/05/2026 15:15:13 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+19/05/2026 15:15:13 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+19/05/2026 15:15:14 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:15:14 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:15:15 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+19/05/2026 15:15:15 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+19/05/2026 15:15:15 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+19/05/2026 15:15:15 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+19/05/2026 15:15:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+19/05/2026 15:15:27 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+19/05/2026 15:15:27 -> Cmd: 0 -> Tc: 0 -> Buffer: 3320
+19/05/2026 15:15:27 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+19/05/2026 15:15:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+19/05/2026 15:15:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+19/05/2026 15:15:28 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+19/05/2026 15:15:28 -> Cmd: 0 -> Tc: 952 -> Buffer: 190019
+19/05/2026 15:15:28 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+19/05/2026 15:15:28 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+19/05/2026 15:15:28 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F2608B54922AEE359B91A9F2701409F10120310600003220000000000000000000000FF9F37043A9725BF9F360200DC950504000480009A032605199C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+19/05/2026 15:15:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 190019 MU 19/05/26 15:15 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999190019 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 190019 MU 19/05/26 15:15 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999190019 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 133 -> Buffer: 190019
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 134 -> Buffer: 999190019
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 135 -> Buffer: 190019
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260519151527
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+19/05/2026 15:15:29 -> Cmd: 0 -> Tc: 1 -> Buffer: 051919001905
+19/05/2026 15:15:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+19/05/2026 15:15:33 -> Crt(0) retorno=0 
+19/05/2026 15:15:33 -> CNF concluído no Crt (cupom quitado) doc=509205
+19/05/2026 15:15:33 -> Finalizar venda: sem pendências (doc 509205)
+19/05/2026 15:15:33 -> Venda finalizada. Documento 509205
+19/05/2026 15:16:27 -> Impressão enviada (2109 caracteres).
+19/05/2026 15:16:33 -> -------------------------------------------------------------------------------------
+19/05/2026 15:16:33 -> Fnc: 110 -> Doc: 509205 -> Vlr: 0,00
+19/05/2026 15:16:33 -> -------------------------------------------------------------------------------------
+19/05/2026 15:16:33 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: v.7.0.117.109S/7.0.117.109S - Selecione a opcao desejada
+19/05/2026 15:16:33 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Teste de comunicacao;2:Reimpressao de comprovante;3:Cancelamento de transacao;4:Pre-autorizacao;5:Consulta parcelas CDC;6:Consulta Private Label;7:Consulta saque e saque Fininvest;8:Consulta Saldo Debito;9:Consulta Saldo Credito;10:Pagamento da Recarga SPTrans;11:Outros Cielo;12:Carga forcada de tabelas no pinpad (Servidor);13:Consulta Saque Parcelado;14:Consulta Parcelas Cred. Conductor;15:Consulta Parcelas Cred. MarketPay;
+19/05/2026 15:17:01 -> Cmd: 14 -> Tc: 4294967295 -> Buffer: 2
+19/05/2026 15:17:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: ATUALIZANDO TABELAS
+19/05/2026 15:17:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 1
+19/05/2026 15:17:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 2
+19/05/2026 15:17:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 3
+19/05/2026 15:17:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 4
+19/05/2026 15:17:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 5
+19/05/2026 15:17:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 6
+19/05/2026 15:17:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 7
+19/05/2026 15:17:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 8
+19/05/2026 15:17:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 9
+19/05/2026 15:17:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 10
+19/05/2026 15:17:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 11
+19/05/2026 15:17:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 12
+19/05/2026 15:17:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 13
+19/05/2026 15:17:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 14
+19/05/2026 15:17:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 15
+19/05/2026 15:17:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 16
+19/05/2026 15:17:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 17
+19/05/2026 15:17:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 18
+19/05/2026 15:17:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 19
+19/05/2026 15:17:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 20
+19/05/2026 15:17:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 21
+19/05/2026 15:17:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 22
+19/05/2026 15:17:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 23
+19/05/2026 15:17:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 24
+19/05/2026 15:17:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 25
+19/05/2026 15:17:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 26
+19/05/2026 15:17:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 27
+19/05/2026 15:17:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 28
+19/05/2026 15:17:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 29
+19/05/2026 15:17:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 30
+19/05/2026 15:17:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 31
+19/05/2026 15:17:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 32
+19/05/2026 15:17:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 33
+19/05/2026 15:17:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 34
+19/05/2026 15:17:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:17:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: ATUALIZANDO TABELAS
+19/05/2026 15:17:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 1/232
+19/05/2026 15:17:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 2/232
+19/05/2026 15:17:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 3/232
+19/05/2026 15:17:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 4/232
+19/05/2026 15:17:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 5/232
+19/05/2026 15:17:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 6/232
+19/05/2026 15:17:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 7/232
+19/05/2026 15:17:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 8/232
+19/05/2026 15:17:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 9/232
+19/05/2026 15:17:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 10/232
+19/05/2026 15:17:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 11/232
+19/05/2026 15:17:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 12/232
+19/05/2026 15:17:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 13/232
+19/05/2026 15:17:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 14/232
+19/05/2026 15:17:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 15/232
+19/05/2026 15:17:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 16/232
+19/05/2026 15:17:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 17/232
+19/05/2026 15:17:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 18/232
+19/05/2026 15:17:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 19/232
+19/05/2026 15:17:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 20/232
+19/05/2026 15:17:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 21/232
+19/05/2026 15:17:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 22/232
+19/05/2026 15:17:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 23/232
+19/05/2026 15:17:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 24/232
+19/05/2026 15:17:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 25/232
+19/05/2026 15:17:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 26/232
+19/05/2026 15:17:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 27/232
+19/05/2026 15:17:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 28/232
+19/05/2026 15:17:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 29/232
+19/05/2026 15:17:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 30/232
+19/05/2026 15:17:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 31/232
+19/05/2026 15:17:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 32/232
+19/05/2026 15:17:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 33/232
+19/05/2026 15:17:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 34/232
+19/05/2026 15:17:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 35/232
+19/05/2026 15:17:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 36/232
+19/05/2026 15:17:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 37/232
+19/05/2026 15:17:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 38/232
+19/05/2026 15:17:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 39/232
+19/05/2026 15:17:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 40/232
+19/05/2026 15:17:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 41/232
+19/05/2026 15:17:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 42/232
+19/05/2026 15:17:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 43/232
+19/05/2026 15:17:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 44/232
+19/05/2026 15:17:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 45/232
+19/05/2026 15:17:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 46/232
+19/05/2026 15:17:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 47/232
+19/05/2026 15:17:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 48/232
+19/05/2026 15:17:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 49/232
+19/05/2026 15:17:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 50/232
+19/05/2026 15:17:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 51/232
+19/05/2026 15:17:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 52/232
+19/05/2026 15:17:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 53/232
+19/05/2026 15:17:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 54/232
+19/05/2026 15:17:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 55/232
+19/05/2026 15:17:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 56/232
+19/05/2026 15:17:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 57/232
+19/05/2026 15:17:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 58/232
+19/05/2026 15:17:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 59/232
+19/05/2026 15:17:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 60/232
+19/05/2026 15:17:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 61/232
+19/05/2026 15:17:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 62/232
+19/05/2026 15:17:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 63/232
+19/05/2026 15:17:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 64/232
+19/05/2026 15:17:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 65/232
+19/05/2026 15:17:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 66/232
+19/05/2026 15:17:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 67/232
+19/05/2026 15:17:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 68/232
+19/05/2026 15:17:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 69/232
+19/05/2026 15:17:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 70/232
+19/05/2026 15:17:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 71/232
+19/05/2026 15:17:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 72/232
+19/05/2026 15:17:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 73/232
+19/05/2026 15:17:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 74/232
+19/05/2026 15:17:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 75/232
+19/05/2026 15:17:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 76/232
+19/05/2026 15:17:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 77/232
+19/05/2026 15:18:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 78/232
+19/05/2026 15:18:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 79/232
+19/05/2026 15:18:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 80/232
+19/05/2026 15:18:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 81/232
+19/05/2026 15:18:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 82/232
+19/05/2026 15:18:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 83/232
+19/05/2026 15:18:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 84/232
+19/05/2026 15:18:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 85/232
+19/05/2026 15:18:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 86/232
+19/05/2026 15:18:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 87/232
+19/05/2026 15:18:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 88/232
+19/05/2026 15:18:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 89/232
+19/05/2026 15:18:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 90/232
+19/05/2026 15:18:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 91/232
+19/05/2026 15:18:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 92/232
+19/05/2026 15:18:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 93/232
+19/05/2026 15:18:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 94/232
+19/05/2026 15:18:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 95/232
+19/05/2026 15:18:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 96/232
+19/05/2026 15:18:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 97/232
+19/05/2026 15:18:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 98/232
+19/05/2026 15:18:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 99/232
+19/05/2026 15:18:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 100/232
+19/05/2026 15:18:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 101/232
+19/05/2026 15:18:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 102/232
+19/05/2026 15:18:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 103/232
+19/05/2026 15:18:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 104/232
+19/05/2026 15:18:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 105/232
+19/05/2026 15:18:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 106/232
+19/05/2026 15:18:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 107/232
+19/05/2026 15:18:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 108/232
+19/05/2026 15:18:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 109/232
+19/05/2026 15:18:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 110/232
+19/05/2026 15:18:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 111/232
+19/05/2026 15:18:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 112/232
+19/05/2026 15:18:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 113/232
+19/05/2026 15:18:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 114/232
+19/05/2026 15:18:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 115/232
+19/05/2026 15:18:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 116/232
+19/05/2026 15:18:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 117/232
+19/05/2026 15:18:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 118/232
+19/05/2026 15:18:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 119/232
+19/05/2026 15:18:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 120/232
+19/05/2026 15:18:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 121/232
+19/05/2026 15:18:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 122/232
+19/05/2026 15:18:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 123/232
+19/05/2026 15:18:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 124/232
+19/05/2026 15:18:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 125/232
+19/05/2026 15:18:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 126/232
+19/05/2026 15:18:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 127/232
+19/05/2026 15:18:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 128/232
+19/05/2026 15:18:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 129/232
+19/05/2026 15:18:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 130/232
+19/05/2026 15:18:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 131/232
+19/05/2026 15:18:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 132/232
+19/05/2026 15:18:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 133/232
+19/05/2026 15:18:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 134/232
+19/05/2026 15:18:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 135/232
+19/05/2026 15:18:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 136/232
+19/05/2026 15:18:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 137/232
+19/05/2026 15:18:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 138/232
+19/05/2026 15:18:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 139/232
+19/05/2026 15:18:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 140/232
+19/05/2026 15:18:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 141/232
+19/05/2026 15:18:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 142/232
+19/05/2026 15:18:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 143/232
+19/05/2026 15:18:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 144/232
+19/05/2026 15:18:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 145/232
+19/05/2026 15:18:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 146/232
+19/05/2026 15:18:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 147/232
+19/05/2026 15:18:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 148/232
+19/05/2026 15:18:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 149/232
+19/05/2026 15:18:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 150/232
+19/05/2026 15:18:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 151/232
+19/05/2026 15:18:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 152/232
+19/05/2026 15:18:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 153/232
+19/05/2026 15:18:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 154/232
+19/05/2026 15:18:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 155/232
+19/05/2026 15:18:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 156/232
+19/05/2026 15:18:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 157/232
+19/05/2026 15:18:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 158/232
+19/05/2026 15:18:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 159/232
+19/05/2026 15:18:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 160/232
+19/05/2026 15:18:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 161/232
+19/05/2026 15:18:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 162/232
+19/05/2026 15:18:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 163/232
+19/05/2026 15:18:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 164/232
+19/05/2026 15:18:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 165/232
+19/05/2026 15:18:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 166/232
+19/05/2026 15:18:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 167/232
+19/05/2026 15:18:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 168/232
+19/05/2026 15:18:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 169/232
+19/05/2026 15:18:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 170/232
+19/05/2026 15:18:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 171/232
+19/05/2026 15:18:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 172/232
+19/05/2026 15:18:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 173/232
+19/05/2026 15:18:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 174/232
+19/05/2026 15:18:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 175/232
+19/05/2026 15:18:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 176/232
+19/05/2026 15:18:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 177/232
+19/05/2026 15:18:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 178/232
+19/05/2026 15:18:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 179/232
+19/05/2026 15:18:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 180/232
+19/05/2026 15:18:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 181/232
+19/05/2026 15:18:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 182/232
+19/05/2026 15:18:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 183/232
+19/05/2026 15:18:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 184/232
+19/05/2026 15:18:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 185/232
+19/05/2026 15:18:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 186/232
+19/05/2026 15:18:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 187/232
+19/05/2026 15:18:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 188/232
+19/05/2026 15:18:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 189/232
+19/05/2026 15:18:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 190/232
+19/05/2026 15:18:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 191/232
+19/05/2026 15:18:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 192/232
+19/05/2026 15:18:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 193/232
+19/05/2026 15:18:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 194/232
+19/05/2026 15:18:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 195/232
+19/05/2026 15:18:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 196/232
+19/05/2026 15:18:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 197/232
+19/05/2026 15:18:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 198/232
+19/05/2026 15:18:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 199/232
+19/05/2026 15:18:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 200/232
+19/05/2026 15:18:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 201/232
+19/05/2026 15:18:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 202/232
+19/05/2026 15:18:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 203/232
+19/05/2026 15:18:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 204/232
+19/05/2026 15:18:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 205/232
+19/05/2026 15:18:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 206/232
+19/05/2026 15:18:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 207/232
+19/05/2026 15:18:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 208/232
+19/05/2026 15:18:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 209/232
+19/05/2026 15:18:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 210/232
+19/05/2026 15:18:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 211/232
+19/05/2026 15:18:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 212/232
+19/05/2026 15:18:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 213/232
+19/05/2026 15:18:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 214/232
+19/05/2026 15:18:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 215/232
+19/05/2026 15:18:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 216/232
+19/05/2026 15:18:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 217/232
+19/05/2026 15:18:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 218/232
+19/05/2026 15:18:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 219/232
+19/05/2026 15:18:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 220/232
+19/05/2026 15:18:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 221/232
+19/05/2026 15:18:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 222/232
+19/05/2026 15:18:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 223/232
+19/05/2026 15:18:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 224/232
+19/05/2026 15:18:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 225/232
+19/05/2026 15:18:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 226/232
+19/05/2026 15:18:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 227/232
+19/05/2026 15:18:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 228/232
+19/05/2026 15:18:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 229/232
+19/05/2026 15:18:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 230/232
+19/05/2026 15:18:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 231/232
+19/05/2026 15:18:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 232/232
+19/05/2026 15:18:54 -> Adm -> 0
+19/05/2026 15:21:25 -> InicializarTef -> 0 
+19/05/2026 15:21:25 -> TEF inicializado com sucesso.
+19/05/2026 15:21:27 -> -------------------------------------------------------------------------------------
+19/05/2026 15:21:27 -> Fnc: 110 -> Doc: 723089 -> Vlr: 0,00
+19/05/2026 15:21:27 -> -------------------------------------------------------------------------------------
+19/05/2026 15:21:29 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: v.7.0.117.109S/7.0.117.109S - Selecione a opcao desejada
+19/05/2026 15:21:29 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Teste de comunicacao;2:Reimpressao de comprovante;3:Cancelamento de transacao;4:Pre-autorizacao;5:Consulta parcelas CDC;6:Consulta Private Label;7:Consulta saque e saque Fininvest;8:Consulta Saldo Debito;9:Consulta Saldo Credito;10:Pagamento da Recarga SPTrans;11:Outros Cielo;12:Carga forcada de tabelas no pinpad (Servidor);13:Consulta Saque Parcelado;14:Consulta Parcelas Cred. Conductor;15:Consulta Parcelas Cred. MarketPay;
+19/05/2026 15:21:33 -> Cmd: 14 -> Tc: 4294967295 -> Buffer: 2
+19/05/2026 15:21:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: ATUALIZANDO TABELAS
+19/05/2026 15:21:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 1
+19/05/2026 15:21:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 2
+19/05/2026 15:21:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 3
+19/05/2026 15:21:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 4
+19/05/2026 15:21:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 5
+19/05/2026 15:21:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 6
+19/05/2026 15:21:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 7
+19/05/2026 15:21:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 8
+19/05/2026 15:21:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 9
+19/05/2026 15:21:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 10
+19/05/2026 15:21:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 11
+19/05/2026 15:21:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 12
+19/05/2026 15:21:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 13
+19/05/2026 15:21:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 14
+19/05/2026 15:21:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 15
+19/05/2026 15:21:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 16
+19/05/2026 15:21:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 17
+19/05/2026 15:21:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 18
+19/05/2026 15:21:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 19
+19/05/2026 15:21:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 20
+19/05/2026 15:21:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 21
+19/05/2026 15:21:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 22
+19/05/2026 15:21:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 23
+19/05/2026 15:21:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 24
+19/05/2026 15:21:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 25
+19/05/2026 15:21:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 26
+19/05/2026 15:21:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 27
+19/05/2026 15:21:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 28
+19/05/2026 15:21:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 29
+19/05/2026 15:21:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 30
+19/05/2026 15:21:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 31
+19/05/2026 15:21:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 32
+19/05/2026 15:21:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 33
+19/05/2026 15:21:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: OBTENDO REGISTRO: 34
+19/05/2026 15:21:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(40)
+19/05/2026 15:21:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: ATUALIZANDO TABELAS
+19/05/2026 15:21:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 1/232
+19/05/2026 15:21:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 2/232
+19/05/2026 15:21:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 3/232
+19/05/2026 15:21:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 4/232
+19/05/2026 15:21:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 5/232
+19/05/2026 15:22:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 6/232
+19/05/2026 15:22:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 7/232
+19/05/2026 15:22:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 8/232
+19/05/2026 15:22:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 9/232
+19/05/2026 15:22:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 10/232
+19/05/2026 15:22:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 11/232
+19/05/2026 15:22:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 12/232
+19/05/2026 15:22:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 13/232
+19/05/2026 15:22:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 14/232
+19/05/2026 15:22:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 15/232
+19/05/2026 15:22:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 16/232
+19/05/2026 15:22:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 17/232
+19/05/2026 15:22:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 18/232
+19/05/2026 15:22:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 19/232
+19/05/2026 15:22:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 20/232
+19/05/2026 15:22:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 21/232
+19/05/2026 15:22:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 22/232
+19/05/2026 15:22:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 23/232
+19/05/2026 15:22:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 24/232
+19/05/2026 15:22:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 25/232
+19/05/2026 15:22:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 26/232
+19/05/2026 15:22:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 27/232
+19/05/2026 15:22:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 28/232
+19/05/2026 15:22:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 29/232
+19/05/2026 15:22:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 30/232
+19/05/2026 15:22:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 31/232
+19/05/2026 15:22:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 32/232
+19/05/2026 15:22:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 33/232
+19/05/2026 15:22:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 34/232
+19/05/2026 15:22:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 35/232
+19/05/2026 15:22:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 36/232
+19/05/2026 15:22:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 37/232
+19/05/2026 15:22:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 38/232
+19/05/2026 15:22:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 39/232
+19/05/2026 15:22:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 40/232
+19/05/2026 15:22:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 41/232
+19/05/2026 15:22:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 42/232
+19/05/2026 15:22:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 43/232
+19/05/2026 15:22:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 44/232
+19/05/2026 15:22:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 45/232
+19/05/2026 15:22:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 46/232
+19/05/2026 15:22:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 47/232
+19/05/2026 15:22:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 48/232
+19/05/2026 15:22:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 49/232
+19/05/2026 15:22:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 50/232
+19/05/2026 15:22:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 51/232
+19/05/2026 15:22:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 52/232
+19/05/2026 15:22:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 53/232
+19/05/2026 15:22:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 54/232
+19/05/2026 15:22:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 55/232
+19/05/2026 15:22:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 56/232
+19/05/2026 15:22:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 57/232
+19/05/2026 15:22:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 58/232
+19/05/2026 15:22:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 59/232
+19/05/2026 15:22:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 60/232
+19/05/2026 15:22:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 61/232
+19/05/2026 15:22:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 62/232
+19/05/2026 15:22:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 63/232
+19/05/2026 15:22:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 64/232
+19/05/2026 15:22:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 65/232
+19/05/2026 15:22:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 66/232
+19/05/2026 15:22:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 67/232
+19/05/2026 15:22:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 68/232
+19/05/2026 15:22:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 69/232
+19/05/2026 15:22:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 70/232
+19/05/2026 15:22:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 71/232
+19/05/2026 15:22:22 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 72/232
+19/05/2026 15:22:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 73/232
+19/05/2026 15:22:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 74/232
+19/05/2026 15:22:23 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 75/232
+19/05/2026 15:22:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 76/232
+19/05/2026 15:22:24 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 77/232
+19/05/2026 15:22:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 78/232
+19/05/2026 15:22:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 79/232
+19/05/2026 15:22:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 80/232
+19/05/2026 15:22:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 81/232
+19/05/2026 15:22:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 82/232
+19/05/2026 15:22:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 83/232
+19/05/2026 15:22:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 84/232
+19/05/2026 15:22:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 85/232
+19/05/2026 15:22:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 86/232
+19/05/2026 15:22:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 87/232
+19/05/2026 15:22:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 88/232
+19/05/2026 15:22:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 89/232
+19/05/2026 15:22:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 90/232
+19/05/2026 15:22:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 91/232
+19/05/2026 15:22:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 92/232
+19/05/2026 15:22:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 93/232
+19/05/2026 15:22:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 94/232
+19/05/2026 15:22:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 95/232
+19/05/2026 15:22:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 96/232
+19/05/2026 15:22:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 97/232
+19/05/2026 15:22:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 98/232
+19/05/2026 15:22:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 99/232
+19/05/2026 15:22:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 100/232
+19/05/2026 15:22:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 101/232
+19/05/2026 15:22:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 102/232
+19/05/2026 15:22:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 103/232
+19/05/2026 15:22:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 104/232
+19/05/2026 15:22:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 105/232
+19/05/2026 15:22:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 106/232
+19/05/2026 15:22:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 107/232
+19/05/2026 15:22:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 108/232
+19/05/2026 15:22:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 109/232
+19/05/2026 15:22:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 110/232
+19/05/2026 15:22:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 111/232
+19/05/2026 15:22:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 112/232
+19/05/2026 15:22:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 113/232
+19/05/2026 15:22:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 114/232
+19/05/2026 15:22:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 115/232
+19/05/2026 15:22:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 116/232
+19/05/2026 15:22:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 117/232
+19/05/2026 15:22:38 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 118/232
+19/05/2026 15:22:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 119/232
+19/05/2026 15:22:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 120/232
+19/05/2026 15:22:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 121/232
+19/05/2026 15:22:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 122/232
+19/05/2026 15:22:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 123/232
+19/05/2026 15:22:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 124/232
+19/05/2026 15:22:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 125/232
+19/05/2026 15:22:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 126/232
+19/05/2026 15:22:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 127/232
+19/05/2026 15:22:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 128/232
+19/05/2026 15:22:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 129/232
+19/05/2026 15:22:42 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 130/232
+19/05/2026 15:22:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 131/232
+19/05/2026 15:22:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 132/232
+19/05/2026 15:22:43 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 133/232
+19/05/2026 15:22:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 134/232
+19/05/2026 15:22:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 135/232
+19/05/2026 15:22:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 136/232
+19/05/2026 15:22:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 137/232
+19/05/2026 15:22:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 138/232
+19/05/2026 15:22:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 139/232
+19/05/2026 15:22:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 140/232
+19/05/2026 15:22:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 141/232
+19/05/2026 15:22:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 142/232
+19/05/2026 15:22:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 143/232
+19/05/2026 15:22:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 144/232
+19/05/2026 15:22:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 145/232
+19/05/2026 15:22:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 146/232
+19/05/2026 15:22:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 147/232
+19/05/2026 15:22:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 148/232
+19/05/2026 15:22:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 149/232
+19/05/2026 15:22:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 150/232
+19/05/2026 15:22:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 151/232
+19/05/2026 15:22:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 152/232
+19/05/2026 15:22:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 153/232
+19/05/2026 15:22:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 154/232
+19/05/2026 15:22:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 155/232
+19/05/2026 15:22:51 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 156/232
+19/05/2026 15:22:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 157/232
+19/05/2026 15:22:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 158/232
+19/05/2026 15:22:52 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 159/232
+19/05/2026 15:22:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 160/232
+19/05/2026 15:22:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 161/232
+19/05/2026 15:22:53 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 162/232
+19/05/2026 15:22:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 163/232
+19/05/2026 15:22:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 164/232
+19/05/2026 15:22:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 165/232
+19/05/2026 15:22:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 166/232
+19/05/2026 15:22:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 167/232
+19/05/2026 15:22:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 168/232
+19/05/2026 15:22:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 169/232
+19/05/2026 15:22:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 170/232
+19/05/2026 15:22:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 171/232
+19/05/2026 15:22:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 172/232
+19/05/2026 15:22:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 173/232
+19/05/2026 15:22:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 174/232
+19/05/2026 15:22:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 175/232
+19/05/2026 15:22:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 176/232
+19/05/2026 15:22:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 177/232
+19/05/2026 15:22:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 178/232
+19/05/2026 15:22:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 179/232
+19/05/2026 15:22:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 180/232
+19/05/2026 15:23:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 181/232
+19/05/2026 15:23:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 182/232
+19/05/2026 15:23:00 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 183/232
+19/05/2026 15:23:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 184/232
+19/05/2026 15:23:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 185/232
+19/05/2026 15:23:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 186/232
+19/05/2026 15:23:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 187/232
+19/05/2026 15:23:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 188/232
+19/05/2026 15:23:02 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 189/232
+19/05/2026 15:23:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 190/232
+19/05/2026 15:23:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 191/232
+19/05/2026 15:23:03 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 192/232
+19/05/2026 15:23:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 193/232
+19/05/2026 15:23:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 194/232
+19/05/2026 15:23:04 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 195/232
+19/05/2026 15:23:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 196/232
+19/05/2026 15:23:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 197/232
+19/05/2026 15:23:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 198/232
+19/05/2026 15:23:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 199/232
+19/05/2026 15:23:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 200/232
+19/05/2026 15:23:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 201/232
+19/05/2026 15:23:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 202/232
+19/05/2026 15:23:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 203/232
+19/05/2026 15:23:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 204/232
+19/05/2026 15:23:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 205/232
+19/05/2026 15:23:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 206/232
+19/05/2026 15:23:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 207/232
+19/05/2026 15:23:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 208/232
+19/05/2026 15:23:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 209/232
+19/05/2026 15:23:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 210/232
+19/05/2026 15:23:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 211/232
+19/05/2026 15:23:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 212/232
+19/05/2026 15:23:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 213/232
+19/05/2026 15:23:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 214/232
+19/05/2026 15:23:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 215/232
+19/05/2026 15:23:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 216/232
+19/05/2026 15:23:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 217/232
+19/05/2026 15:23:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 218/232
+19/05/2026 15:23:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 219/232
+19/05/2026 15:23:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 220/232
+19/05/2026 15:23:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 221/232
+19/05/2026 15:23:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 222/232
+19/05/2026 15:23:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 223/232
+19/05/2026 15:23:14 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 224/232
+19/05/2026 15:23:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 225/232
+19/05/2026 15:23:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 226/232
+19/05/2026 15:23:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 227/232
+19/05/2026 15:23:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 228/232
+19/05/2026 15:23:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 229/232
+19/05/2026 15:23:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 230/232
+19/05/2026 15:23:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 231/232
+19/05/2026 15:23:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Atualizando Reg. 232/232
+19/05/2026 15:23:19 -> Adm -> 0
+19/05/2026 15:23:29 -> Crt(0) doc=723089 valor=1,00 | modo=automático | CNF no Crt=sim
+19/05/2026 15:23:29 -> -------------------------------------------------------------------------------------
+19/05/2026 15:23:29 -> Fnc: 0 -> Doc: 723089 -> Vlr: 1,00
+19/05/2026 15:23:29 -> -------------------------------------------------------------------------------------
+19/05/2026 15:23:29 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+19/05/2026 15:23:29 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+19/05/2026 15:23:30 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+19/05/2026 15:23:30 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+19/05/2026 15:23:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+19/05/2026 15:23:35 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:23:35 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+19/05/2026 15:23:36 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+19/05/2026 15:23:36 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+19/05/2026 15:23:37 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+19/05/2026 15:23:38 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+19/05/2026 15:23:38 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+19/05/2026 15:23:38 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+19/05/2026 15:23:38 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+19/05/2026 15:23:38 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+19/05/2026 15:23:38 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+19/05/2026 15:23:38 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:23:39 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+19/05/2026 15:23:39 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+19/05/2026 15:23:39 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+19/05/2026 15:23:39 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+19/05/2026 15:23:39 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+19/05/2026 15:23:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+19/05/2026 15:23:45 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+19/05/2026 15:23:45 -> Cmd: 0 -> Tc: 0 -> Buffer: 2069
+19/05/2026 15:23:45 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+19/05/2026 15:23:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+19/05/2026 15:23:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 952 -> Buffer: 190020
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F26084C75425536A9E4279F2701409F10120310600003220000000000000000000000FF9F370440FD66D09F360200DE950504000480009A032605199C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+19/05/2026 15:23:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 190020 MU 19/05/26 15:23 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999190020 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 190020 MU 19/05/26 15:23 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999190020 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 133 -> Buffer: 190020
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 134 -> Buffer: 999190020
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 135 -> Buffer: 190020
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:23:47 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+19/05/2026 15:23:48 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+19/05/2026 15:23:48 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:23:48 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260519152346
+19/05/2026 15:23:48 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+19/05/2026 15:23:48 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+19/05/2026 15:23:48 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+19/05/2026 15:23:48 -> Cmd: 0 -> Tc: 1 -> Buffer: 051919002005
+19/05/2026 15:23:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+19/05/2026 15:23:52 -> Crt(0) retorno=0 
+19/05/2026 15:23:52 -> CNF concluído no Crt (cupom quitado) doc=723089
+19/05/2026 15:23:52 -> Finalizar venda: sem pendências (doc 723089)
+19/05/2026 15:23:52 -> Venda finalizada. Documento 723089
+19/05/2026 15:29:16 -> InicializarTef -> 0 
+19/05/2026 15:29:16 -> TEF inicializado com sucesso.
+19/05/2026 15:29:21 -> Crt(0) doc=576064 valor=1,00 | modo=automático | CNF no Crt=sim
+19/05/2026 15:29:21 -> -------------------------------------------------------------------------------------
+19/05/2026 15:29:21 -> Fnc: 0 -> Doc: 576064 -> Vlr: 1,00
+19/05/2026 15:29:21 -> -------------------------------------------------------------------------------------
+19/05/2026 15:29:21 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+19/05/2026 15:29:23 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+19/05/2026 15:29:23 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+19/05/2026 15:29:23 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+19/05/2026 15:29:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+19/05/2026 15:29:28 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+19/05/2026 15:29:28 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+19/05/2026 15:29:30 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+19/05/2026 15:29:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+19/05/2026 15:29:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+19/05/2026 15:29:31 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+19/05/2026 15:29:31 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+19/05/2026 15:29:31 -> Cmd: 0 -> Tc: 2362 -> Buffer: 0
+19/05/2026 15:29:31 -> Cmd: 0 -> Tc: 2364 -> Buffer: 1
+19/05/2026 15:29:31 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+19/05/2026 15:29:31 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+19/05/2026 15:29:32 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+19/05/2026 15:29:32 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+19/05/2026 15:29:32 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 170 -> Buffer: 1
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 171 -> Buffer: 2
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 172 -> Buffer: 99
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 174 -> Buffer: 1
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 175 -> Buffer: 2
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 176 -> Buffer: 99
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 724 -> Buffer: 0
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 725 -> Buffer: 0
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 726 -> Buffer: 0
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 727 -> Buffer: 0
+19/05/2026 15:29:33 -> Cmd: 0 -> Tc: 2974 -> Buffer: 1
+19/05/2026 15:29:33 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+19/05/2026 15:29:33 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Parcelado pelo Estabelecimento;3:Parcelado pela Administradora;4:Crediario;5:Consulta parcelamento;
+19/05/2026 15:29:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+19/05/2026 15:29:39 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+19/05/2026 15:29:39 -> Cmd: 0 -> Tc: 0 -> Buffer: 5865
+19/05/2026 15:29:39 -> Cmd: 0 -> Tc: 2333 -> Buffer: 1
+19/05/2026 15:29:39 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+19/05/2026 15:29:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 952 -> Buffer: 190021
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 2 -> Buffer: 56
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000100;023049F3303E0F0C89F0607A00000000410108407A0000000041010500A4D6173746572636172649F2608343CF9B9F01071A09F2701409F10120310650003020000000000000000000000FF9F37040A053ABE9F3602027C950504000080009A032605199C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034103025F3401009F6E0700760000303000;
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+19/05/2026 15:29:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 100 -> Buffer: 0200
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Credito a Vista
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 190021 MU 19/05/26 15:29 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999190021 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 190021 MU 19/05/26 15:29 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999190021 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 133 -> Buffer: 190021
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 134 -> Buffer: 999190021
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 135 -> Buffer: 190021
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260519152940
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+19/05/2026 15:29:41 -> Cmd: 0 -> Tc: 1 -> Buffer: 051919002105
+19/05/2026 15:29:41 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+19/05/2026 15:29:46 -> Crt(0) retorno=0 
+19/05/2026 15:29:46 -> CNF concluído no Crt (cupom quitado) doc=576064
+19/05/2026 15:29:46 -> Finalizar venda: sem pendências (doc 576064)
+19/05/2026 15:29:46 -> Venda finalizada. Documento 576064
+19/05/2026 15:29:51 -> Impressão enviada (2091 caracteres).
+19/05/2026 15:30:14 -> InicializarTef -> 0 

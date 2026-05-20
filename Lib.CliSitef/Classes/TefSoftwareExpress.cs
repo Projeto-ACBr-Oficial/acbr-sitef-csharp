@@ -1,0 +1,1483 @@
+﻿using Lib.CliSitef.ConstantValues;
+using Lib.Utils.Classes;
+using Lib.Utils.Enuns;
+using Lib.Utils.Logs;
+using System;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace Lib.CliSitef.Classes
+{
+    public class TefSoftwareExpress
+    {
+        #region Declaracao das Dll´s Sitef Software Express
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int ConfiguraIntSiTefInterativo(string IPSiTef, string IdLoja, string IdTerminal, string Reservado);
+
+        [DllImport("CliSiTef32I.dll")]
+        public static extern int ConfiguraIntSiTefInterativoEx(string IPSiTef, string IdLoja, string IdTerminal, string Reservado, string ParametrosAdicionais);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int IniciaFuncaoSiTefInterativo(int Funcao, string Valor, string CupomFiscal, string DataFiscal, string HoraFiscal, string Operador, string ParamAdic);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int ContinuaFuncaoSiTefInterativo(out int Comando, out long TipoCampo, out short TamMinimo, out short TamMaximo, byte[] Buffer, int TamBuffer, int Continua);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern void FinalizaFuncaoSiTefInterativo(short Confirma, string CupomFiscal, string DataFiscal, string HoraFiscal, string ParamAdic);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int ObtemQuantidadeTransacoesPendentes(string DataFiscal, string CupomFiscal);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int VerificaPresencaPinPad();
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int KeepAlivePinPad();
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int EscreveMensagemPermanentePinPad(string Mensagem);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int LeTrilha3(string Mensagem);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int LeCartaoSeguro(string Mensagem);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int LeSenhaInterativo(string mensagem);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int LeSenhaDireto(string ChaveSeguranca, string SenhaCliente);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int LeSimNaoPinPad(string Mensagem);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int CorrespondenteBancarioSiTefInterativo(string CupomFiscal, string DataFiscal, string Horario, string Operador, string ParamAdic);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int ValidaCampoCodigoEmBarras(string Dados, out short Tipo);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int ObtemVersao(out string VersaoCliSiTef, out string VersaoCliSiTefI);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int DescarregaMensagens();
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int ObtemInformacoesPinPad(string InfoPinPad);
+
+        [DllImport("CliSiTef32I.dll")]
+        static extern int ObtemDadoPinPadDiretoEx(string ChaveAcesso, string Identificador, string Entrada, [MarshalAs(UnmanagedType.VBByRefStr)] ref string Saida);
+
+        #endregion
+
+        public delegate void OnMessageClientHandle(string _mensagem, int _tempoMiliSegundos, TefFuncaoInterativa _tefFuncaoInterativa = null);
+        public event OnMessageClientHandle OnMessageClient;
+
+        public delegate void OnCallFormtHandle(TefFuncaoInterativa _tefFuncaoInterativa);
+        public event OnCallFormtHandle OnCallForm;
+
+        public delegate void OnCallPanelQrCodeHandle(TefFuncaoInterativa _tefFuncaoInterativa);
+        public event OnCallPanelQrCodeHandle OnCallPanelQrCode;
+
+        public delegate void OnClosePanelQrCodeHandle(TefFuncaoInterativa _tefFuncaoInterativa);
+        public event OnClosePanelQrCodeHandle OnClosePanelQrCode;
+
+        public delegate void OnVerifyDataCollectionInterruptionHandle(TefFuncaoInterativa _tefFuncaoInterativa);
+        public event OnVerifyDataCollectionInterruptionHandle OnVerifyDataCollectionInterruption;
+
+        private TefFuncaoInterativa mObjForm50 { get; set; }
+
+        private TefConfig mTefConfig { get; set; }
+        private CampoAberto mCampoAberto { get; set; }
+
+        public TefTransacao gTefTransacao { get; set; }
+        public Cupom gCupomVenda { get; set; }
+
+        /// <param name="indiceTransacaoUmBased">Quando informado, grava somente essa transação do cupom (1 = primeira).</param>
+        private void GerarArquivoRetornoDaTransacao(int? indiceTransacaoUmBased = null)
+        {
+            if (gCupomVenda != null)
+            {
+                if (gCupomVenda.Transacoes.Count > 0)
+                {
+                    int transacaoId = 1;
+                    foreach (TefTransacao itemTefTransacao in gCupomVenda.Transacoes)
+                    {
+                        if (indiceTransacaoUmBased.HasValue && transacaoId != indiceTransacaoUmBased.Value)
+                        {
+                            transacaoId++;
+                            continue;
+                        }
+
+                        if (itemTefTransacao.Retornos.Count > 0)
+                        {
+                            string path = mTefConfig.Tef_PathArquivos + "\\TefRetorno";
+                            if (!Directory.Exists(path))
+                                Directory.CreateDirectory(path);
+
+                            if (Directory.Exists(path))
+                            {
+                                var lst = itemTefTransacao.Retornos.OrderBy(p => p.Codigo).ThenBy(p => p.Indice).ToList();
+                                using (StreamWriter sr = File.AppendText(path + "\\" + "Tef" + gCupomVenda.TipoOperacao + "_" + gCupomVenda.DocumentoVinculado + "_T" + transacaoId.ToString("000") + "_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".tef"))
+                                {
+                                    foreach (var item in lst)
+                                    {
+                                        sr.WriteLine(item.Codigo.ToString("000") + "-" + item.Indice.ToString("000") + "=" + item.Valor);
+                                        sr.Flush();
+                                    }
+                                }
+                                transacaoId++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        private string RemoverQuebraDeLinhas(string _texto)
+        {
+            if (string.IsNullOrWhiteSpace(_texto))
+                return "";
+
+            _texto = Regex.Replace(_texto, @"\r\n?|\n|\t", " "); //Remover Quebra de Linha (ENTER)
+            _texto = Regex.Replace(_texto, @"\s{2,}", " "); //Remover espaços a mais no meio da palavra
+
+            return _texto;
+        }
+        private int VerificarEscreverMsgPinPad()
+        {
+            int sts = 0;
+            if (mTefConfig.Tef_PinPadVerificar)
+            {
+                int stsPinPad = KeepAlivePinPad();
+                if (stsPinPad > 0)
+                    EscreveMensagemPermanentePinPad(mTefConfig.Tef_PinPadMensagem);
+                else
+                    sts = stsPinPad == 0 ? 50001 : 5002;
+            }
+            return sts;
+        }
+        private void TefRetornoAdicionar(TefRetorno _obj, TefTransacao _tefTransacao, bool _substituirValor = true)
+        {
+            TefRetorno obj = _tefTransacao.Retornos.Find(p => p.Codigo == _obj.Codigo && p.Indice == _obj.Indice);
+            if (obj != null)
+            {
+                if (_substituirValor)
+                {
+                    obj.Codigo = _obj.Codigo;
+                    obj.Indice = _obj.Indice;
+                    obj.Valor = _obj.Valor;
+                }
+            }
+            else
+                _tefTransacao.Retornos.Add(_obj);
+        }
+
+        private void TefRetornoProximoIndice(TefRetorno _obj, TefTransacao _tefTransacao)
+        {
+            _obj.Indice = 1;
+            TefRetorno obj = _tefTransacao.Retornos.Where(p => p.Codigo == _obj.Codigo).OrderBy(p => p.Indice).LastOrDefault();
+            if (obj != null)
+                _obj.Indice = obj.Indice + 1;
+        }
+        private void TefRetornoRemoverUltimoIndice(int _codigo, TefTransacao _tefTransacao)
+        {
+            TefRetorno obj = _tefTransacao.Retornos.Where(p => p.Codigo == _codigo).OrderBy(p => p.Indice).LastOrDefault();
+            if (obj != null)
+                _tefTransacao.Retornos.Remove(obj);
+        }
+
+        private int ContinuarRequisicao()
+        {
+            byte[] valorBuffer = new byte[20000];
+            int result;
+            int continua = 0;
+            int descontos = 0;
+            int taxas = 0;
+            int troco = 0;
+            string captionMenu = "";
+            string captionCarteiraDigital = "";
+            bool interromper = false;
+            bool qrCodePinPad = false;
+
+            do
+            {
+                result = ContinuaFuncaoSiTefInterativo(out int proximoComando, out long tipoCampo, out short tamanhoMinimo, out short tamanhoMaximo, valorBuffer, valorBuffer.Length, continua);
+
+                continua = 0;
+                string mensagem = Encoding.UTF8.GetString(valorBuffer).Replace("\0", "").Trim();
+                string respostaSitef = "";
+                bool voltarAoMenuAnterior = false;
+
+                if (!string.IsNullOrWhiteSpace(mensagem))
+                    Log.GerarLogProcessoExecucao("Cmd: " + proximoComando + " -> Tc: " + tipoCampo + " -> Buffer: " + RemoverQuebraDeLinhas(mensagem));
+
+                if (result == 10000)
+                {
+                    switch (proximoComando)
+                    {
+                        case 0: //Está devolvendo um valor para, se desejado, ser armazenado pela automação
+                            #region Trata Tipo de Campo
+
+                            //0-A rotina está sendo chamada para indicar que acabou de coletar os dados da transação e irá iniciar a interação com o SiTef para obter a autorização
+                            if (tipoCampo == 0)
+                            {
+                                TefRetorno obj1 = new TefRetorno(1, 0, mensagem);
+                                TefRetornoAdicionar(obj1, gTefTransacao);
+                            }
+                            //100-Modalidade de pagamento no formato xxnn. xx corresponde ao grupo da modalidade e nn ao subgrupo.
+                            else if (tipoCampo == 100)
+                            {
+                                TefRetorno obj11 = new TefRetorno(11, 0, mensagem);
+                                TefRetornoAdicionar(obj11, gTefTransacao);
+
+                                string msgAut = mensagem.PadRight(4, '0');
+                                TefRetorno obj731 = new TefRetorno(731, 0, msgAut.Substring(0, 2));
+                                TefRetornoAdicionar(obj731, gTefTransacao);
+                                ModalidadePagamentoGrupoConst grupo = ModalidadePagamentoGrupo.RetornarModalidadePagamentoGrupo(msgAut.Substring(0, 2));
+                                if (grupo != null)
+                                {
+                                    TefRetorno obj731_1 = new TefRetorno(731, 1, grupo.Nome);
+                                    TefRetornoAdicionar(obj731_1, gTefTransacao);
+                                }
+
+                                TefRetorno obj732 = new TefRetorno(732, 0, msgAut.Substring(2, 2));
+                                TefRetornoAdicionar(obj732, gTefTransacao);
+                                ModalidadePagamentoSubGrupoConst subgrupo = ModalidadePagamentoSubGrupo.RetornarModalidadePagamentoSubGrupo(msgAut.Substring(2, 2));
+                                if (subgrupo != null)
+                                {
+                                    TefRetorno obj732_1 = new TefRetorno(732, 1, subgrupo.Nome);
+                                    TefRetornoAdicionar(obj732_1, gTefTransacao);
+                                }
+                            }
+                            //105-Contém a data e hora da transação no formato AAAAMMDDHHMMSS
+                            else if (tipoCampo == 105)
+                            {
+                                string msgData = mensagem.Substring(6, 2) + mensagem.Substring(4, 2) + mensagem.Substring(0, 4);
+                                TefRetorno obj22 = new TefRetorno(22, 0, msgData);
+                                TefRetornoAdicionar(obj22, gTefTransacao);
+
+                                string msgHora = mensagem.Substring(8);
+                                TefRetorno obj23 = new TefRetorno(23, 0, msgHora);
+                                TefRetornoAdicionar(obj23, gTefTransacao);
+                            }
+                            //106-Contém um índice que indica qual o tipo do cartão quando esse tipo for identificável, segundo uma tabela a ser fornecida(5 posições)
+                            //106-ID da carteira digital selecionada
+                            else if (tipoCampo == 106)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    TefRetorno obj748_1 = new TefRetorno(748, 1, mensagem);
+                                    TefRetornoAdicionar(obj748_1, gTefTransacao);
+
+                                    BandeiraPadraoConst obj = BandeiraPadrao.RetornarBandeiraPadrao(Convert.ToInt32(mensagem));
+                                    if (obj != null)
+                                    {
+                                        TefRetorno obj748_2 = new TefRetorno(748, 2, obj.NomeTipoCodigo);
+                                        TefRetornoAdicionar(obj748_2, gTefTransacao);
+                                    }
+                                }
+                            }
+                            //107-Nome da instituição padronizado para Carteira Digital
+                            else if (tipoCampo == 107)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    captionCarteiraDigital = mensagem;
+                                    TefRetorno obj748 = new TefRetorno(748, 0, mensagem);
+                                    TefRetornoAdicionar(obj748, gTefTransacao);
+                                }
+                            }
+                            //108-Verificar Carteira Digital
+                            else if (tipoCampo == 108)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                    _ = mensagem;
+                            }
+                            //111-Contém o texto real da modalidade de cancelamento que pode ser memorizado pela aplicação caso exista essa necessidade. Descreve por extenso o par xxnn fornecido em 110
+                            else if (tipoCampo == 111)
+                            {
+                                OnMessageClient?.Invoke(mensagem, 100);
+                            }
+                            //121-Buffer contém a primeira via do comprovante de pagamento (via do cliente) 
+                            else if (tipoCampo == 121)
+                            {
+                                string[] viaCliente = mensagem.Split('\n', '\r');
+                                TefRetorno obj712 = new TefRetorno(712, 0, viaCliente.Length.ToString());
+                                TefRetornoAdicionar(obj712, gTefTransacao);
+                                for (int i = 0; i < viaCliente.Length; i++)
+                                {
+                                    TefRetorno obj713 = new TefRetorno(713, i, "\"" + viaCliente[i] + "\"");
+                                    TefRetornoAdicionar(obj713, gTefTransacao);
+                                }
+                            }
+                            //122-Buffer contém a segunda via do comprovante de pagamento (via do caixa)
+                            else if (tipoCampo == 122)
+                            {
+                                string[] viaEstab = mensagem.Split('\n', '\r');
+                                TefRetorno obj714 = new TefRetorno(714, 0, viaEstab.Length.ToString());
+                                TefRetornoAdicionar(obj714, gTefTransacao);
+                                for (int i = 0; i < viaEstab.Length; i++)
+                                {
+                                    TefRetorno obj715 = new TefRetorno(715, i, "\"" + viaEstab[i] + "\"");
+                                    TefRetornoAdicionar(obj715, gTefTransacao);
+                                }
+                            }
+                            //123-Indica que os comprovantes que serão entregues na sequência são de determinado tipo
+                            else if (tipoCampo == 123)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    ComprovanteTipoConst obj = ComprovanteTipo.RetornarComprovanteTipo(mensagem);
+                                    if (obj != null)
+                                    {
+                                        TefRetorno obj712_1 = new TefRetorno(712, 1, obj.CodigoNome);
+                                        TefRetornoAdicionar(obj712_1, gTefTransacao);
+
+                                        TefRetorno obj714_1 = new TefRetorno(714, 1, obj.CodigoNome);
+                                        TefRetornoAdicionar(obj714_1, gTefTransacao);
+                                    }
+                                }
+                            }
+                            //131-Contém um índice que indica qual a instituição que irá processar a transação segundo a tabela presente no final do documento(até 5 dígitos significativos)
+                            else if (tipoCampo == 131)
+                            {
+                                TefRetorno obj10 = new TefRetorno(10, 0, mensagem);
+                                TefRetornoAdicionar(obj10, gTefTransacao);
+                                var obj = RedeAutorizadora.RetornarAutorizadora(obj10.Valor);
+                                if (obj != null)
+                                {
+                                    TefRetorno obj10_1 = new TefRetorno(10, 1, obj.Nome);
+                                    TefRetornoAdicionar(obj10_1, gTefTransacao);
+                                }
+                            }
+                            //132-Contém um índice que indica qual o tipo do cartão quando esse tipo for identificável, segundo uma tabela a ser fornecida(5 posições)
+                            else if (tipoCampo == 132)
+                            {
+                                TefRetorno obj748_1 = new TefRetorno(748, 1, mensagem);
+                                TefRetornoAdicionar(obj748_1, gTefTransacao);
+                                BandeiraPadraoConst obj = BandeiraPadrao.RetornarBandeiraPadrao(Convert.ToInt32(mensagem));
+                                if (obj != null)
+                                {
+                                    TefRetorno obj748_2 = new TefRetorno(748, 2, obj.NomeTipoCodigo);
+                                    TefRetornoAdicionar(obj748_2, gTefTransacao);
+                                }
+                            }
+                            //133-Contém o NSU do SiTef (6 posições)
+                            else if (tipoCampo == 133)
+                            {
+                                TefRetorno obj13 = new TefRetorno(13, 0, mensagem);
+                                TefRetornoAdicionar(obj13, gTefTransacao);
+                            }
+                            //134-Contém o NSU do Host autorizador (20 posições no máximo)
+                            else if (tipoCampo == 134)
+                            {
+                                TefRetorno obj12 = new TefRetorno(12, 0, mensagem);
+                                TefRetornoAdicionar(obj12, gTefTransacao);
+                            }
+                            //135-Contém o Código de Autorização para as transações de crédito (15 posições no máximo)
+                            else if (tipoCampo == 135)
+                            {
+                                TefRetorno obj13_1 = new TefRetorno(13, 1, mensagem);
+                                TefRetornoAdicionar(obj13_1, gTefTransacao);
+                            }
+                            //136-Contém as 6 primeiras posições do cartão (bin)
+                            else if (tipoCampo == 136)
+                            {
+                                TefRetorno obj740_1 = new TefRetorno(740, 1, mensagem);
+                                TefRetornoAdicionar(obj740_1, gTefTransacao);
+                            }
+                            //156-Nome da instituição
+                            else if (tipoCampo == 156)
+                            {
+                                TefRetorno obj748 = new TefRetorno(748, 0, mensagem);
+                                TefRetornoAdicionar(obj748, gTefTransacao);
+                            }
+                            //158-Código da Rede Autorizadora
+                            else if (tipoCampo == 158)
+                            {
+                                TefRetorno obj739 = new TefRetorno(739, 0, mensagem);
+                                TefRetornoAdicionar(obj739, gTefTransacao);
+                            }
+                            //160-Cupom Fiscal (Pendente)
+                            else if (tipoCampo == 160)
+                            {
+                                TefRetorno obj801 = new TefRetorno
+                                {
+                                    Codigo = 801,
+                                    Valor = mensagem
+                                };
+                                TefRetornoProximoIndice(obj801, gTefTransacao);
+                                TefRetornoAdicionar(obj801, gTefTransacao);
+                            }
+                            //161-Número Identificador do Cupom do Pagamento  (Pendente)
+                            else if (tipoCampo == 161)
+                            {
+                                TefRetorno obj802 = new TefRetorno
+                                {
+                                    Codigo = 802,
+                                    Valor = mensagem
+                                };
+                                TefRetornoProximoIndice(obj802, gTefTransacao);
+                                TefRetornoAdicionar(obj802, gTefTransacao);
+                            }
+                            //163-Data Fiscal  (Pendente)
+                            else if (tipoCampo == 163)
+                            {
+                                TefRetorno obj803 = new TefRetorno
+                                {
+                                    Codigo = 803,
+                                    Valor = mensagem
+                                };
+                                TefRetornoProximoIndice(obj803, gTefTransacao);
+                                TefRetornoAdicionar(obj803, gTefTransacao);
+                            }
+                            //164-Hora Fiscal  (Pendente)
+                            else if (tipoCampo == 164)
+                            {
+                                TefRetorno obj804 = new TefRetorno
+                                {
+                                    Codigo = 804,
+                                    Valor = mensagem
+                                };
+                                TefRetornoProximoIndice(obj804, gTefTransacao);
+                                TefRetornoAdicionar(obj804, gTefTransacao);
+                            }
+                            //210-Quantidade total de pendências, listadas nos blocos de dados abaixo
+                            else if (tipoCampo == 210)
+                            {
+                                TefRetorno obj800 = new TefRetorno(800, 0, mensagem);
+                                TefRetornoAdicionar(obj800, gTefTransacao);
+                            }
+                            //211-Código da “Funcao” original  (Pendente)
+                            else if (tipoCampo == 211)
+                            {
+                                TefRetorno obj805 = new TefRetorno
+                                {
+                                    Codigo = 805,
+                                    Valor = mensagem
+                                };
+                                TefRetornoProximoIndice(obj805, gTefTransacao);
+                                TefRetornoAdicionar(obj805, gTefTransacao);
+                            }
+                            //545-Tipo de Pagamento para Carteiras Digitais
+                            else if (tipoCampo == 545)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    TefRetorno obj749 = new TefRetorno(749, 0, mensagem);
+                                    TefRetornoAdicionar(obj749, gTefTransacao);
+                                    CarteiraDigitalTipoPagamentoConst obj = CarteiraDigitalTipoPagamento.RetornarTipoPagamento(Convert.ToInt32(mensagem));
+                                    if (obj != null)
+                                    {
+                                        TefRetorno obj749_1 = new TefRetorno(749, 1, obj.CodigoNome);
+                                        TefRetornoAdicionar(obj749_1, gTefTransacao);
+                                    }
+                                }
+                            }
+                            //546-Tipo de Voucher para Carteiras Digitais
+                            else if (tipoCampo == 546)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    TefRetorno obj750 = new TefRetorno(750, 0, mensagem);
+                                    TefRetornoAdicionar(obj750, gTefTransacao);
+                                    CarteiraDigitalTipoVoucherConst obj = CarteiraDigitalTipoVoucher.RetornarTipoVoucher(Convert.ToInt32(mensagem));
+                                    if (obj != null)
+                                    {
+                                        TefRetorno obj750_1 = new TefRetorno(750, 1, obj.CodigoNome);
+                                        TefRetornoAdicionar(obj750_1, gTefTransacao);
+                                    }
+                                }
+                            }
+                            //590-Operadora da Recarga de Celular
+                            else if (tipoCampo == 590)
+                            {
+                                TefRetorno obj742 = new TefRetorno(742, 0, mensagem);
+                                TefRetornoAdicionar(obj742, gTefTransacao);
+                            }
+                            //591-Valor da Regarga de Celular
+                            else if (tipoCampo == 591)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    decimal valorRecarga = Convert.ToDecimal(mensagem) / 100M;
+                                    TefRetorno obj742_1 = new TefRetorno(742, 1, valorRecarga.ToString("N2"));
+                                    TefRetornoAdicionar(obj742_1, gTefTransacao);
+                                }
+                            }
+                            //800 a 849 está reservada para retorno dos GerPdv - 800 Codigo de Controle
+                            else if (tipoCampo == 800)
+                            {
+                                TefRetorno obj27 = new TefRetorno(27, 0, mensagem);
+                                TefRetornoAdicionar(obj27, gTefTransacao);
+                            }
+                            //950-CNPJ Credenciadora NFCE
+                            else if (tipoCampo == 950) //Para Modulo SAT_NFCe INSTALADO - CNPJ da fonte pagadora (autorizador do cartão)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    TefRetorno obj600 = new TefRetorno(600, 0, mensagem);
+                                    TefRetornoAdicionar(obj600, gTefTransacao);
+                                }
+                            }
+                            //951-Bandeira NFCE
+                            else if (tipoCampo == 951) //Para Modulo SAT_NFCe INSTALADO - Bandeira NFCE
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    TefRetorno obj601 = new TefRetorno(601, 0, mensagem);
+                                    TefRetornoAdicionar(obj601, gTefTransacao);
+                                    SatNfceBandeiraConst obj = SatNfceBandeira.RetornarSatNfceBandeira(Convert.ToInt32(mensagem));
+                                    if (obj != null)
+                                    {
+                                        TefRetorno obj601_1 = new TefRetorno(601, 1, obj.CodigoNome);
+                                        TefRetornoAdicionar(obj601_1, gTefTransacao);
+                                    }
+                                }
+                            }
+                            //952-Número de autorização NFCE
+                            else if (tipoCampo == 952) //Para Modulo SAT_NFCe INSTALADO - Número de autorização NFCE
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    TefRetorno obj602 = new TefRetorno(602, 0, mensagem);
+                                    TefRetornoAdicionar(obj602, gTefTransacao);
+                                }
+                            }
+                            //953-Código Credenciadora SAT
+                            else if (tipoCampo == 953) //Para Modulo SAT_NFCe INSTALADO - Código da credenciadora
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem))
+                                {
+                                    TefRetorno obj603 = new TefRetorno(603, 0, mensagem);
+                                    TefRetornoAdicionar(obj603, gTefTransacao);
+                                    SatNfceCredenciadoraConst obj = SatNfceCredenciadora.RetornarSatNfceCredenciadora(Convert.ToInt32(mensagem));
+                                    if (obj != null)
+                                    {
+                                        TefRetorno obj603_1 = new TefRetorno(603, 1, obj.CodigoNomeCnpj);
+                                        TefRetornoAdicionar(obj603_1, gTefTransacao);
+                                    }
+                                }
+                            }
+                            //1319-Valor da transação original (Pendente)
+                            else if (tipoCampo == 1319)
+                            {
+                                TefRetorno obj806 = new TefRetorno
+                                {
+                                    Codigo = 806,
+                                    Valor = (Convert.ToDecimal(mensagem) / 100M).ToString("N2")
+                                };
+                                TefRetornoProximoIndice(obj806, gTefTransacao);
+                                TefRetornoAdicionar(obj806, gTefTransacao);
+                            }
+                            //2021-Número do cartão
+                            else if (tipoCampo == 2021)
+                            {
+                                TefRetorno obj740 = new TefRetorno(740, 0, mensagem);
+                                TefRetornoAdicionar(obj740, gTefTransacao);
+                            }
+                            //2022-Data de vencimento do cartão
+                            else if (tipoCampo == 2022)
+                            {
+                                string msgAut = mensagem.PadRight(4, '0');
+                                TefRetorno obj747 = new TefRetorno(747, 0, msgAut.Substring(2, 2) + msgAut.Substring(0, 2));
+                                TefRetornoAdicionar(obj747, gTefTransacao);
+                            }
+                            //2023-Nome do Titular do cartão
+                            else if (tipoCampo == 2023)
+                            {
+                                TefRetorno obj741 = new TefRetorno(741, 0, mensagem);
+                                TefRetornoAdicionar(obj741, gTefTransacao);
+                            }
+                            //2971-Retorno do conteúdo digitado o PIN PAD, na Leitura de Campos Abertos
+                            else if (tipoCampo == 2971)
+                            {
+                                TefRetorno obj07 = new TefRetorno(7, 38, mensagem);
+                                TefRetornoAdicionar(obj07, gTefTransacao);
+                            }
+                            //4029-Valor do desconto total, em centavos
+                            else if (tipoCampo == 4029)
+                            {
+                                if (!string.IsNullOrWhiteSpace(mensagem) && Convert.ToDecimal(mensagem) > 0)
+                                {
+                                    decimal valor = Convert.ToDecimal(mensagem) / 100M;
+                                    TefRetorno obj709 = new TefRetorno(709, descontos, valor.ToString("N2"));
+                                    TefRetornoAdicionar(obj709, gTefTransacao);
+                                    descontos++;
+                                }
+                            }
+                            //5074-Indica que deve ser obtida assinatura em papel num pagamento com cartão com chip
+                            //else if (tipoCampo == 5074)
+                            //{
+                            //    if (!string.IsNullOrWhiteSpace(mensagem))
+                            //    {
+                            //        OnMessageClient?.Invoke("Continuar Transação sem Digitação da Senha?\r\nObs.: Se SIM -> Colher assinatura do portador do cartão no comprovante", 250);
+                            //        TefFuncaoInterativa objForm = new TefFuncaoInterativa
+                            //        {
+                            //            DataType = DataTypeEnum.Confirmation,
+                            //            TipoCampo = tipoCampo,
+                            //            RespostaSitef = "1",
+                            //            Mensagem = "Continuar Transação sem Digitação da Senha?\r\n\r\nObs.: Se SIM -> Colher assinatura do portador do cartão no comprovante"
+                            //        };
+                            //        OnCallForm?.Invoke(objForm);
+                            //        respostaSitef = objForm.RespostaSitef;
+                            //        interromper = respostaSitef == "1";
+                            //    }
+                            //}
+                            #endregion
+
+                            break;
+                        case 1: //Mensagem para o visor do operador
+                            OnMessageClient?.Invoke(mensagem, 250);
+
+                            break;
+                        case 2: //Mensagem para o visor do cliente
+                            OnMessageClient?.Invoke(mensagem, 250);
+
+                            break;
+                        case 3: //Mensagem para os dois visores
+                            if (!string.IsNullOrWhiteSpace(mensagem) && mensagem.ToLower().Contains("solicite a leitura do qr code no pinpad utilizando o smartphone"))
+                                qrCodePinPad = true;
+                            TefFuncaoInterativa objForm3 = new TefFuncaoInterativa
+                            {
+                                DataType = DataTypeEnum.Message,
+                                TipoCampo = tipoCampo,
+                                Mensagem = mensagem
+                            };
+                            OnVerifyDataCollectionInterruption?.Invoke(objForm3);
+                            interromper = objForm3.Interromper;
+                            if (qrCodePinPad && interromper)
+                                qrCodePinPad = false;
+                            OnMessageClient?.Invoke(mensagem, 250);
+
+                            break;
+                        case 4: //Texto que deverá ser utilizado como cabeçalho na apresentação do menu (Comando 21)
+                            captionMenu = mensagem;
+
+                            break;
+                        case 11: //Deve remover a mensagem apresentada no visor do operador
+                            mensagem = "";
+                            OnMessageClient?.Invoke(mensagem, 0);
+
+                            break;
+                        case 12: //Deve remover a mensagem apresentada no visor do cliente
+                            mensagem = "";
+                            OnMessageClient?.Invoke(mensagem, 0);
+
+                            break;
+                        case 13: //Deve remover mensagem apresentada no visor do operador e do cliente
+                            mensagem = "";
+                            OnMessageClient?.Invoke(mensagem, 0);
+
+                            break;
+                        case 14: //Deve limpar o texto utilizado como cabeçalho na apresentação do menu
+                            captionMenu = "";
+
+                            break;
+                        case 15: //Cabeçalho a ser apresentado pela aplicação
+
+                            break;
+                        case 16: //Deve remover o cabeçalho
+                            captionMenu = "";
+
+                            break;
+                        case 20: //Deve obter uma resposta do tipo SIM/NÃO.
+                            if (string.IsNullOrWhiteSpace(mensagem))
+                                mensagem = "Confirma?";
+                            TefFuncaoInterativa objForm20 = new TefFuncaoInterativa
+                            {
+                                DataType = DataTypeEnum.Confirmation,
+                                TipoCampo = tipoCampo,
+                                RespostaSitef = "1",
+                                Mensagem = mensagem
+                            };
+                            OnCallForm?.Invoke(objForm20);
+                            respostaSitef = objForm20.RespostaSitef;
+                            interromper = objForm20.Interromper;
+
+                            break;
+                        case 21: //Deve apresentar um menu de opções e permitir que o usuário selecione uma delas. Na chamada o parâmetro Buffer contém as opções no formato 1:texto;2:texto;...i:Texto;... A rotina da aplicação deve apresentar as opções da forma que ela desejar (não sendo necessário incluir os índices 1,2, ...) e após a seleção feita pelo usuário, retornar em Buffer o índice i escolhido pelo operador (em ASCII)
+                            TefFuncaoInterativa objForm21 = new TefFuncaoInterativa
+                            {
+                                DataType = DataTypeEnum.Menu,
+                                Titulo = captionMenu,
+                                ItensMenu = mensagem.Split(';')
+                            };
+                            OnCallForm?.Invoke(objForm21);
+                            respostaSitef = objForm21.RespostaSitef;
+                            interromper = objForm21.Interromper;
+                            voltarAoMenuAnterior = objForm21.Voltar;
+
+                            break;
+                        case 22: //Deve aguardar uma tecla do operador. É utilizada quando se deseja que o operador seja avisado de alguma mensagem apresentada na tela
+                            if (string.IsNullOrWhiteSpace(mensagem))
+                                mensagem = "Aguarde .....";
+                            TefFuncaoInterativa objForm22 = new TefFuncaoInterativa
+                            {
+                                DataType = DataTypeEnum.Await,
+                                Mensagem = mensagem
+                            };
+                            if (mensagem.ToLower().Contains("excede taxa"))
+                            {
+                                TefRetornoRemoverUltimoIndice(727, gTefTransacao);
+                                taxas--;
+                                if (taxas < 0)
+                                    taxas = 0;
+                            }
+                            OnCallForm?.Invoke(objForm22);
+                            respostaSitef = "";
+
+                            break;
+                        case 23: //Este comando indica que a rotina está perguntando para a aplicação se ele deseja interromper o processo de coleta de dados ou não. Esse código ocorre quando a CliSiTef está acessando algum periférico e permite que a automação interrompa esse acesso (por exemplo: aguardando a passagem de um cartão pela leitora ou a digitação de senha pelo cliente)
+                            TefFuncaoInterativa objForm23 = new TefFuncaoInterativa();
+                            OnVerifyDataCollectionInterruption?.Invoke(objForm23);
+                            interromper = objForm23.Interromper;
+
+                            break;
+                        case 29: //Deve ser fornecido um campo, sem captura, cujo tamanho está entre TamMinimo e TamMaximo. O campo deve ser devolvido em Buffer
+                            #region Trata Tipo de Campo
+                            //2967-Código hexadecimal da mensagem que será exibida no PIN pad durante a coleta do dado.
+                            if (tipoCampo == 2967)
+                            {
+                                respostaSitef = CampoAbertoMsg.RetornarMensagemPinPad(mCampoAberto.MensagemExibidaPinPad);
+                                TefRetorno obj12 = new TefRetorno(1, 2, "01");
+                                TefRetornoAdicionar(obj12, gTefTransacao);
+                                TefRetorno obj13 = new TefRetorno(1, 3, respostaSitef);
+                                TefRetornoAdicionar(obj13, gTefTransacao);
+                            }
+                            //2968-Tamanho mínimo do dado
+                            else if (tipoCampo == 2968)
+                            {
+                                respostaSitef = mCampoAberto.TamanhoMinimo.ToString();
+                                TefRetorno obj34 = new TefRetorno(3, 4, respostaSitef);
+                                TefRetornoAdicionar(obj34, gTefTransacao);
+                            }
+                            //2969-Tamanho máximo do dado
+                            else if (tipoCampo == 2969)
+                            {
+                                respostaSitef = mCampoAberto.TamanhoMaximo.ToString();
+                                TefRetorno obj56 = new TefRetorno(5, 6, respostaSitef);
+                                TefRetornoAdicionar(obj56, gTefTransacao);
+                            }
+                            //2970-Tempo de espera máximo de inatividade até que a função aborte. Valor 0 = infinito.
+                            else if (tipoCampo == 2970)
+                                respostaSitef = mCampoAberto.TempoEsperaInatividade.ToString();
+                            #endregion
+
+                            break;
+                        case 30: //Deve ser lido um campo cujo tamanho está entre TamMinimo e TamMaximo. O campo lido deve ser devolvido em Buffer
+                            TefFuncaoInterativa objForm30 = new TefFuncaoInterativa
+                            {
+                                DataType = DataTypeEnum.Numeric,
+                                TipoCampo = tipoCampo,
+                                TamanhoMinimo = tamanhoMinimo,
+                                TamanhoMaximo = tamanhoMaximo,
+                                Titulo = mensagem
+                            };
+                            OnCallForm?.Invoke(objForm30);
+                            respostaSitef = objForm30.RespostaSitef;
+                            interromper = objForm30.Interromper;
+                            voltarAoMenuAnterior = objForm30.Voltar;
+                            if (!interromper)
+                            {
+                                if (tipoCampo == 505)
+                                {
+                                    TefRetorno obj505 = new TefRetorno(505, 0, respostaSitef);
+                                    TefRetornoAdicionar(obj505, gTefTransacao);
+                                }
+                            }
+
+                            break;
+                        case 31: //Deve ser lido o número de um cheque. A coleta pode ser feita via leitura de CMC-7 ou pela digitação da primeira linha do cheque. No retorno deve ser devolvido em Buffer “0:” ou “1:” seguido do número coletado manualmente ou pela leitura do CMC-7, respectivamente. Quando o número for coletado manualmente o formato é o seguinte: Compensação (3), Banco (3), Agencia (4), C1 (1), ContaCorrente (10), C2 (1), Numero do Cheque (6) e C3 (1), nesta ordem. Notar que estes campos são os que estão na parte superior de um cheque e na ordem apresentada. Sugerimos que na coleta seja apresentada uma interface que permita ao operador identificar e digitar adequadamente estas informações de forma que a consulta não seja feita com dados errados, retornando como bom um cheque com problemas
+
+                            break;
+                        case 34: //Deve ser lido um campo monetário ou seja, aceita o delimitador de centavos e devolvido no parâmetro Buffer
+                            TefFuncaoInterativa objForm34 = new TefFuncaoInterativa
+                            {
+                                DataType = DataTypeEnum.Currency,
+                                Comando = 34,
+                                TipoCampo = tipoCampo,
+                                TamanhoMinimo = tamanhoMinimo,
+                                TamanhoMaximo = tamanhoMaximo,
+                                Titulo = mensagem
+                            };
+                            OnCallForm?.Invoke(objForm34);
+                            respostaSitef = objForm34.RespostaSitef;
+                            interromper = objForm34.Interromper;
+                            voltarAoMenuAnterior = objForm34.Voltar;
+                            //130-Indica, na coleta, que o campo em questão é o valor do troco em dinheiro a ser devolvido para o cliente. Na devolução de resultado(Comando = 0) contém o valor efetivamente aprovado para o troco
+                            //504-Taxa de Serviço
+                            if (tipoCampo == 130)
+                            {
+                                if (!string.IsNullOrWhiteSpace(respostaSitef) && Convert.ToDecimal(respostaSitef) > 0)
+                                {
+                                    string valor = Convert.ToDecimal(respostaSitef).ToString("N2");
+                                    TefRetorno obj708 = new TefRetorno(708, troco, valor + "|" + RemoverQuebraDeLinhas(mensagem));
+                                    TefRetornoAdicionar(obj708, gTefTransacao);
+                                    troco++;
+                                }
+                            }
+                            else if (tipoCampo == 504)
+                            {
+                                if (!string.IsNullOrWhiteSpace(respostaSitef) && Convert.ToDecimal(respostaSitef) > 0)
+                                {
+                                    string valor = Convert.ToDecimal(respostaSitef).ToString("N2");
+                                    TefRetorno obj727 = new TefRetorno(727, taxas, valor + "|" + RemoverQuebraDeLinhas(mensagem));
+                                    TefRetornoAdicionar(obj727, gTefTransacao);
+                                    taxas++;
+                                }
+                            }
+
+                            //146-A rotina está sendo chamada para ler o Valor a ser cancelado. Caso o aplicativo de automação possua esse valor, pode apresentá-lo para o operador e permitir que ele confirme o valor antes de passá-lo devolvê-lo para a rotina. Caso ele não possua esse valor, deve lê-lo.
+                            //147-Valor do cancelamento
+                            //154-Contém o novo valor de pagamento
+                            if (tipoCampo == 146 || tipoCampo == 147 || tipoCampo == 154)
+                            {
+                                if (!string.IsNullOrWhiteSpace(respostaSitef) && Convert.ToDecimal(respostaSitef) > 0)
+                                {
+                                    string valor = Convert.ToDecimal(respostaSitef).ToString("N2");
+                                    TefRetorno obj3 = new TefRetorno(3, 10, valor + "|" + RemoverQuebraDeLinhas(mensagem));
+                                    TefRetornoAdicionar(obj3, gTefTransacao);
+                                }
+                            }
+
+                            break;
+                        case 35: //Deve ser lido um código em barras ou o mesmo deve ser coletado manualmente. No retorno Buffer deve conter “0:” ou “1:” seguido do código em barras coletado manualmente ou pela leitora, respectivamente. Cabe ao aplicativo decidir se a coleta será manual ou através de uma leitora. Caso seja coleta manual, recomenda-se seguir o procedimento descrito na rotina ValidaCampoCodigoEmBarras de forma a tratar um código em barras da forma mais genérica possível, deixando o aplicativo de automação independente de futuras alterações que possam surgir nos formatos em barras. No retorno do Buffer também pode ser passado “2:”, indicando que a coleta foi cancelada, porém o fluxo não será interrompido, logo no caso de pagamentos múltiplos, todos os documentados coletados anteriormente serão mantidos e o fluxo retomado, permitindo a efetivação de tais pagamentos.
+
+                            break;
+                        case 41: //Análogo ao Comando 30 (TextInputNeeded), porém o campo deve ser coletado de forma mascarada (senha).
+
+                            break;
+                        case 42: //Deve apresentar um menu de opções e permitir que o usuário selecione uma delas.
+
+                            break;
+                        case 50: //A automação comercial deve exibir o QRCode na tela. Para tanto, neste mesmo comando, será devolvida a string do QRCode com a identificação de campo 584.
+                            mObjForm50 = new TefFuncaoInterativa
+                            {
+                                DataType = DataTypeEnum.QrCode,
+                                Comando = proximoComando,
+                                TipoCampo = tipoCampo > 0 ? tipoCampo : 584,
+                                Titulo = captionCarteiraDigital,
+                                Mensagem = mensagem
+                            };
+                            OnCallPanelQrCode?.Invoke(mObjForm50);
+
+                            break;
+                        case 51: //A automação comercial deve remover da tela o QRCode exibido anteriormente, pois o SiTef já devolveu uma resposta à CliSiTef.
+                            OnMessageClient?.Invoke(mensagem, 1000);
+                            if (mObjForm50 != null && mObjForm50.FormAberto)
+                            {
+                                mObjForm50.FormFechar = true;
+                                OnClosePanelQrCode?.Invoke(mObjForm50);
+                                respostaSitef = mObjForm50.RespostaSitef;
+                                interromper = mObjForm50.Interromper;
+                            }
+                            mObjForm50 = null;
+                            captionCarteiraDigital = "";
+
+                            break;
+                        case 52: //Mensagem de rodapé, opcional para o caso haja um espaço para ela ser exibida, no caso em que o QRCode foi exibido e está aguardando que o cliente faça a sua leitura.
+                            TefFuncaoInterativa objForm52 = new TefFuncaoInterativa();
+                            OnVerifyDataCollectionInterruption?.Invoke(objForm52);
+                            interromper = objForm52.Interromper;
+                            if (interromper && mObjForm50 != null && mObjForm50.FormAberto)
+                            {
+                                mObjForm50.FormFechar = true;
+                                OnClosePanelQrCode?.Invoke(mObjForm50);
+                            }
+                            OnMessageClient?.Invoke(mensagem, 500);
+
+                            break;
+                        case 99:
+
+                            break;
+                        default:
+
+                            break;
+                    }
+                }
+                if (voltarAoMenuAnterior)
+                    continua = 1;
+                else if (interromper)
+                {
+                    interromper = false;
+                    continua = -1;
+                }
+                valorBuffer = Encoding.ASCII.GetBytes(respostaSitef + new string('\0', 20000 - respostaSitef.Length));
+            } while (result == 10000);
+            return result;
+        }
+        private int FazerRequisicao(int _funcao, string _header, decimal _valor = 0M, string _documento = "", string _parametrosAdicionais = "", string _operador = "")
+        {
+            if (string.IsNullOrWhiteSpace(_documento))
+                _documento = DateTime.Now.ToString("HHmmss");
+
+            if (_parametrosAdicionais.IndexOf(@"{TipoTratamento=4}", StringComparison.Ordinal) == -1 && (_header.Contains("ADM") || _header.Contains("CRT") || _header.Contains("CHQ")))
+                _parametrosAdicionais += "{TipoTratamento=4}";
+            if (_header.Contains("CRT") && !mTefConfig.Tef_PinPadQrCode)
+                _parametrosAdicionais += "{DevolveStringQRCode=1}";
+            if (_header.Contains("LCA"))
+                _parametrosAdicionais = "";
+
+            var dataHora = DateTime.Now;
+            var dataStr = dataHora.ToString("yyyyMMdd");
+            var horaStr = dataHora.ToString("HHmmss");
+            var valorStr = _valor.ToString("N2");
+
+            Log.GerarLogProcessoExecucao("-------------------------------------------------------------------------------------");
+            Log.GerarLogProcessoExecucao("Fnc: " + _funcao + " -> Doc: " + _documento + " -> Vlr: " + _valor.ToString("N2"));
+            Log.GerarLogProcessoExecucao("-------------------------------------------------------------------------------------");
+            return IniciaFuncaoSiTefInterativo(_funcao, valorStr, _documento, dataStr, horaStr, _operador, _parametrosAdicionais);
+        }
+        private void FinalizarOperacao(short _confirma, string _documentoVinculado = "")
+        {
+            string dataStr = DateTime.Now.ToString("yyyyMMdd");
+            string horaStr = DateTime.Now.ToString("HHmmss");
+            if (string.IsNullOrWhiteSpace(_documentoVinculado))
+                _documentoVinculado = new Random().Next(999999).ToString("000000");
+            FinalizaFuncaoSiTefInterativo(_confirma, _documentoVinculado, dataStr, horaStr, null);
+        }
+
+        public string MensagemTef(int _retornoTef)
+        {
+            string msg = "";
+            switch (_retornoTef)
+            {
+                case -1:
+                    msg = "Módulo não inicializado";
+                    break;
+                case -2:
+                    msg = "Operação cancelada pelo operador";
+                    break;
+                case -3:
+                    msg = "Fornecido um código de função inválido";
+                    break;
+                case -4:
+                    msg = "Falta de memória para rodar a função";
+                    break;
+                case -5:
+                    msg = "Sem comunicação com o SiTef";
+                    break;
+                case -6:
+                    msg = "Operação cancelada pelo usuário";
+                    break;
+                case -8:
+                    msg = "A CliSiTef não possui a implementação da função necessária, provavelmente está desatualizada";
+                    break;
+                case -9:
+                    msg = "A automação chamou a rotina ContinuaFuncaoSiTefInterativo sem antes iniciar uma função iterativa";
+                    break;
+                case -10:
+                    msg = "Algum parâmetro obrigatório não foi passado pela automação comercial";
+                    break;
+                case -12:
+                    msg = "Erro na execução da rotina iterativa";
+                    break;
+                case -13:
+                    msg = "Documento fiscal não encontrado nos registros da CliSiTef";
+                    break;
+                case -15:
+                    msg = "Operação cancelada pela automação comercial";
+                    break;
+                case -20:
+                    msg = "Parâmetro inválido passado para a função";
+                    break;
+                case -21:
+                    msg = "Utilizada uma palavra proibida";
+                    break;
+                case -25:
+                    msg = "Erro no Correspondente Bancário";
+                    break;
+                case -30:
+                    msg = "Erro de acesso ao arquivo";
+                    break;
+                case -40:
+                    msg = "Transação negada pelo SiTef";
+                    break;
+                case -41:
+                    msg = "Dados Inválidos";
+                    break;
+                case -43:
+                    msg = "Falha no pinpad";
+                    break;
+                case -50:
+                    msg = "Transação não segura";
+                    break;
+                case -100:
+                    msg = "";
+                    break;
+                case 0:
+                    break;
+                case 1:
+                    msg = "Endereço IP inválido ou não resolvido";
+                    break;
+                case 2:
+                    msg = "Código da loja inválido";
+                    break;
+                case 3:
+                    msg = "Código de terminal inválido";
+                    break;
+                case 6:
+                    msg = "Erro na inicialização do Tcp/Ip";
+                    break;
+                case 7:
+                    msg = "Falta de memória";
+                    break;
+                case 8:
+                    msg = "Não encontrou a CliSiTef ou ela está com problemas";
+                    break;
+                case 9:
+                    msg = "Configuração de servidores SiTef foi excedida";
+                    break;
+                case 10:
+                    msg = "Erro de acesso na pasta CliSiTef (possível falta de permissão para escrita)";
+                    break;
+                case 11:
+                    msg = "Dados inválidos passados pela automaçãoo";
+                    break;
+                case 12:
+                    msg = "Modo seguro não ativo (possível falta de configuração no servidor SiTef do arquivo.cha)";
+                    break;
+                case 13:
+                    msg = "Caminho DLL inválido(o caminho completo das bibliotecas está muito grande)";
+                    break;
+                case 50001:
+                    msg = "Não existe um PinPad conectado ao micro";
+                    break;
+                case 50002:
+                    msg = "Biblioteca de acesso ao PinPad não encontrada";
+                    break;
+                default:
+                    break;
+            }
+            return msg;
+        }
+
+        public int InicializarTef(TefConfig _tefConfig)
+        {
+            mTefConfig = _tefConfig;
+            string tipoComunicacaoExterna = "";
+            if (!string.IsNullOrWhiteSpace(_tefConfig.Tef_TipoComunicacaoExterna) && _tefConfig.Tef_TipoComunicacaoExterna.ToUpper() == "TLSGWP")
+                tipoComunicacaoExterna = ";[TipoComunicacaoExterna=" + _tefConfig.Tef_TipoComunicacaoExterna.ToUpper() + "]";
+            int sts = ConfiguraIntSiTefInterativoEx(_tefConfig.Tef_Ip, _tefConfig.Tef_Empresa, "IP" + _tefConfig.Tef_Terminal, "0", "[VersaoAutomacaoCielo=G310];[ParmsClient=1=" + _tefConfig.Tef_EmpresaCnpj + ";2=" + _tefConfig.Tef_SoftwareHouseCnpj + "]" + tipoComunicacaoExterna);
+            if (sts == 0)
+                sts = VerificarEscreverMsgPinPad();
+            return sts;
+        }
+        public int Atv()
+        {
+            int sts = FazerRequisicao(111, "ATV");
+            if (sts == 10000)
+                sts = ContinuarRequisicao();
+            if (mTefConfig.Tef_PinPadVerificar)
+                EscreveMensagemPermanentePinPad(mTefConfig.Tef_PinPadMensagem);
+            return sts;
+        }
+        public int Adm(string _documentoVinculado = "")
+        {
+            int sts = FazerRequisicao(110, "ADM", _documento: _documentoVinculado);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+
+                DefinirTefTransacao(_documentoVinculado, 0m);
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "ADM");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, _documentoVinculado);
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+                Cnf(_documentoVinculado: _documentoVinculado);
+            return sts;
+        }
+        public int Crt(decimal _valor, string _documentoVinculado = "", string _operador = "", int _funcao = 0, bool _confirmarCnf = true)
+        {
+            string parametrosAdicionais = "";
+            int sts = FazerRequisicao(_funcao, "CRT", _valor, _documentoVinculado, parametrosAdicionais, _operador);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+                DefinirTefTransacao(_documentoVinculado, _valor);
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "CRT");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, _documentoVinculado);
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj3 = new TefRetorno(3, 0, _valor.ToString("N2"));
+                TefRetornoAdicionar(obj3, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+            {
+                #region Retornos TEF
+
+                TefRetorno obj9 = new TefRetorno(9, 0, "0");
+                TefRetornoAdicionar(obj9, gTefTransacao);
+
+                #endregion
+
+                if (_confirmarCnf)
+                    Cnf(_documentoVinculado: _documentoVinculado);
+            }
+            return sts;
+        }
+        public int Cnc(string _documentoVinculado, string _operador = "", int _funcao = 200)
+        {
+            string parametrosAdicionais = "";
+            int sts = FazerRequisicao(_funcao, "CNC", 0M, _documentoVinculado, parametrosAdicionais, _operador);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+                DefinirTefTransacao(_documentoVinculado, 0m);
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "CNC");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, _documentoVinculado);
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+                Cnf(_documentoVinculado: _documentoVinculado);
+            return sts;
+        }
+        public int FuncaoExecutar(int _funcao, string _documentoVinculado = "")
+        {
+            int sts = FazerRequisicao(_funcao, "FNC", _documento: _documentoVinculado);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+
+                DefinirTefTransacao(_documentoVinculado, 0m);
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "FNC");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, _documentoVinculado);
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+                Cnf(_documentoVinculado: _documentoVinculado);
+            return sts;
+        }
+        public int RecargaCelular(string _documentoVinculado = "")
+        {
+            int sts = FazerRequisicao(300, "CEL", _documento: _documentoVinculado);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+
+                DefinirTefTransacao(_documentoVinculado, 0m);
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "CEL");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, _documentoVinculado);
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+                Cnf(_documentoVinculado: _documentoVinculado);
+            return sts;
+        }
+        public int CorrespondenteBancario(string _documentoVinculado = "")
+        {
+            int sts = FazerRequisicao(310, "CBC", _documento: _documentoVinculado);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+
+                DefinirTefTransacao(_documentoVinculado, 0m);
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "CBC");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, _documentoVinculado);
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+                Cnf(_documentoVinculado: _documentoVinculado);
+            return sts;
+        }
+        public int CorrespondenteBancarioRecarga(string _documentoVinculado = "")
+        {
+            int sts = FazerRequisicao(669, "RCB", _documento: _documentoVinculado);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+
+                DefinirTefTransacao(_documentoVinculado, 0m);
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "CBC");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, _documentoVinculado);
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+                Cnf(_documentoVinculado: _documentoVinculado);
+            return sts;
+        }
+        public void Cnf(bool _gerarArquivo = true, string _documentoVinculado = "")
+        {
+            FinalizarOperacao(1, _documentoVinculado);
+
+            InicializarTefTransacao(_documentoVinculado, 0m);
+
+            #region Retornos TEF
+
+            TefRetorno obj729 = new TefRetorno(729, 0, "1");
+            TefRetornoAdicionar(obj729, gTefTransacao);
+
+            TefRetorno obj999 = new TefRetorno(999, 0, "0");
+            TefRetornoAdicionar(obj999, gTefTransacao);
+
+            if (_gerarArquivo && gCupomVenda != null && gCupomVenda.Transacoes.Count > 0)
+            {
+                int pendentesRestantes = ObtemQuantidadeTransacoesPendentes(_documentoVinculado);
+                int indiceConfirmado = gCupomVenda.Transacoes.Count - pendentesRestantes;
+                if (indiceConfirmado > 0)
+                    GerarArquivoRetornoDaTransacao(indiceConfirmado);
+            }
+
+            if (mTefConfig.Tef_PinPadVerificar)
+                EscreveMensagemPermanentePinPad(mTefConfig.Tef_PinPadMensagem);
+
+            #endregion
+        }
+
+        public int VerificarPinpad()
+        {
+            return KeepAlivePinPad();
+        }
+        public string LeituraCampoAberto(CampoAberto _campoAberto)
+        {
+            mCampoAberto = _campoAberto;
+            string retorno = "";
+            int sts = FazerRequisicao(789, "LCA", 0);
+            if (sts == 10000)
+            {
+                #region Retornos TEF
+                DefinirTefTransacao();
+                gCupomVenda.Transacoes.Add(gTefTransacao);
+
+                TefRetorno obj0 = new TefRetorno(0, 0, "LCA");
+                TefRetornoAdicionar(obj0, gTefTransacao);
+
+                TefRetorno obj2 = new TefRetorno(2, 0, "");
+                TefRetornoAdicionar(obj2, gTefTransacao);
+
+                TefRetorno obj2_1 = new TefRetorno(2, 1, gTefTransacao.IdentificadorTransacao.ToString());
+                TefRetornoAdicionar(obj2_1, gTefTransacao);
+
+                TefRetorno obj3 = new TefRetorno(3, 0, "0,00");
+                TefRetornoAdicionar(obj3, gTefTransacao);
+
+                TefRetorno obj4 = new TefRetorno(4, 0, "0");
+                TefRetornoAdicionar(obj4, gTefTransacao);
+
+                TefRetorno obj718 = new TefRetorno(718, 0, "IP" + mTefConfig.Tef_Terminal);
+                TefRetornoAdicionar(obj718, gTefTransacao);
+
+                TefRetorno obj719 = new TefRetorno(719, 0, mTefConfig.Tef_Empresa);
+                TefRetornoAdicionar(obj719, gTefTransacao);
+
+                #endregion
+
+                sts = ContinuarRequisicao();
+            }
+            if (sts == 0)
+            {
+                mCampoAberto = null;
+
+                var obj = gTefTransacao.Retornos.Where(p => p.Codigo == 7 && p.Indice == 38).FirstOrDefault();
+                if (obj != null)
+                    retorno = obj.Valor;
+                GerarArquivoRetornoDaTransacao();
+
+                if (mTefConfig.Tef_PinPadVerificar)
+                    EscreveMensagemPermanentePinPad(mTefConfig.Tef_PinPadMensagem);
+            }
+            return retorno;
+        }
+        public string CpfCnpjCapturar(bool _pessoaFisica = true)
+        {
+            string opcao = "020808DIGITAR CNPJ P1                 CONFIRME CNPJ P1|xx.xxx.xxx      " + "0606DIGITAR CNPJ P2                 CONFIRME CNPJ P2|xxxx-xx         ";
+            if (_pessoaFisica)
+                opcao = "011111DIGITAR CPF                     CONFIRME O CPF  |xxx.xxx.xxx-xx  ";
+
+            string retornoPinPad = new string(' ', 50);
+            ObtemDadoPinPadDiretoEx("", "", opcao, ref retornoPinPad);
+            return _pessoaFisica ? retornoPinPad.Substring(4, 11).Replace("\0", "").Trim() : (retornoPinPad.Substring(4, 08) + retornoPinPad.Substring(14, 06)).Replace("\0", "").Trim();
+        }
+
+        public void ConfirmarTransacaoPendente(string _documentoVinculado = "")
+        {
+            FinalizarOperacao(1, _documentoVinculado);
+
+            if (gCupomVenda != null && gCupomVenda.Transacoes.Count > 0)
+            {
+                int pendentesRestantes = ObtemQuantidadeTransacoesPendentes(_documentoVinculado);
+                int indiceConfirmado = gCupomVenda.Transacoes.Count - pendentesRestantes;
+                if (indiceConfirmado > 0)
+                    GerarArquivoRetornoDaTransacao(indiceConfirmado);
+            }
+
+            if (mTefConfig.Tef_PinPadVerificar)
+                EscreveMensagemPermanentePinPad(mTefConfig.Tef_PinPadMensagem);
+        }
+        public void CancelarTransacaoPendente(string _documentoVinculado = "")
+        {
+            FinalizarOperacao(0, _documentoVinculado);
+
+            if (mTefConfig.Tef_PinPadVerificar)
+                EscreveMensagemPermanentePinPad(mTefConfig.Tef_PinPadMensagem);
+        }
+
+        public int ObtemQuantidadeTransacoesPendentes(string _cupomFiscal)
+        {
+            string dataStr = DateTime.Now.ToString("yyyyMMdd");
+            return ObtemQuantidadeTransacoesPendentes(dataStr, _cupomFiscal);
+        }
+        private void InicializarTefTransacao(string _documentoVinculado = "", decimal _valor = 0m)
+        {
+            if (gTefTransacao == null)
+                DefinirTefTransacao(_documentoVinculado, _valor);
+        }
+        private void DefinirTefTransacao(string _documentoVinculado = "", decimal _valor = 0m)
+        {
+            gTefTransacao = new TefTransacao
+            {
+                DocumentoVinculado = _documentoVinculado,
+                ValorTransacao = _valor
+            };
+        }
+    }
+}

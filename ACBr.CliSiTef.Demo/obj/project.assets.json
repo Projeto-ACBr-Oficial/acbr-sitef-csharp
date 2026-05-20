@@ -1,0 +1,1177 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "ACBrLib.Core/1.2.47": {
+        "type": "package",
+        "compile": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ACBrLib.PosPrinter/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "ACBrLib.Core": "1.2.47"
+        },
+        "compile": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Bindings.Windows.Compatibility/0.16.12": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Lib.CliSitef/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        }
+      },
+      "Lib.FormsAuxiliares/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        }
+      },
+      "Lib.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "System.Drawing.Common": "8.0.7",
+          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.12"
+        },
+        "compile": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win": {
+      "ACBrLib.Core/1.2.47": {
+        "type": "package",
+        "compile": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ACBrLib.PosPrinter/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "ACBrLib.Core": "1.2.47"
+        },
+        "compile": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Bindings.Windows.Compatibility/0.16.12": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Lib.CliSitef/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        }
+      },
+      "Lib.FormsAuxiliares/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        }
+      },
+      "Lib.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "System.Drawing.Common": "8.0.7",
+          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.12"
+        },
+        "compile": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-arm64": {
+      "ACBrLib.Core/1.2.47": {
+        "type": "package",
+        "compile": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ACBrLib.PosPrinter/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "ACBrLib.Core": "1.2.47"
+        },
+        "compile": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Bindings.Windows.Compatibility/0.16.12": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Lib.CliSitef/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        }
+      },
+      "Lib.FormsAuxiliares/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        }
+      },
+      "Lib.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "System.Drawing.Common": "8.0.7",
+          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.12"
+        },
+        "compile": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "ACBrLib.Core/1.2.47": {
+        "type": "package",
+        "compile": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ACBrLib.PosPrinter/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "ACBrLib.Core": "1.2.47"
+        },
+        "compile": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Bindings.Windows.Compatibility/0.16.12": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Lib.CliSitef/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        }
+      },
+      "Lib.FormsAuxiliares/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        }
+      },
+      "Lib.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "System.Drawing.Common": "8.0.7",
+          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.12"
+        },
+        "compile": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "ACBrLib.Core/1.2.47": {
+        "type": "package",
+        "compile": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ACBrLib.PosPrinter/1.0.11": {
+        "type": "package",
+        "dependencies": {
+          "ACBrLib.Core": "1.2.47"
+        },
+        "compile": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net452/ACBrLib.PosPrinter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net48/zxing.dll": {
+            "related": ".presentation.XML;.XML"
+          },
+          "lib/net48/zxing.presentation.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ZXing.Net.Bindings.Windows.Compatibility/0.16.12": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Drawing.Common": "7.0.0",
+          "ZXing.Net": "0.16.9"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZXing.Windows.Compatibility.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Lib.CliSitef/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.CliSitef.dll": {}
+        }
+      },
+      "Lib.FormsAuxiliares/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Lib.Utils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.FormsAuxiliares.dll": {}
+        }
+      },
+      "Lib.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "System.Drawing.Common": "8.0.7",
+          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.12"
+        },
+        "compile": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lib.Utils.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ACBrLib.Core/1.2.47": {
+      "sha512": "CQjCiwOyHeeOnE5CgyrfQfKETcfZtlY+Wk4TX7tYElTTzOF4uamDzMYNTHQU8xswS+KE5/ojQ8LcTSoN3V/uDQ==",
+      "type": "package",
+      "path": "acbrlib.core/1.2.47",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "acbrlib.core.1.2.47.nupkg.sha512",
+        "acbrlib.core.nuspec",
+        "lib/net452/ACBrLib.Core.dll",
+        "lib/net452/ACBrLib.Core.xml",
+        "lib/net8.0/ACBrLib.Core.dll",
+        "lib/net8.0/ACBrLib.Core.xml",
+        "lib/netstandard2.0/ACBrLib.Core.dll",
+        "lib/netstandard2.0/ACBrLib.Core.xml"
+      ]
+    },
+    "ACBrLib.PosPrinter/1.0.11": {
+      "sha512": "CiOHEGox3gsCYufuqcuFuEIF+yd69JsBhISusipAXb7DfrJR6AsY2TawMXmV2MYtZ+YkMCS/0QnXSvAfVXh0nA==",
+      "type": "package",
+      "path": "acbrlib.posprinter/1.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acbrlib.posprinter.1.0.11.nupkg.sha512",
+        "acbrlib.posprinter.nuspec",
+        "lib/net452/ACBrLib.PosPrinter.dll",
+        "lib/net452/ACBrLib.PosPrinter.xml",
+        "lib/net8.0/ACBrLib.PosPrinter.dll",
+        "lib/net8.0/ACBrLib.PosPrinter.xml",
+        "lib/netstandard2.0/ACBrLib.PosPrinter.dll",
+        "lib/netstandard2.0/ACBrLib.PosPrinter.xml"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json"
+      ]
+    },
+    "NETStandard.Library/2.0.0": {
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "type": "package",
+      "path": "netstandard.library/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/NETStandard.Library.targets",
+        "build/netstandard2.0/NETStandard.Library.targets",
+        "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
+        "build/netstandard2.0/ref/System.AppContext.dll",
+        "build/netstandard2.0/ref/System.Collections.Concurrent.dll",
+        "build/netstandard2.0/ref/System.Collections.NonGeneric.dll",
+        "build/netstandard2.0/ref/System.Collections.Specialized.dll",
+        "build/netstandard2.0/ref/System.Collections.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Composition.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.EventBasedAsync.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.Primitives.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.TypeConverter.dll",
+        "build/netstandard2.0/ref/System.ComponentModel.dll",
+        "build/netstandard2.0/ref/System.Console.dll",
+        "build/netstandard2.0/ref/System.Core.dll",
+        "build/netstandard2.0/ref/System.Data.Common.dll",
+        "build/netstandard2.0/ref/System.Data.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Contracts.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Debug.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.FileVersionInfo.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Process.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.StackTrace.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TextWriterTraceListener.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tools.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.TraceSource.dll",
+        "build/netstandard2.0/ref/System.Diagnostics.Tracing.dll",
+        "build/netstandard2.0/ref/System.Drawing.Primitives.dll",
+        "build/netstandard2.0/ref/System.Drawing.dll",
+        "build/netstandard2.0/ref/System.Dynamic.Runtime.dll",
+        "build/netstandard2.0/ref/System.Globalization.Calendars.dll",
+        "build/netstandard2.0/ref/System.Globalization.Extensions.dll",
+        "build/netstandard2.0/ref/System.Globalization.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.ZipFile.dll",
+        "build/netstandard2.0/ref/System.IO.Compression.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.DriveInfo.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.Watcher.dll",
+        "build/netstandard2.0/ref/System.IO.FileSystem.dll",
+        "build/netstandard2.0/ref/System.IO.IsolatedStorage.dll",
+        "build/netstandard2.0/ref/System.IO.MemoryMappedFiles.dll",
+        "build/netstandard2.0/ref/System.IO.Pipes.dll",
+        "build/netstandard2.0/ref/System.IO.UnmanagedMemoryStream.dll",
+        "build/netstandard2.0/ref/System.IO.dll",
+        "build/netstandard2.0/ref/System.Linq.Expressions.dll",
+        "build/netstandard2.0/ref/System.Linq.Parallel.dll",
+        "build/netstandard2.0/ref/System.Linq.Queryable.dll",
+        "build/netstandard2.0/ref/System.Linq.dll",
+        "build/netstandard2.0/ref/System.Net.Http.dll",
+        "build/netstandard2.0/ref/System.Net.NameResolution.dll",
+        "build/netstandard2.0/ref/System.Net.NetworkInformation.dll",
+        "build/netstandard2.0/ref/System.Net.Ping.dll",
+        "build/netstandard2.0/ref/System.Net.Primitives.dll",
+        "build/netstandard2.0/ref/System.Net.Requests.dll",
+        "build/netstandard2.0/ref/System.Net.Security.dll",
+        "build/netstandard2.0/ref/System.Net.Sockets.dll",
+        "build/netstandard2.0/ref/System.Net.WebHeaderCollection.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.Client.dll",
+        "build/netstandard2.0/ref/System.Net.WebSockets.dll",
+        "build/netstandard2.0/ref/System.Net.dll",
+        "build/netstandard2.0/ref/System.Numerics.dll",
+        "build/netstandard2.0/ref/System.ObjectModel.dll",
+        "build/netstandard2.0/ref/System.Reflection.Extensions.dll",
+        "build/netstandard2.0/ref/System.Reflection.Primitives.dll",
+        "build/netstandard2.0/ref/System.Reflection.dll",
+        "build/netstandard2.0/ref/System.Resources.Reader.dll",
+        "build/netstandard2.0/ref/System.Resources.ResourceManager.dll",
+        "build/netstandard2.0/ref/System.Resources.Writer.dll",
+        "build/netstandard2.0/ref/System.Runtime.CompilerServices.VisualC.dll",
+        "build/netstandard2.0/ref/System.Runtime.Extensions.dll",
+        "build/netstandard2.0/ref/System.Runtime.Handles.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.RuntimeInformation.dll",
+        "build/netstandard2.0/ref/System.Runtime.InteropServices.dll",
+        "build/netstandard2.0/ref/System.Runtime.Numerics.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Formatters.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Json.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.Xml.dll",
+        "build/netstandard2.0/ref/System.Runtime.Serialization.dll",
+        "build/netstandard2.0/ref/System.Runtime.dll",
+        "build/netstandard2.0/ref/System.Security.Claims.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Algorithms.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Csp.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Encoding.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.Primitives.dll",
+        "build/netstandard2.0/ref/System.Security.Cryptography.X509Certificates.dll",
+        "build/netstandard2.0/ref/System.Security.Principal.dll",
+        "build/netstandard2.0/ref/System.Security.SecureString.dll",
+        "build/netstandard2.0/ref/System.ServiceModel.Web.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.Extensions.dll",
+        "build/netstandard2.0/ref/System.Text.Encoding.dll",
+        "build/netstandard2.0/ref/System.Text.RegularExpressions.dll",
+        "build/netstandard2.0/ref/System.Threading.Overlapped.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.Parallel.dll",
+        "build/netstandard2.0/ref/System.Threading.Tasks.dll",
+        "build/netstandard2.0/ref/System.Threading.Thread.dll",
+        "build/netstandard2.0/ref/System.Threading.ThreadPool.dll",
+        "build/netstandard2.0/ref/System.Threading.Timer.dll",
+        "build/netstandard2.0/ref/System.Threading.dll",
+        "build/netstandard2.0/ref/System.Transactions.dll",
+        "build/netstandard2.0/ref/System.ValueTuple.dll",
+        "build/netstandard2.0/ref/System.Web.dll",
+        "build/netstandard2.0/ref/System.Windows.dll",
+        "build/netstandard2.0/ref/System.Xml.Linq.dll",
+        "build/netstandard2.0/ref/System.Xml.ReaderWriter.dll",
+        "build/netstandard2.0/ref/System.Xml.Serialization.dll",
+        "build/netstandard2.0/ref/System.Xml.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.XDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XPath.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlDocument.dll",
+        "build/netstandard2.0/ref/System.Xml.XmlSerializer.dll",
+        "build/netstandard2.0/ref/System.Xml.dll",
+        "build/netstandard2.0/ref/System.dll",
+        "build/netstandard2.0/ref/mscorlib.dll",
+        "build/netstandard2.0/ref/netstandard.dll",
+        "build/netstandard2.0/ref/netstandard.xml",
+        "lib/netstandard1.0/_._",
+        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.nuspec"
+      ]
+    },
+    "System.Drawing.Common/8.0.7": {
+      "sha512": "DoeBae0gZvxs3mtfoub6F1k28fSkFPzmhFuvblplKMnLYKmTMVy0j4Yxahh96KM532JzHGDxhJn1VpMKSB1pyg==",
+      "type": "package",
+      "path": "system.drawing.common/8.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.pdb",
+        "lib/net6.0/System.Drawing.Common.xml",
+        "lib/net7.0/System.Drawing.Common.dll",
+        "lib/net7.0/System.Drawing.Common.pdb",
+        "lib/net7.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.drawing.common.8.0.7.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "ZXing.Net/0.16.9": {
+      "sha512": "7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
+      "type": "package",
+      "path": "zxing.net/0.16.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/native/zxing.XML",
+        "lib/native/zxing.pri",
+        "lib/native/zxing.winmd",
+        "lib/net20-cf/zxing.ce2.0.dll",
+        "lib/net20-cf/zxing.ce2.0.xml",
+        "lib/net20/zxing.XML",
+        "lib/net20/zxing.dll",
+        "lib/net35-cf/zxing.ce3.5.dll",
+        "lib/net35-cf/zxing.ce3.5.xml",
+        "lib/net35/zxing.XML",
+        "lib/net35/zxing.dll",
+        "lib/net40/zxing.XML",
+        "lib/net40/zxing.dll",
+        "lib/net40/zxing.presentation.XML",
+        "lib/net40/zxing.presentation.dll",
+        "lib/net45/zxing.XML",
+        "lib/net45/zxing.dll",
+        "lib/net45/zxing.presentation.XML",
+        "lib/net45/zxing.presentation.dll",
+        "lib/net461/zxing.XML",
+        "lib/net461/zxing.dll",
+        "lib/net461/zxing.presentation.XML",
+        "lib/net461/zxing.presentation.dll",
+        "lib/net47/zxing.XML",
+        "lib/net47/zxing.dll",
+        "lib/net47/zxing.presentation.XML",
+        "lib/net47/zxing.presentation.dll",
+        "lib/net48/zxing.XML",
+        "lib/net48/zxing.dll",
+        "lib/net48/zxing.presentation.XML",
+        "lib/net48/zxing.presentation.dll",
+        "lib/net5.0/zxing.XML",
+        "lib/net5.0/zxing.dll",
+        "lib/net6.0/zxing.XML",
+        "lib/net6.0/zxing.dll",
+        "lib/net7.0/zxing.XML",
+        "lib/net7.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.xml",
+        "lib/netcoreapp3.1/zxing.dll",
+        "lib/netcoreapp3.1/zxing.xml",
+        "lib/netstandard1.0/zxing.dll",
+        "lib/netstandard1.0/zxing.xml",
+        "lib/netstandard1.1/zxing.dll",
+        "lib/netstandard1.1/zxing.xml",
+        "lib/netstandard1.3/zxing.dll",
+        "lib/netstandard1.3/zxing.xml",
+        "lib/netstandard2.0/zxing.dll",
+        "lib/netstandard2.0/zxing.xml",
+        "lib/netstandard2.1/zxing.dll",
+        "lib/netstandard2.1/zxing.xml",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.XML",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.dll",
+        "lib/sl3-wp/zxing.wp7.0.XML",
+        "lib/sl3-wp/zxing.wp7.0.dll",
+        "lib/sl4-wp71/zxing.wp7.1.XML",
+        "lib/sl4-wp71/zxing.wp7.1.dll",
+        "lib/sl4/zxing.sl4.XML",
+        "lib/sl4/zxing.sl4.dll",
+        "lib/sl5/zxing.sl5.XML",
+        "lib/sl5/zxing.sl5.dll",
+        "lib/uap10/zxing.dll",
+        "lib/uap10/zxing.pri",
+        "lib/uap10/zxing.xml",
+        "lib/windows8-managed/zxing.winrt.XML",
+        "lib/windows8-managed/zxing.winrt.dll",
+        "lib/windows8/zxing.XML",
+        "lib/windows8/zxing.pri",
+        "lib/windows8/zxing.winmd",
+        "lib/wp8/zxing.wp8.0.XML",
+        "lib/wp8/zxing.wp8.0.dll",
+        "logo.jpg",
+        "zxing.net.0.16.9.nupkg.sha512",
+        "zxing.net.nuspec"
+      ]
+    },
+    "ZXing.Net.Bindings.Windows.Compatibility/0.16.12": {
+      "sha512": "bmwWQ4mOQEJOD0IkxSNZScU+kjMT1YliZPLIQtuh1LbxolKqJLcvyIY/9xv/2g3tNO3mZlcCIUOx756Xu3kE6w==",
+      "type": "package",
+      "path": "zxing.net.bindings.windows.compatibility/0.16.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/ZXing.Windows.Compatibility.dll",
+        "lib/net6.0/ZXing.Windows.Compatibility.pdb",
+        "lib/net6.0/ZXing.Windows.Compatibility.xml",
+        "lib/net7.0/ZXing.Windows.Compatibility.dll",
+        "lib/net7.0/ZXing.Windows.Compatibility.pdb",
+        "lib/net7.0/ZXing.Windows.Compatibility.xml",
+        "lib/netcoreapp3.0/ZXing.Windows.Compatibility.dll",
+        "lib/netcoreapp3.0/ZXing.Windows.Compatibility.pdb",
+        "lib/netcoreapp3.0/ZXing.Windows.Compatibility.xml",
+        "lib/netcoreapp3.1/ZXing.Windows.Compatibility.dll",
+        "lib/netcoreapp3.1/ZXing.Windows.Compatibility.pdb",
+        "lib/netcoreapp3.1/ZXing.Windows.Compatibility.xml",
+        "lib/netstandard2.0/ZXing.Windows.Compatibility.dll",
+        "lib/netstandard2.0/ZXing.Windows.Compatibility.pdb",
+        "lib/netstandard2.0/ZXing.Windows.Compatibility.xml",
+        "logo.jpg",
+        "readme.md",
+        "zxing.net.bindings.windows.compatibility.0.16.12.nupkg.sha512",
+        "zxing.net.bindings.windows.compatibility.nuspec"
+      ]
+    },
+    "Lib.CliSitef/1.0.0": {
+      "type": "project",
+      "path": "../Lib.CliSitef/Lib.CliSitef.csproj",
+      "msbuildProject": "../Lib.CliSitef/Lib.CliSitef.csproj"
+    },
+    "Lib.FormsAuxiliares/1.0.0": {
+      "type": "project",
+      "path": "../Lib.FormsAuxiliares/Lib.FormsAuxiliares.csproj",
+      "msbuildProject": "../Lib.FormsAuxiliares/Lib.FormsAuxiliares.csproj"
+    },
+    "Lib.Utils/1.0.0": {
+      "type": "project",
+      "path": "../Lib.Utils/Lib.Utils.csproj",
+      "msbuildProject": "../Lib.Utils/Lib.Utils.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "ACBrLib.Core >= 1.2.47",
+      "ACBrLib.PosPrinter >= 1.0.11",
+      "Lib.CliSitef >= 1.0.0",
+      "Lib.FormsAuxiliares >= 1.0.0",
+      "Lib.Utils >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Antonio Carlos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\ACBr.CliSiTef.Demo\\ACBr.CliSiTef.Demo.csproj",
+      "projectName": "ACBr.CliSiTef.Demo",
+      "projectPath": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\ACBr.CliSiTef.Demo\\ACBr.CliSiTef.Demo.csproj",
+      "packagesPath": "C:\\Users\\Antonio Carlos\\.nuget\\packages\\",
+      "outputPath": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\ACBr.CliSiTef.Demo\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Antonio Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "projectReferences": {
+            "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.CliSitef\\Lib.CliSitef.csproj": {
+              "projectPath": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.CliSitef\\Lib.CliSitef.csproj"
+            },
+            "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.FormsAuxiliares\\Lib.FormsAuxiliares.csproj": {
+              "projectPath": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.FormsAuxiliares\\Lib.FormsAuxiliares.csproj"
+            },
+            "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Lib.Utils.csproj": {
+              "projectPath": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Lib.Utils.csproj"
+            }
+          }
+        }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "dependencies": {
+          "ACBrLib.Core": {
+            "target": "Package",
+            "version": "[1.2.47, )"
+          },
+          "ACBrLib.PosPrinter": {
+            "target": "Package",
+            "version": "[1.0.11, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

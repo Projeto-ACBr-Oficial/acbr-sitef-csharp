@@ -1,0 +1,10 @@
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\bin\Debug\netstandard2.0\Lib.Utils.deps.json
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\bin\Debug\netstandard2.0\Lib.Utils.dll
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\bin\Debug\netstandard2.0\Lib.Utils.pdb
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\obj\Debug\netstandard2.0\Lib.Utils.csproj.AssemblyReference.cache
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\obj\Debug\netstandard2.0\Lib.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\obj\Debug\netstandard2.0\Lib.Utils.AssemblyInfoInputs.cache
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\obj\Debug\netstandard2.0\Lib.Utils.AssemblyInfo.cs
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\obj\Debug\netstandard2.0\Lib.Utils.csproj.CoreCompileInputs.cache
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\obj\Debug\netstandard2.0\Lib.Utils.dll
+C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.Utils\obj\Debug\netstandard2.0\Lib.Utils.pdb

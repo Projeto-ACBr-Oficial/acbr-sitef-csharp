@@ -1,0 +1,736 @@
+15/05/2026 16:43:29 -> InicializarTef -> 0 
+15/05/2026 16:43:29 -> TEF inicializado com sucesso.
+15/05/2026 16:43:37 -> Crt(0) doc=177038 valor=1,00 | modo=automático | CNF no Crt=sim
+15/05/2026 16:43:37 -> -------------------------------------------------------------------------------------
+15/05/2026 16:43:37 -> Fnc: 0 -> Doc: 177038 -> Vlr: 1,00
+15/05/2026 16:43:37 -> -------------------------------------------------------------------------------------
+15/05/2026 16:43:37 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 16:43:39 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 16:43:39 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:43:39 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 16:43:40 -> Cmd: 22 -> Tc: 4294967295 -> Buffer: Dados Invalidos
+15/05/2026 16:43:41 -> Crt(0) retorno=-100 
+15/05/2026 16:43:44 -> Crt(0) doc=177038 valor=1,00 | modo=automático | CNF no Crt=sim
+15/05/2026 16:43:44 -> -------------------------------------------------------------------------------------
+15/05/2026 16:43:44 -> Fnc: 0 -> Doc: 177038 -> Vlr: 1,00
+15/05/2026 16:43:44 -> -------------------------------------------------------------------------------------
+15/05/2026 16:43:44 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 16:43:44 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 16:43:45 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:43:45 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 16:43:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 16:43:55 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:43:55 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:43:55 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:43:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:43:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:43:57 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:43:57 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:43:57 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+15/05/2026 16:43:57 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+15/05/2026 16:43:57 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 16:43:57 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 16:43:58 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:43:58 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:43:58 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:43:58 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:43:58 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:43:58 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+15/05/2026 16:43:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 16:44:06 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 16:44:06 -> Cmd: 0 -> Tc: 0 -> Buffer: 14444
+15/05/2026 16:44:06 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+15/05/2026 16:44:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:44:07 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 952 -> Buffer: 150088
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F2608D912A082AECF57329F2701409F10120310600003220000000000000000000000FF9F37046F8A3D119F360200CB950504000480009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+15/05/2026 16:44:08 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150088 MU 15/05/26 16:44 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150088 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150088 MU 15/05/26 16:44 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150088 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:44:08 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 133 -> Buffer: 150088
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150088
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 135 -> Buffer: 150088
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515164407
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 16:44:09 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515008805
+15/05/2026 16:44:09 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 16:44:13 -> Crt(0) retorno=0 
+15/05/2026 16:44:13 -> CNF concluído no Crt (cupom quitado) doc=177038
+15/05/2026 16:44:13 -> Finalizar venda: sem pendências (doc 177038)
+15/05/2026 16:44:13 -> Venda finalizada. Documento 177038
+15/05/2026 16:44:27 -> Crt(0) doc=969436 valor=1,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 16:44:27 -> -------------------------------------------------------------------------------------
+15/05/2026 16:44:27 -> Fnc: 0 -> Doc: 969436 -> Vlr: 1,00
+15/05/2026 16:44:27 -> -------------------------------------------------------------------------------------
+15/05/2026 16:44:27 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 16:44:27 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 16:44:27 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:44:27 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 16:44:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 16:44:33 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:44:34 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:44:35 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:44:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:44:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:44:36 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:44:36 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:44:36 -> Cmd: 0 -> Tc: 2362 -> Buffer: 0
+15/05/2026 16:44:36 -> Cmd: 0 -> Tc: 2364 -> Buffer: 1
+15/05/2026 16:44:36 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 16:44:36 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+15/05/2026 16:44:37 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:44:37 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 170 -> Buffer: 1
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 171 -> Buffer: 2
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 172 -> Buffer: 99
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 174 -> Buffer: 1
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 175 -> Buffer: 2
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 176 -> Buffer: 99
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 724 -> Buffer: 0
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 725 -> Buffer: 0
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 726 -> Buffer: 0
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 727 -> Buffer: 0
+15/05/2026 16:44:38 -> Cmd: 0 -> Tc: 2974 -> Buffer: 1
+15/05/2026 16:44:38 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:44:38 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Parcelado pelo Estabelecimento;3:Parcelado pela Administradora;4:Crediario;5:Consulta parcelamento;
+15/05/2026 16:44:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 16:44:44 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 16:44:44 -> Cmd: 0 -> Tc: 0 -> Buffer: 23496
+15/05/2026 16:44:44 -> Cmd: 0 -> Tc: 2333 -> Buffer: 1
+15/05/2026 16:44:44 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:44:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 952 -> Buffer: 150089
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 2 -> Buffer: 56
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000100;023049F3303E0F0C89F0607A00000000410108407A0000000041010500A4D6173746572636172649F26080B587741ECC3504E9F2701409F10120310650003020000000000000000000000FF9F370404B07ECB9F3602026E950504000080009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034103025F3401009F6E0700760000303000;
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+15/05/2026 16:44:46 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 100 -> Buffer: 0200
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Credito a Vista
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150089 MU 15/05/26 16:44 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150089 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150089 MU 15/05/26 16:44 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150089 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:44:46 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 133 -> Buffer: 150089
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150089
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 135 -> Buffer: 150089
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515164445
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 16:44:47 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515008905
+15/05/2026 16:44:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 16:44:50 -> Crt(0) retorno=0 
+15/05/2026 16:44:51 -> Pendências após Crt: 1 (doc 969436) — aguardando operador
+15/05/2026 16:44:55 -> NCN após pagamento (operador) doc=969436
+15/05/2026 16:44:55 -> Operação descartada (NCN) doc=969436
+15/05/2026 16:44:55 -> Documento e valor da operação limpos (NCN) doc=969436
+15/05/2026 16:45:12 -> Crt(0) doc=854526 valor=2,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 16:45:12 -> -------------------------------------------------------------------------------------
+15/05/2026 16:45:12 -> Fnc: 0 -> Doc: 854526 -> Vlr: 2,00
+15/05/2026 16:45:12 -> -------------------------------------------------------------------------------------
+15/05/2026 16:45:12 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 16:45:12 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 16:45:13 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:45:13 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 16:45:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 16:45:19 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:45:19 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:45:20 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:45:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:45:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:45:21 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:45:21 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:45:21 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+15/05/2026 16:45:21 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+15/05/2026 16:45:21 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 16:45:21 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 16:45:22 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:45:22 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:45:23 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:45:23 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:45:23 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:45:23 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+15/05/2026 16:45:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 16:45:30 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 16:45:30 -> Cmd: 0 -> Tc: 0 -> Buffer: 28900
+15/05/2026 16:45:30 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+15/05/2026 16:45:30 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:45:31 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 952 -> Buffer: 150091
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F260800490707F1B6135F9F2701409F10120310600003220000000000000000000000FF9F3704AA204D0B9F360200CD950504000480009A032605159C01009F02060000000002005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+15/05/2026 16:45:32 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 2,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150091 MU 15/05/26 16:45 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150091 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 2,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150091 MU 15/05/26 16:45 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150091 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 133 -> Buffer: 150091
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150091
+15/05/2026 16:45:32 -> Cmd: 0 -> Tc: 135 -> Buffer: 150091
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515164531
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 16:45:33 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515009105
+15/05/2026 16:45:33 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 16:45:37 -> Crt(0) retorno=0 
+15/05/2026 16:45:37 -> Pendências após Crt: 1 (doc 854526) — aguardando operador
+15/05/2026 16:45:40 -> CNF após pagamento (operador) doc=854526
+15/05/2026 16:45:40 -> Finalizar venda: sem pendências (doc 854526)
+15/05/2026 16:45:40 -> Venda finalizada. Documento 854526
+15/05/2026 16:46:03 -> Crt(0) doc=131183 valor=1,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 16:46:03 -> -------------------------------------------------------------------------------------
+15/05/2026 16:46:03 -> Fnc: 0 -> Doc: 131183 -> Vlr: 1,00
+15/05/2026 16:46:03 -> -------------------------------------------------------------------------------------
+15/05/2026 16:46:03 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 16:46:04 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 16:46:04 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:46:04 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 16:46:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 16:46:09 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:46:09 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:46:10 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:46:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:46:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:46:11 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:46:11 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:46:11 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+15/05/2026 16:46:11 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+15/05/2026 16:46:11 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 16:46:11 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 16:46:12 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:46:13 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 16:46:13 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:46:13 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:46:13 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:46:13 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+15/05/2026 16:46:15 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 16:46:19 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 16:46:19 -> Cmd: 0 -> Tc: 0 -> Buffer: 20341
+15/05/2026 16:46:19 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+15/05/2026 16:46:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:46:20 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 952 -> Buffer: 150092
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F2608293169920DA127049F2701409F10120310600003220000000000000000000000FF9F37049EE1990E9F360200CF950504000480009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+15/05/2026 16:46:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150092 MU 15/05/26 16:46 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150092 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150092 MU 15/05/26 16:46 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150092 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 133 -> Buffer: 150092
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150092
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 135 -> Buffer: 150092
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515164620
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 16:46:21 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515009205
+15/05/2026 16:46:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 16:46:29 -> Crt(0) retorno=0 
+15/05/2026 16:46:29 -> Pendências após Crt: 1 (doc 131183) — aguardando operador
+15/05/2026 16:46:36 -> CNF após pagamento (operador) doc=131183
+15/05/2026 16:46:36 -> Falta pagar: R$ 1,00
+15/05/2026 16:46:47 -> Crt(0) doc=131183 valor=1,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 16:46:47 -> -------------------------------------------------------------------------------------
+15/05/2026 16:46:47 -> Fnc: 0 -> Doc: 131183 -> Vlr: 1,00
+15/05/2026 16:46:47 -> -------------------------------------------------------------------------------------
+15/05/2026 16:46:47 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 16:46:47 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 16:46:47 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:46:47 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 16:46:55 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 16:47:04 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:47:04 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:47:05 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:47:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:47:06 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:47:06 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:47:06 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:47:06 -> Cmd: 0 -> Tc: 2362 -> Buffer: 0
+15/05/2026 16:47:06 -> Cmd: 0 -> Tc: 2364 -> Buffer: 1
+15/05/2026 16:47:06 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 16:47:07 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+15/05/2026 16:47:07 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:47:08 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 170 -> Buffer: 1
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 171 -> Buffer: 2
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 172 -> Buffer: 99
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 174 -> Buffer: 1
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 175 -> Buffer: 2
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 176 -> Buffer: 99
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 724 -> Buffer: 0
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 725 -> Buffer: 0
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 726 -> Buffer: 0
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 727 -> Buffer: 0
+15/05/2026 16:47:08 -> Cmd: 0 -> Tc: 2974 -> Buffer: 1
+15/05/2026 16:47:08 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 16:47:08 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Parcelado pelo Estabelecimento;3:Parcelado pela Administradora;4:Crediario;5:Consulta parcelamento;
+15/05/2026 16:47:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 16:47:16 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 16:47:16 -> Cmd: 0 -> Tc: 0 -> Buffer: 8133
+15/05/2026 16:47:16 -> Cmd: 0 -> Tc: 2333 -> Buffer: 1
+15/05/2026 16:47:16 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 16:47:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 952 -> Buffer: 150093
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 2 -> Buffer: 56
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000100;023049F3303E0F0C89F0607A00000000410108407A0000000041010500A4D6173746572636172649F2608CBA14288C60ED10D9F2701409F10120310650003020000000000000000000000FF9F3704191303389F36020270950504000080009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034103025F3401009F6E0700760000303000;
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 161 -> Buffer: 1
+15/05/2026 16:47:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 100 -> Buffer: 0200
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Credito a Vista
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150093 MU 15/05/26 16:47 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150093 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150093 MU 15/05/26 16:47 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150093 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 133 -> Buffer: 150093
+15/05/2026 16:47:18 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150093
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 135 -> Buffer: 150093
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515164717
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 16:47:19 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515009305
+15/05/2026 16:47:19 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 16:47:21 -> Crt(0) retorno=0 
+15/05/2026 16:47:21 -> Pendências após Crt: 1 (doc 131183) — aguardando operador
+15/05/2026 16:47:28 -> CNF após pagamento (operador) doc=131183
+15/05/2026 16:47:28 -> Finalizar venda: sem pendências (doc 131183)
+15/05/2026 16:47:28 -> Venda finalizada. Documento 131183
+15/05/2026 17:04:30 -> InicializarTef -> 0 
+15/05/2026 17:04:30 -> TEF inicializado com sucesso.
+15/05/2026 17:04:52 -> Crt(0) doc=644590 valor=1,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 17:04:52 -> -------------------------------------------------------------------------------------
+15/05/2026 17:04:52 -> Fnc: 0 -> Doc: 644590 -> Vlr: 1,00
+15/05/2026 17:04:52 -> -------------------------------------------------------------------------------------
+15/05/2026 17:04:52 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 17:04:54 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 17:04:54 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:04:54 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 17:04:56 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 17:04:59 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:04:59 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:05:00 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:05:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:05:01 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:05:02 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:05:02 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:05:02 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+15/05/2026 17:05:02 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+15/05/2026 17:05:02 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 17:05:02 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 17:05:03 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:05:03 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:05:03 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:05:03 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:05:03 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:05:03 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+15/05/2026 17:05:05 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 17:05:10 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 17:05:10 -> Cmd: 0 -> Tc: 0 -> Buffer: 20717
+15/05/2026 17:05:10 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+15/05/2026 17:05:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:05:11 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 952 -> Buffer: 150094
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F2608879E7286E19D723C9F2701409F10120310600003220000000000000000000000FF9F370428791ACB9F360200D1950504000480009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+15/05/2026 17:05:12 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150094 MU 15/05/26 17:05 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150094 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150094 MU 15/05/26 17:05 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150094 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 133 -> Buffer: 150094
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150094
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 135 -> Buffer: 150094
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:05:12 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515170511
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 17:05:13 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515009405
+15/05/2026 17:05:13 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 17:05:16 -> Crt(0) retorno=0 
+15/05/2026 17:05:16 -> Pendências após Crt: 1 (doc 644590) — aguardando demais pagamentos
+15/05/2026 17:05:16 -> Falta pagar: R$ 1,00
+15/05/2026 17:05:26 -> Crt(0) doc=644590 valor=1,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 17:05:26 -> -------------------------------------------------------------------------------------
+15/05/2026 17:05:26 -> Fnc: 0 -> Doc: 644590 -> Vlr: 1,00
+15/05/2026 17:05:26 -> -------------------------------------------------------------------------------------
+15/05/2026 17:05:26 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 17:05:26 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 17:05:26 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:05:26 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 17:05:29 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 17:05:33 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 17:05:33 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:05:34 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:05:34 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:05:35 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:05:36 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:05:36 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:05:36 -> Cmd: 0 -> Tc: 2362 -> Buffer: 0
+15/05/2026 17:05:36 -> Cmd: 0 -> Tc: 2364 -> Buffer: 1
+15/05/2026 17:05:36 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 17:05:36 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+15/05/2026 17:05:37 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 17:05:37 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Credit
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 170 -> Buffer: 1
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 171 -> Buffer: 2
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 172 -> Buffer: 99
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 174 -> Buffer: 1
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 175 -> Buffer: 2
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 176 -> Buffer: 99
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 724 -> Buffer: 0
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 725 -> Buffer: 0
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 726 -> Buffer: 0
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 727 -> Buffer: 0
+15/05/2026 17:05:37 -> Cmd: 0 -> Tc: 2974 -> Buffer: 1
+15/05/2026 17:05:37 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:05:37 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Parcelado pelo Estabelecimento;3:Parcelado pela Administradora;4:Crediario;5:Consulta parcelamento;
+15/05/2026 17:05:40 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 17:05:47 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 17:05:47 -> Cmd: 0 -> Tc: 0 -> Buffer: 10964
+15/05/2026 17:05:47 -> Cmd: 0 -> Tc: 2333 -> Buffer: 1
+15/05/2026 17:05:47 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:05:48 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 952 -> Buffer: 150095
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 2 -> Buffer: 56
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000100;023049F3303E0F0C89F0607A00000000410108407A0000000041010500A4D6173746572636172649F260881B9D8F9ED5A8EF59F2701409F10120310650003020000000000000000000000FF9F3704B151E4239F36020272950504000080009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034103025F3401009F6E0700760000303000;
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 161 -> Buffer: 1
+15/05/2026 17:05:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 100 -> Buffer: 0200
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Credito a Vista
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150095 MU 15/05/26 17:05 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150095 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 3000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150095 MU 15/05/26 17:05 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150095 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000041010 DO TAG AID 0x9F06: A0000000041010 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 132 -> Buffer: 00002
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 133 -> Buffer: 150095
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150095
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 135 -> Buffer: 150095
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515170548
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 17:05:49 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515009505
+15/05/2026 17:05:49 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 17:05:51 -> Crt(0) retorno=0 
+15/05/2026 17:05:51 -> Pendências após Crt: 2 (doc 644590) — cupom quitado; confirmação na finalização
+15/05/2026 17:05:51 -> Finalizar venda: 2 transação(ões) pendente(s) no doc 644590
+15/05/2026 17:06:44 -> CNF na finalização (operador) doc=644590 qtd=2
+15/05/2026 17:06:44 -> Venda finalizada. Documento 644590
+15/05/2026 17:10:28 -> InicializarTef -> 0 
+15/05/2026 17:10:28 -> TEF inicializado com sucesso.
+15/05/2026 17:10:41 -> Crt(0) doc=174092 valor=1,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 17:10:41 -> -------------------------------------------------------------------------------------
+15/05/2026 17:10:41 -> Fnc: 0 -> Doc: 174092 -> Vlr: 1,00
+15/05/2026 17:10:41 -> -------------------------------------------------------------------------------------
+15/05/2026 17:10:41 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 17:10:43 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 17:10:43 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:10:43 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 17:10:45 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 17:10:49 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:10:49 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:10:50 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:10:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:10:50 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:10:51 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:10:51 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:10:51 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+15/05/2026 17:10:51 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+15/05/2026 17:10:51 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 17:10:51 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 17:10:52 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:10:52 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:10:52 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:10:52 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:10:52 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:10:52 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+15/05/2026 17:10:54 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 17:10:57 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 17:10:57 -> Cmd: 0 -> Tc: 0 -> Buffer: 16023
+15/05/2026 17:10:57 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+15/05/2026 17:10:57 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:10:58 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 952 -> Buffer: 150096
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F2608DA7B20A809948B7B9F2701409F10120310600003220000000000000000000000FF9F3704FD613D699F360200D3950504000480009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 161 -> Buffer: 0
+15/05/2026 17:10:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150096 MU 15/05/26 17:10 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150096 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150096 MU 15/05/26 17:10 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150096 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 133 -> Buffer: 150096
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150096
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 135 -> Buffer: 150096
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515171058
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 17:10:59 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515009605
+15/05/2026 17:10:59 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 17:11:03 -> Crt(0) retorno=0 
+15/05/2026 17:11:03 -> Pendências após Crt: 1 (doc 174092) — aguardando demais pagamentos
+15/05/2026 17:11:03 -> Falta pagar: R$ 1,00
+15/05/2026 17:11:07 -> Crt(0) doc=174092 valor=1,00 | modo=manual | CNF no Crt=não (pendente)
+15/05/2026 17:11:07 -> -------------------------------------------------------------------------------------
+15/05/2026 17:11:07 -> Fnc: 0 -> Doc: 174092 -> Vlr: 1,00
+15/05/2026 17:11:07 -> -------------------------------------------------------------------------------------
+15/05/2026 17:11:07 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Conectando Servidor
+15/05/2026 17:11:08 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: Servidor Conectado
+15/05/2026 17:11:08 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:11:08 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:Cheque;2:Cartao de Debito;3:Cartao de Credito;4:Cartao Private Label;5:Confirmacao de Pre-autorizacao;6:Carteira Digital;
+15/05/2026 17:11:10 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aproxime, insira ou passe o cartao na leitora
+15/05/2026 17:11:16 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:11:16 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:11:17 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:11:17 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:11:18 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:11:18 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:11:18 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:11:18 -> Cmd: 0 -> Tc: 2362 -> Buffer: 1
+15/05/2026 17:11:18 -> Cmd: 0 -> Tc: 2364 -> Buffer: 0
+15/05/2026 17:11:18 -> Cmd: 0 -> Tc: 2421 -> Buffer: 0
+15/05/2026 17:11:18 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 17:11:19 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:11:20 -> Cmd: 1 -> Tc: 4294967295 -> Buffer: SELECIONADO: Maestro
+15/05/2026 17:11:20 -> Cmd: 0 -> Tc: 2090 -> Buffer: 3
+15/05/2026 17:11:20 -> Cmd: 0 -> Tc: 2091 -> Buffer: 0
+15/05/2026 17:11:20 -> Cmd: 4 -> Tc: 4294967295 -> Buffer: Selecione a forma de pagamento
+15/05/2026 17:11:20 -> Cmd: 21 -> Tc: 4294967295 -> Buffer: 1:A Vista;2:Compra e Saque;3:Consulta parcelas CDC;4:CDC;
+15/05/2026 17:11:21 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: SOLICITE A SENHA
+15/05/2026 17:11:25 -> Cmd: 0 -> Tc: 5074 -> Buffer: 0
+15/05/2026 17:11:25 -> Cmd: 0 -> Tc: 0 -> Buffer: 9919
+15/05/2026 17:11:25 -> Cmd: 0 -> Tc: 2333 -> Buffer: 5
+15/05/2026 17:11:25 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...
+15/05/2026 17:11:26 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Aguarde, em processamento...(35)
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 951 -> Buffer: 02
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 952 -> Buffer: 150097
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 800 -> Buffer: DCD72692B123A2749D9070BA2BB79525EFEB727F
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 2 -> Buffer: 32
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 3 -> Buffer: 05006000000;022989F3303E0D0C89F0607A00000000430608407A000000004306050074D61657374726F9F2608FBB7C18823FC49AB9F2701409F10120310600003220000000000000000000000FF9F37044BD023C89F360200D5950504000480009A032605159C01009F02060000000001005F2A020986820239009F1A0200769F03060000000000009F34034203005F3401009F6E0700760000303000;
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 161 -> Buffer: 1
+15/05/2026 17:11:27 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Transacao Aprov.
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 100 -> Buffer: 0100
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 101 -> Buffer: Cartao de Debito a Vista
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 102 -> Buffer: T.E.F.
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 123 -> Buffer: 00
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 121 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150097 MU 15/05/26 17:11 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150097 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SI SALDO DISP. 0,02 SiTef from Fiserv
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 122 -> Buffer: .....S.O.F.T.W.A.R.E.E.X.P.R.E.S.S.... SI Rede 5 MU Codigo transacao: 200 LA Codigo operacao: 2000 DO Valor: 1,00 .....S...I...M...U...L...A...D...O.... SI NSU SiTef: 150097 MU 15/05/26 17:11 LA ID PDV: IP000001 DO Estab.: 000000000000005 .....S...I...M...U...L...A...D...O.... SI Host: 999150097 MU Transacao Simulada Aprovada LA TAG AID 0x84: A0000000043060 DO TAG AID 0x9F06: A0000000043060 .....S...I...M...U...L...A...D...O.... SiTef from Fiserv
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 2010 -> Buffer: 00
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 131 -> Buffer: 00005
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 132 -> Buffer: 20001
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 133 -> Buffer: 150097
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 134 -> Buffer: 999150097
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 135 -> Buffer: 150097
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 136 -> Buffer: 523284
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 1190 -> Buffer: 0657
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 1002 -> Buffer: 3005
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 1003 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 2021 -> Buffer: 523284******0657
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 2022 -> Buffer: 3005
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 2023 -> Buffer: FERNANDES/ANTONIO CARLOS
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 105 -> Buffer: 20260515171126
+15/05/2026 17:11:27 -> Cmd: 0 -> Tc: 158 -> Buffer: 05
+15/05/2026 17:11:28 -> Cmd: 0 -> Tc: 156 -> Buffer: MASTERCARD DEBIT
+15/05/2026 17:11:28 -> Cmd: 0 -> Tc: 157 -> Buffer: 000000000000005
+15/05/2026 17:11:28 -> Cmd: 0 -> Tc: 1 -> Buffer: 051515009705
+15/05/2026 17:11:28 -> Cmd: 3 -> Tc: 4294967295 -> Buffer: Retire o cartao da leitora
+15/05/2026 17:11:30 -> Crt(0) retorno=0 
+15/05/2026 17:11:30 -> Pendências após Crt: 2 (doc 174092) — cupom quitado; confirmação na finalização
+15/05/2026 17:11:30 -> Finalizar venda: 2 transação(ões) pendente(s) no doc 174092
+15/05/2026 17:11:37 -> CNF na finalização (operador) doc=174092 qtd=2
+15/05/2026 17:11:37 -> Venda finalizada. Documento 174092

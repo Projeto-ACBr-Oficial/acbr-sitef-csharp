@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = Lib.CliSitef
+build_property.ProjectDir = C:\DEV\C#\ACBr\Fiserv\CliSiTef\src\Lib.CliSitef\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

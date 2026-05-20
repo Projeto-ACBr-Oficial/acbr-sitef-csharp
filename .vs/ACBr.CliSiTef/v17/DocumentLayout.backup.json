@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{541CD1DC-63E2-4A64-8B0C-3EDF253ABABF}|Lib.Utils\\Lib.Utils.csproj|c:\\dev\\c#\\acbr\\fiserv\\clisitef\\src\\lib.utils\\classes\\teffuncaointerativa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{541CD1DC-63E2-4A64-8B0C-3EDF253ABABF}|Lib.Utils\\Lib.Utils.csproj|solutionrelative:lib.utils\\classes\\teffuncaointerativa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{541CD1DC-63E2-4A64-8B0C-3EDF253ABABF}|Lib.Utils\\Lib.Utils.csproj|c:\\dev\\c#\\acbr\\fiserv\\clisitef\\src\\lib.utils\\classes\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{541CD1DC-63E2-4A64-8B0C-3EDF253ABABF}|Lib.Utils\\Lib.Utils.csproj|solutionrelative:lib.utils\\classes\\functions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{541CD1DC-63E2-4A64-8B0C-3EDF253ABABF}|Lib.Utils\\Lib.Utils.csproj|c:\\dev\\c#\\acbr\\fiserv\\clisitef\\src\\lib.utils\\classes\\converthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{541CD1DC-63E2-4A64-8B0C-3EDF253ABABF}|Lib.Utils\\Lib.Utils.csproj|solutionrelative:lib.utils\\classes\\converthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4A91B2C-8F3D-4A5E-9C1D-2B7E6F8A0D4C}|ACBr.CliSiTef.Demo\\ACBr.CliSiTef.Demo.csproj|c:\\dev\\c#\\acbr\\fiserv\\clisitef\\src\\acbr.clisitef.demo\\frmpdv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4A91B2C-8F3D-4A5E-9C1D-2B7E6F8A0D4C}|ACBr.CliSiTef.Demo\\ACBr.CliSiTef.Demo.csproj|solutionrelative:acbr.clisitef.demo\\frmpdv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4A91B2C-8F3D-4A5E-9C1D-2B7E6F8A0D4C}|ACBr.CliSiTef.Demo\\ACBr.CliSiTef.Demo.csproj|C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\acbr.clisitef.demo\\frmconfiguracao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E4A91B2C-8F3D-4A5E-9C1D-2B7E6F8A0D4C}|ACBr.CliSiTef.Demo\\ACBr.CliSiTef.Demo.csproj|solutionrelative:acbr.clisitef.demo\\frmconfiguracao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TefFuncaoInterativa.cs",
+              "DocumentMoniker": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Classes\\TefFuncaoInterativa.cs",
+              "RelativeDocumentMoniker": "Lib.Utils\\Classes\\TefFuncaoInterativa.cs",
+              "ToolTip": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Classes\\TefFuncaoInterativa.cs",
+              "RelativeToolTip": "Lib.Utils\\Classes\\TefFuncaoInterativa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T21:34:43.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Functions.cs",
+              "DocumentMoniker": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Classes\\Functions.cs",
+              "RelativeDocumentMoniker": "Lib.Utils\\Classes\\Functions.cs",
+              "ToolTip": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Classes\\Functions.cs",
+              "RelativeToolTip": "Lib.Utils\\Classes\\Functions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T21:34:40.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConvertHelper.cs",
+              "DocumentMoniker": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Classes\\ConvertHelper.cs",
+              "RelativeDocumentMoniker": "Lib.Utils\\Classes\\ConvertHelper.cs",
+              "ToolTip": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\Lib.Utils\\Classes\\ConvertHelper.cs",
+              "RelativeToolTip": "Lib.Utils\\Classes\\ConvertHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T21:34:36.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmPdv.cs [Design]",
+              "DocumentMoniker": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\ACBr.CliSiTef.Demo\\FrmPdv.cs",
+              "RelativeDocumentMoniker": "ACBr.CliSiTef.Demo\\FrmPdv.cs",
+              "ToolTip": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\ACBr.CliSiTef.Demo\\FrmPdv.cs [Design]",
+              "RelativeToolTip": "ACBr.CliSiTef.Demo\\FrmPdv.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T13:06:55.915Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmConfiguracao.cs [Design]",
+              "DocumentMoniker": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\ACBr.CliSiTef.Demo\\FrmConfiguracao.cs",
+              "RelativeDocumentMoniker": "ACBr.CliSiTef.Demo\\FrmConfiguracao.cs",
+              "ToolTip": "C:\\DEV\\C#\\ACBr\\Fiserv\\CliSiTef\\src\\ACBr.CliSiTef.Demo\\FrmConfiguracao.cs [Design]",
+              "RelativeToolTip": "ACBr.CliSiTef.Demo\\FrmConfiguracao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T17:58:42.066Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
