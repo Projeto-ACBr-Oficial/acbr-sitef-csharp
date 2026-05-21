@@ -11,6 +11,9 @@
 Thumbs.db
 Desktop.ini
 
+## Configuração local do demo
+ACBr.CliSiTef.Demo/App.config
+
 ## Logs e artefatos de execução (gerados ao lado do .exe)
 Logs/
 **/Logs/
