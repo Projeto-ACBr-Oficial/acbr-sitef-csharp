@@ -11,6 +11,8 @@ git clone https://github.com/antoniocarlosjr97/acbr-clisitef-demo.git
 cd acbr-clisitef-demo
 ```
 
+Crie `ACBr.CliSiTef.Demo\App.config` conforme o [exemplo abaixo](#configuração).
+
 Abra `ACBr.CliSiTef.sln`, restaure os pacotes NuGet (se necessário) e compile em **Debug**. Em seguida:
 
 1. Copie o **SDK CliSiTef Windows** (`CliSiTef32I.dll` + dependências) para `ACBr.CliSiTef.Demo\bin\Debug\`.
@@ -65,7 +67,31 @@ NuGet (`ACBrLib.Core`, `ACBrLib.PosPrinter`) gera só assemblies gerenciados —
 
 ## Configuração
 
-Principais chaves em `ACBr.CliSiTef.Demo\App.config`:
+Exemplo em `ACBr.CliSiTef.Demo\App.config`:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="Tef_Ip" value="127.0.0.1"/>
+    <add key="Tef_Empresa" value="00000000"/>
+    <add key="Tef_EmpresaCnpj" value="11111111111111"/>
+    <add key="Tef_Terminal" value="000001"/>
+    <add key="Tef_SoftwareHouseCnpj" value="22222222222222"/>
+    <add key="Tef_PinPadVerificar" value="1"/>
+    <add key="Tef_PinPadQrCode" value="0"/>
+    <add key="Tef_PinPadPorta" value="AUTO_USB"/>
+    <add key="Tef_PinPadMensagem" value="ACBr CliSiTef Demo"/>
+    <add key="Tef_SenhaCodigoSupervisor" value="1234"/>
+    <add key="Tef_TipoComunicacaoExterna" value=""/>
+    <add key="Tef_ConfirmacaoAutomatica" value="1"/>
+    <add key="PosPrinter_EnviarImpressora" value="0"/>
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8"/>
+  </startup>
+</configuration>
+```
 
 | Chave | Uso |
 |-------|-----|
@@ -75,7 +101,7 @@ Principais chaves em `ACBr.CliSiTef.Demo\App.config`:
 | `Tef_ConfirmacaoAutomatica` | `1` = confirma pendências ao finalizar |
 | `PosPrinter_EnviarImpressora` | `1` imprime; `0` só preview |
 
-Demais chaves e impressora detalhada: `App.config` + `ACBrLib.ini` (gravado na tela). `CliSiTef.ini` é criado na pasta do exe se não existir.
+Valores de exemplo — ajuste conforme seu SitDemo. Impressora detalhada: `ACBrLib.ini` (tela de configuração). `CliSiTef.ini` é criado na pasta do exe se não existir.
 
 ---
 
