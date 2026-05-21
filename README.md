@@ -67,7 +67,7 @@ NuGet (`ACBrLib.Core`, `ACBrLib.PosPrinter`) gera só assemblies gerenciados —
 
 ## Configuração
 
-Exemplo em `ACBr.CliSiTef.Demo\App.config`:
+Crie `ACBr.CliSiTef.Demo\App.config` com o conteúdo abaixo:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -85,7 +85,11 @@ Exemplo em `ACBr.CliSiTef.Demo\App.config`:
     <add key="Tef_SenhaCodigoSupervisor" value="1234"/>
     <add key="Tef_TipoComunicacaoExterna" value=""/>
     <add key="Tef_ConfirmacaoAutomatica" value="1"/>
+    <add key="PosPrinter_Porta" value=""/>
+    <add key="PosPrinter_Modelo" value="EscPosEpson"/>
+    <add key="PosPrinter_Colunas" value="48"/>
     <add key="PosPrinter_EnviarImpressora" value="0"/>
+    <add key="PosPrinter_ArquivoSimulado" value=""/>
   </appSettings>
   <startup>
     <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8"/>
@@ -97,11 +101,15 @@ Exemplo em `ACBr.CliSiTef.Demo\App.config`:
 |-------|-----|
 | `Tef_Ip`, `Tef_Empresa`, `Tef_Terminal` | Conexão SiTef |
 | `Tef_EmpresaCnpj`, `Tef_SoftwareHouseCnpj` | CNPJs |
+| `Tef_PinPadVerificar`, `Tef_PinPadPorta`, `Tef_PinPadMensagem` | Pinpad |
 | `Tef_PinPadQrCode` | `0` = QR na tela; `1` = pinpad |
+| `Tef_SenhaCodigoSupervisor` | Senha funções restritas |
+| `Tef_TipoComunicacaoExterna` | Ex.: `TLSGWP` (opcional) |
 | `Tef_ConfirmacaoAutomatica` | `1` = confirma pendências ao finalizar |
+| `PosPrinter_*` | Porta, modelo, colunas, impressão e simulação por arquivo |
 | `PosPrinter_EnviarImpressora` | `1` imprime; `0` só preview |
 
-Valores de exemplo — ajuste conforme seu SitDemo. Impressora detalhada: `ACBrLib.ini` (tela de configuração). `CliSiTef.ini` é criado na pasta do exe se não existir.
+Ajuste os valores conforme seu SitDemo. Na tela de configuração, opções da impressora também são gravadas em `ACBrLib.ini`. `CliSiTef.ini` é criado na pasta do exe se não existir.
 
 ---
 
