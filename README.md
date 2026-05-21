@@ -7,8 +7,8 @@ Exemplo **WinForms** (.NET 4.8, **x86**) para integração **CliSiTef** (Fiserv)
 ## Início rápido
 
 ```bash
-git clone https://github.com/antoniocarlosjr97/acbr-clisitef-demo.git
-cd acbr-clisitef-demo
+git clone https://github.com/Projeto-ACBr-Oficial/acbr-sitef-csharp.git
+cd acbr-sitef-csharp
 ```
 
 Crie `ACBr.CliSiTef.Demo\App.config` conforme o [exemplo abaixo](#configuração).
