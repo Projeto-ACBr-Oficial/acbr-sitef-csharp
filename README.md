@@ -155,12 +155,13 @@ Na [plataforma de cursos do Projeto ACBr](https://www.projetoacbr.com.br/cursos/
 
 | Recurso | Link |
 |---------|------|
+| Projeto ACBr | https://www.projetoacbr.com.br/ |
 | SDK CliSiTef Windows | https://www.projetoacbr.com.br/forum/files/file/524-sdk-clisitef-windows-homologa%C3%A7%C3%A3o/ |
 | SitDemo Fiserv | https://www.projetoacbr.com.br/forum/files/file/526-sitdemo-fiserv/ |
 | SitDemo Configurado ACBr | https://www.projetoacbr.com.br/forum/files/file/523-sitdemo-configurado-acbr/ |
-| Projeto ACBr | https://www.projetoacbr.com.br/ |
 | NuGet PosPrinter | https://www.nuget.org/packages/ACBrLib.PosPrinter |
-
+| ACBrLibPosPrinter Versão PRO | https://www.projetoacbr.com.br/forum/files/file/439-acbrlibposprinter/ |
+| ACBrLibPosPrinter Versão Demonstração | https://www.projetoacbr.com.br/forum/files/file/481-acbrlibposprinter-demo/ |
 
 ---
 
