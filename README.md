@@ -126,6 +126,7 @@ Ajuste os valores conforme seu SitDemo. Na tela de configuração, opções da i
 
 | Sintoma | O que checar |
 |---------|----------------|
+| `App.config` inválido ou não encontrado | Crie `ACBr.CliSiTef.Demo\App.config` com o XML da seção [Configuração](#configuração) |
 | Aviso 32 bits | Build x86, não Any CPU 64 |
 | TEF não inicia | SitDemo, IP/empresa/terminal, DLLs no exe |
 | Erro impressora | `ACBrLib\x86\ACBrPosPrinter32.dll` |
