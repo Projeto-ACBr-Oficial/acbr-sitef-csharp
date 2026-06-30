@@ -24,6 +24,10 @@ comprovante_simulado.txt
 ACBrLib.ini
 CliSiTef.ini
 
+## Exceção: código-fonte dentro de Lib.Utils/Logs/
+!Lib.Utils/Logs/
+!Lib.Utils/Logs/*.cs
+
 ## NuGet (legado packages/ + lock files locais)
 packages/
 project.lock.json
