@@ -311,12 +311,22 @@ namespace ACBr.CliSiTef.Demo
             ExecutarPagamento(3, "Crédito");
         }
 
+        private void btnCreditoParceladoEstabelecimento_Click(object sender, EventArgs e)
+        {
+            ExecutarPagamento(3, "Crédito Parcelado Estabelecimento", "[16;17;24;26;28;34;36;45;3004;3049;3052;3053;3480;3988]");
+        }
+
+        private void btnCreditoParceladoEmissor_Click(object sender, EventArgs e)
+        {
+            ExecutarPagamento(3, "Crédito Parcelado Emissor", "[16;17;24;26;27;34;36;45;3004;3049;3052;3053;3480;3988]");
+        }
+
         private void btnCarteiraDigital_Click(object sender, EventArgs e)
         {
             ExecutarPagamento(122, "Carteira Digital");
         }
 
-        private void ExecutarPagamento(int funcao, string descricao)
+        private void ExecutarPagamento(int funcao, string descricao, string parametrosAdicionais = "")
         {
             if (_tef.VendaFinalizada)
             {
@@ -358,7 +368,7 @@ namespace ACBr.CliSiTef.Demo
             }
 
             DefinirStatusCaixa("EM PAGAMENTO", Color.DarkOrange);
-            int sts = _tef.EfetuarPagamento(documento, valorPagamento, funcao);
+            int sts = _tef.EfetuarPagamento(documento, valorPagamento, funcao, parametrosAdicionais);
             if (sts == TefDemoService.CodigoPagamentoDesfeito)
             {
                 bool operacaoReiniciada = TratarDesfazimentoPagamento(documento);
@@ -570,6 +580,5 @@ namespace ACBr.CliSiTef.Demo
             LiberarCamposVenda();
             DefinirStatusCaixa("CAIXA LIVRE", Color.DarkGreen);
         }
-
     }
 }

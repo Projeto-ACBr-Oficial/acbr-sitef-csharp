@@ -13,7 +13,6 @@ namespace ACBr.CliSiTef.Demo
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlTopo = new System.Windows.Forms.Panel();
             this.btnConfiguracao = new System.Windows.Forms.Button();
             this.lblStatusOperacao = new System.Windows.Forms.Label();
@@ -22,40 +21,42 @@ namespace ACBr.CliSiTef.Demo
             this.pnlPrincipal = new System.Windows.Forms.Panel();
             this.tabOperacao = new System.Windows.Forms.TabControl();
             this.tabVenda = new System.Windows.Forms.TabPage();
-            this.pnlVendaRodape = new System.Windows.Forms.Panel();
-            this.tblTotais = new System.Windows.Forms.TableLayoutPanel();
+            this.gridPagamentos = new System.Windows.Forms.DataGridView();
             this.pnlVendaTopo = new System.Windows.Forms.Panel();
+            this.btnCreditoParceladoEmissor = new System.Windows.Forms.Button();
+            this.btnCreditoParceladoEstabelecimento = new System.Windows.Forms.Button();
             this.btnNovaVenda = new System.Windows.Forms.Button();
             this.btnCarteiraDigital = new System.Windows.Forms.Button();
             this.btnCredito = new System.Windows.Forms.Button();
             this.btnDebito = new System.Windows.Forms.Button();
             this.btnEfetuarPagamento = new System.Windows.Forms.Button();
-            this.lblTroco = new System.Windows.Forms.Label();
-            this.lblTotalPago = new System.Windows.Forms.Label();
-            this.lblTotalOperacao = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.gridPagamentos = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.numValorOperacao = new System.Windows.Forms.NumericUpDown();
             this.btnGerarDocumento = new System.Windows.Forms.Button();
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pnlVendaRodape = new System.Windows.Forms.Panel();
+            this.tblTotais = new System.Windows.Forms.TableLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblTotalOperacao = new System.Windows.Forms.Label();
+            this.lblTotalPago = new System.Windows.Forms.Label();
+            this.lblTroco = new System.Windows.Forms.Label();
             this.tabAdmin = new System.Windows.Forms.TabPage();
             this.btnAtv = new System.Windows.Forms.Button();
             this.btnVerificarPinPad = new System.Windows.Forms.Button();
             this.btnCancelarVenda = new System.Windows.Forms.Button();
             this.btnMenuAdm = new System.Windows.Forms.Button();
+            this.pnlQr = new System.Windows.Forms.Panel();
+            this.lblQrCabecalho = new System.Windows.Forms.Label();
+            this.lblQrCode = new System.Windows.Forms.Label();
+            this.lblMenuTituloQrCode = new System.Windows.Forms.Label();
             this.splitDireita = new System.Windows.Forms.SplitContainer();
             this.grpComprovante = new System.Windows.Forms.GroupBox();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnLimparComprovante = new System.Windows.Forms.Button();
             this.txtComprovante = new System.Windows.Forms.TextBox();
-            this.pnlQr = new System.Windows.Forms.Panel();
-            this.lblQrCabecalho = new System.Windows.Forms.Label();
-            this.lblQrCode = new System.Windows.Forms.Label();
-            this.lblMenuTituloQrCode = new System.Windows.Forms.Label();
             this.grpLog = new System.Windows.Forms.GroupBox();
             this.btnLimparLog = new System.Windows.Forms.Button();
             this.txtLog = new System.Windows.Forms.TextBox();
@@ -68,18 +69,18 @@ namespace ACBr.CliSiTef.Demo
             this.pnlPrincipal.SuspendLayout();
             this.tabOperacao.SuspendLayout();
             this.tabVenda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPagamentos)).BeginInit();
+            this.pnlVendaTopo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numValorOperacao)).BeginInit();
             this.pnlVendaRodape.SuspendLayout();
             this.tblTotais.SuspendLayout();
-            this.pnlVendaTopo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPagamentos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numValorOperacao)).BeginInit();
             this.tabAdmin.SuspendLayout();
+            this.pnlQr.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitDireita)).BeginInit();
             this.splitDireita.Panel1.SuspendLayout();
             this.splitDireita.Panel2.SuspendLayout();
             this.splitDireita.SuspendLayout();
             this.grpComprovante.SuspendLayout();
-            this.pnlQr.SuspendLayout();
             this.grpLog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,13 +93,13 @@ namespace ACBr.CliSiTef.Demo
             this.pnlTopo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopo.Location = new System.Drawing.Point(0, 0);
             this.pnlTopo.Name = "pnlTopo";
-            this.pnlTopo.Size = new System.Drawing.Size(1184, 64);
+            this.pnlTopo.Size = new System.Drawing.Size(1172, 64);
             this.pnlTopo.TabIndex = 0;
             // 
             // btnConfiguracao
             // 
             this.btnConfiguracao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfiguracao.Location = new System.Drawing.Point(1064, 16);
+            this.btnConfiguracao.Location = new System.Drawing.Point(1052, 16);
             this.btnConfiguracao.Name = "btnConfiguracao";
             this.btnConfiguracao.Size = new System.Drawing.Size(108, 32);
             this.btnConfiguracao.TabIndex = 2;
@@ -112,7 +113,7 @@ namespace ACBr.CliSiTef.Demo
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatusOperacao.Location = new System.Drawing.Point(12, 40);
             this.lblStatusOperacao.Name = "lblStatusOperacao";
-            this.lblStatusOperacao.Size = new System.Drawing.Size(1040, 18);
+            this.lblStatusOperacao.Size = new System.Drawing.Size(1028, 18);
             this.lblStatusOperacao.TabIndex = 1;
             this.lblStatusOperacao.Text = "Aguardando...";
             // 
@@ -123,7 +124,7 @@ namespace ACBr.CliSiTef.Demo
             this.lblStatusCaixa.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.lblStatusCaixa.Location = new System.Drawing.Point(120, 8);
             this.lblStatusCaixa.Name = "lblStatusCaixa";
-            this.lblStatusCaixa.Size = new System.Drawing.Size(920, 32);
+            this.lblStatusCaixa.Size = new System.Drawing.Size(908, 32);
             this.lblStatusCaixa.TabIndex = 0;
             this.lblStatusCaixa.Text = "CAIXA LIVRE";
             this.lblStatusCaixa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,8 +144,8 @@ namespace ACBr.CliSiTef.Demo
             // 
             this.splitPrincipal.Panel2.Controls.Add(this.splitDireita);
             this.splitPrincipal.Panel2MinSize = 320;
-            this.splitPrincipal.Size = new System.Drawing.Size(1184, 617);
-            this.splitPrincipal.SplitterDistance = 680;
+            this.splitPrincipal.Size = new System.Drawing.Size(1172, 617);
+            this.splitPrincipal.SplitterDistance = 673;
             this.splitPrincipal.TabIndex = 1;
             // 
             // pnlPrincipal
@@ -155,7 +156,7 @@ namespace ACBr.CliSiTef.Demo
             this.pnlPrincipal.Enabled = false;
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 0);
             this.pnlPrincipal.Name = "pnlPrincipal";
-            this.pnlPrincipal.Size = new System.Drawing.Size(680, 617);
+            this.pnlPrincipal.Size = new System.Drawing.Size(673, 617);
             this.pnlPrincipal.TabIndex = 0;
             // 
             // tabOperacao
@@ -167,7 +168,7 @@ namespace ACBr.CliSiTef.Demo
             this.tabOperacao.Location = new System.Drawing.Point(0, 0);
             this.tabOperacao.Name = "tabOperacao";
             this.tabOperacao.SelectedIndex = 0;
-            this.tabOperacao.Size = new System.Drawing.Size(680, 617);
+            this.tabOperacao.Size = new System.Drawing.Size(673, 617);
             this.tabOperacao.TabIndex = 0;
             // 
             // tabVenda
@@ -178,44 +179,28 @@ namespace ACBr.CliSiTef.Demo
             this.tabVenda.Location = new System.Drawing.Point(4, 24);
             this.tabVenda.Name = "tabVenda";
             this.tabVenda.Padding = new System.Windows.Forms.Padding(8);
-            this.tabVenda.Size = new System.Drawing.Size(672, 589);
+            this.tabVenda.Size = new System.Drawing.Size(665, 589);
             this.tabVenda.TabIndex = 0;
             this.tabVenda.Text = "Venda";
             this.tabVenda.UseVisualStyleBackColor = true;
             // 
-            // pnlVendaRodape
+            // gridPagamentos
             // 
-            this.pnlVendaRodape.Controls.Add(this.tblTotais);
-            this.pnlVendaRodape.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlVendaRodape.Location = new System.Drawing.Point(8, 505);
-            this.pnlVendaRodape.Name = "pnlVendaRodape";
-            this.pnlVendaRodape.Padding = new System.Windows.Forms.Padding(8, 4, 8, 4);
-            this.pnlVendaRodape.Size = new System.Drawing.Size(656, 76);
-            this.pnlVendaRodape.TabIndex = 2;
-            // 
-            // tblTotais
-            // 
-            this.tblTotais.ColumnCount = 3;
-            this.tblTotais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tblTotais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tblTotais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tblTotais.Controls.Add(this.label4, 0, 0);
-            this.tblTotais.Controls.Add(this.label5, 1, 0);
-            this.tblTotais.Controls.Add(this.label6, 2, 0);
-            this.tblTotais.Controls.Add(this.lblTotalOperacao, 0, 1);
-            this.tblTotais.Controls.Add(this.lblTotalPago, 1, 1);
-            this.tblTotais.Controls.Add(this.lblTroco, 2, 1);
-            this.tblTotais.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblTotais.Location = new System.Drawing.Point(8, 4);
-            this.tblTotais.Name = "tblTotais";
-            this.tblTotais.RowCount = 2;
-            this.tblTotais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
-            this.tblTotais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblTotais.Size = new System.Drawing.Size(640, 68);
-            this.tblTotais.TabIndex = 0;
+            this.gridPagamentos.AllowUserToAddRows = false;
+            this.gridPagamentos.AllowUserToDeleteRows = false;
+            this.gridPagamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridPagamentos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridPagamentos.Location = new System.Drawing.Point(8, 200);
+            this.gridPagamentos.Name = "gridPagamentos";
+            this.gridPagamentos.ReadOnly = true;
+            this.gridPagamentos.RowHeadersVisible = false;
+            this.gridPagamentos.Size = new System.Drawing.Size(649, 305);
+            this.gridPagamentos.TabIndex = 5;
             // 
             // pnlVendaTopo
             // 
+            this.pnlVendaTopo.Controls.Add(this.btnCreditoParceladoEmissor);
+            this.pnlVendaTopo.Controls.Add(this.btnCreditoParceladoEstabelecimento);
             this.pnlVendaTopo.Controls.Add(this.btnNovaVenda);
             this.pnlVendaTopo.Controls.Add(this.btnCarteiraDigital);
             this.pnlVendaTopo.Controls.Add(this.btnCredito);
@@ -229,15 +214,35 @@ namespace ACBr.CliSiTef.Demo
             this.pnlVendaTopo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlVendaTopo.Location = new System.Drawing.Point(8, 8);
             this.pnlVendaTopo.Name = "pnlVendaTopo";
-            this.pnlVendaTopo.Size = new System.Drawing.Size(656, 192);
+            this.pnlVendaTopo.Size = new System.Drawing.Size(649, 192);
             this.pnlVendaTopo.TabIndex = 1;
+            // 
+            // btnCreditoParceladoEmissor
+            // 
+            this.btnCreditoParceladoEmissor.Location = new System.Drawing.Point(380, 124);
+            this.btnCreditoParceladoEmissor.Name = "btnCreditoParceladoEmissor";
+            this.btnCreditoParceladoEmissor.Size = new System.Drawing.Size(117, 53);
+            this.btnCreditoParceladoEmissor.TabIndex = 18;
+            this.btnCreditoParceladoEmissor.Text = "Crédito Parcelado Emissor";
+            this.btnCreditoParceladoEmissor.UseVisualStyleBackColor = true;
+            this.btnCreditoParceladoEmissor.Click += new System.EventHandler(this.btnCreditoParceladoEmissor_Click);
+            // 
+            // btnCreditoParceladoEstabelecimento
+            // 
+            this.btnCreditoParceladoEstabelecimento.Location = new System.Drawing.Point(257, 126);
+            this.btnCreditoParceladoEstabelecimento.Name = "btnCreditoParceladoEstabelecimento";
+            this.btnCreditoParceladoEstabelecimento.Size = new System.Drawing.Size(117, 53);
+            this.btnCreditoParceladoEstabelecimento.TabIndex = 17;
+            this.btnCreditoParceladoEstabelecimento.Text = "Crédito Parcelado Estabelecimento";
+            this.btnCreditoParceladoEstabelecimento.UseVisualStyleBackColor = true;
+            this.btnCreditoParceladoEstabelecimento.Click += new System.EventHandler(this.btnCreditoParceladoEstabelecimento_Click);
             // 
             // btnNovaVenda
             // 
             this.btnNovaVenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNovaVenda.Location = new System.Drawing.Point(516, 58);
+            this.btnNovaVenda.Location = new System.Drawing.Point(509, 64);
             this.btnNovaVenda.Name = "btnNovaVenda";
-            this.btnNovaVenda.Size = new System.Drawing.Size(132, 32);
+            this.btnNovaVenda.Size = new System.Drawing.Size(132, 41);
             this.btnNovaVenda.TabIndex = 16;
             this.btnNovaVenda.Text = "Nova venda";
             this.btnNovaVenda.UseVisualStyleBackColor = true;
@@ -245,9 +250,9 @@ namespace ACBr.CliSiTef.Demo
             // 
             // btnCarteiraDigital
             // 
-            this.btnCarteiraDigital.Location = new System.Drawing.Point(360, 127);
+            this.btnCarteiraDigital.Location = new System.Drawing.Point(503, 124);
             this.btnCarteiraDigital.Name = "btnCarteiraDigital";
-            this.btnCarteiraDigital.Size = new System.Drawing.Size(140, 53);
+            this.btnCarteiraDigital.Size = new System.Drawing.Size(117, 53);
             this.btnCarteiraDigital.TabIndex = 15;
             this.btnCarteiraDigital.Text = "Carteira digital";
             this.btnCarteiraDigital.UseVisualStyleBackColor = true;
@@ -255,9 +260,9 @@ namespace ACBr.CliSiTef.Demo
             // 
             // btnCredito
             // 
-            this.btnCredito.Location = new System.Drawing.Point(192, 127);
+            this.btnCredito.Location = new System.Drawing.Point(134, 124);
             this.btnCredito.Name = "btnCredito";
-            this.btnCredito.Size = new System.Drawing.Size(140, 53);
+            this.btnCredito.Size = new System.Drawing.Size(117, 53);
             this.btnCredito.TabIndex = 14;
             this.btnCredito.Text = "Crédito";
             this.btnCredito.UseVisualStyleBackColor = true;
@@ -265,9 +270,9 @@ namespace ACBr.CliSiTef.Demo
             // 
             // btnDebito
             // 
-            this.btnDebito.Location = new System.Drawing.Point(24, 127);
+            this.btnDebito.Location = new System.Drawing.Point(11, 126);
             this.btnDebito.Name = "btnDebito";
-            this.btnDebito.Size = new System.Drawing.Size(140, 53);
+            this.btnDebito.Size = new System.Drawing.Size(117, 53);
             this.btnDebito.TabIndex = 13;
             this.btnDebito.Text = "Débito";
             this.btnDebito.UseVisualStyleBackColor = true;
@@ -276,89 +281,13 @@ namespace ACBr.CliSiTef.Demo
             // btnEfetuarPagamento
             // 
             this.btnEfetuarPagamento.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnEfetuarPagamento.Location = new System.Drawing.Point(302, 64);
+            this.btnEfetuarPagamento.Location = new System.Drawing.Point(278, 49);
             this.btnEfetuarPagamento.Name = "btnEfetuarPagamento";
-            this.btnEfetuarPagamento.Size = new System.Drawing.Size(198, 53);
+            this.btnEfetuarPagamento.Size = new System.Drawing.Size(219, 69);
             this.btnEfetuarPagamento.TabIndex = 12;
             this.btnEfetuarPagamento.Text = "Efetuar Pagamento";
             this.btnEfetuarPagamento.UseVisualStyleBackColor = true;
             this.btnEfetuarPagamento.Click += new System.EventHandler(this.btnEfetuarPagamento_Click);
-            // 
-            // lblTroco
-            // 
-            this.lblTroco.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTroco.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTroco.Location = new System.Drawing.Point(429, 25);
-            this.lblTroco.Name = "lblTroco";
-            this.lblTroco.Size = new System.Drawing.Size(211, 43);
-            this.lblTroco.TabIndex = 11;
-            this.lblTroco.Text = "R$ 0,00";
-            this.lblTroco.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblTotalPago
-            // 
-            this.lblTotalPago.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTotalPago.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTotalPago.Location = new System.Drawing.Point(216, 25);
-            this.lblTotalPago.Name = "lblTotalPago";
-            this.lblTotalPago.Size = new System.Drawing.Size(207, 43);
-            this.lblTotalPago.TabIndex = 10;
-            this.lblTotalPago.Text = "R$ 0,00";
-            this.lblTotalPago.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblTotalOperacao
-            // 
-            this.lblTotalOperacao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTotalOperacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTotalOperacao.Location = new System.Drawing.Point(3, 25);
-            this.lblTotalOperacao.Name = "lblTotalOperacao";
-            this.lblTotalOperacao.Size = new System.Drawing.Size(207, 43);
-            this.lblTotalOperacao.TabIndex = 9;
-            this.lblTotalOperacao.Text = "R$ 0,00";
-            this.lblTotalOperacao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(429, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 22);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Troco";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(216, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(207, 22);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Total pago";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 22);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Total operação";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // gridPagamentos
-            // 
-            this.gridPagamentos.AllowUserToAddRows = false;
-            this.gridPagamentos.AllowUserToDeleteRows = false;
-            this.gridPagamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridPagamentos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridPagamentos.Location = new System.Drawing.Point(8, 200);
-            this.gridPagamentos.Name = "gridPagamentos";
-            this.gridPagamentos.ReadOnly = true;
-            this.gridPagamentos.RowHeadersVisible = false;
-            this.gridPagamentos.Size = new System.Drawing.Size(656, 305);
-            this.gridPagamentos.TabIndex = 5;
             // 
             // label3
             // 
@@ -387,7 +316,7 @@ namespace ACBr.CliSiTef.Demo
             // btnGerarDocumento
             // 
             this.btnGerarDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerarDocumento.Location = new System.Drawing.Point(516, 16);
+            this.btnGerarDocumento.Location = new System.Drawing.Point(509, 16);
             this.btnGerarDocumento.Name = "btnGerarDocumento";
             this.btnGerarDocumento.Size = new System.Drawing.Size(132, 28);
             this.btnGerarDocumento.TabIndex = 2;
@@ -401,7 +330,7 @@ namespace ACBr.CliSiTef.Demo
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDocumento.Location = new System.Drawing.Point(112, 20);
             this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.Size = new System.Drawing.Size(392, 23);
+            this.txtDocumento.Size = new System.Drawing.Size(385, 23);
             this.txtDocumento.TabIndex = 1;
             // 
             // label2
@@ -413,6 +342,100 @@ namespace ACBr.CliSiTef.Demo
             this.label2.TabIndex = 0;
             this.label2.Text = "Documento:";
             // 
+            // pnlVendaRodape
+            // 
+            this.pnlVendaRodape.Controls.Add(this.tblTotais);
+            this.pnlVendaRodape.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlVendaRodape.Location = new System.Drawing.Point(8, 505);
+            this.pnlVendaRodape.Name = "pnlVendaRodape";
+            this.pnlVendaRodape.Padding = new System.Windows.Forms.Padding(8, 4, 8, 4);
+            this.pnlVendaRodape.Size = new System.Drawing.Size(649, 76);
+            this.pnlVendaRodape.TabIndex = 2;
+            // 
+            // tblTotais
+            // 
+            this.tblTotais.ColumnCount = 3;
+            this.tblTotais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tblTotais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tblTotais.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tblTotais.Controls.Add(this.label4, 0, 0);
+            this.tblTotais.Controls.Add(this.label5, 1, 0);
+            this.tblTotais.Controls.Add(this.label6, 2, 0);
+            this.tblTotais.Controls.Add(this.lblTotalOperacao, 0, 1);
+            this.tblTotais.Controls.Add(this.lblTotalPago, 1, 1);
+            this.tblTotais.Controls.Add(this.lblTroco, 2, 1);
+            this.tblTotais.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblTotais.Location = new System.Drawing.Point(8, 4);
+            this.tblTotais.Name = "tblTotais";
+            this.tblTotais.RowCount = 2;
+            this.tblTotais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tblTotais.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblTotais.Size = new System.Drawing.Size(633, 68);
+            this.tblTotais.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(204, 22);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Total operação";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(213, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(205, 22);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Total pago";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Location = new System.Drawing.Point(424, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(206, 22);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Troco";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // lblTotalOperacao
+            // 
+            this.lblTotalOperacao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTotalOperacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTotalOperacao.Location = new System.Drawing.Point(3, 22);
+            this.lblTotalOperacao.Name = "lblTotalOperacao";
+            this.lblTotalOperacao.Size = new System.Drawing.Size(204, 46);
+            this.lblTotalOperacao.TabIndex = 9;
+            this.lblTotalOperacao.Text = "R$ 0,00";
+            this.lblTotalOperacao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblTotalPago
+            // 
+            this.lblTotalPago.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTotalPago.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTotalPago.Location = new System.Drawing.Point(213, 22);
+            this.lblTotalPago.Name = "lblTotalPago";
+            this.lblTotalPago.Size = new System.Drawing.Size(205, 46);
+            this.lblTotalPago.TabIndex = 10;
+            this.lblTotalPago.Text = "R$ 0,00";
+            this.lblTotalPago.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblTroco
+            // 
+            this.lblTroco.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTroco.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTroco.Location = new System.Drawing.Point(424, 22);
+            this.lblTroco.Name = "lblTroco";
+            this.lblTroco.Size = new System.Drawing.Size(206, 46);
+            this.lblTroco.TabIndex = 11;
+            this.lblTroco.Text = "R$ 0,00";
+            this.lblTroco.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // tabAdmin
             // 
             this.tabAdmin.Controls.Add(this.btnAtv);
@@ -422,7 +445,7 @@ namespace ACBr.CliSiTef.Demo
             this.tabAdmin.Location = new System.Drawing.Point(4, 24);
             this.tabAdmin.Name = "tabAdmin";
             this.tabAdmin.Padding = new System.Windows.Forms.Padding(8);
-            this.tabAdmin.Size = new System.Drawing.Size(672, 589);
+            this.tabAdmin.Size = new System.Drawing.Size(665, 589);
             this.tabAdmin.TabIndex = 1;
             this.tabAdmin.Text = "Administrativo";
             this.tabAdmin.UseVisualStyleBackColor = true;
@@ -467,74 +490,6 @@ namespace ACBr.CliSiTef.Demo
             this.btnMenuAdm.UseVisualStyleBackColor = true;
             this.btnMenuAdm.Click += new System.EventHandler(this.btnMenuAdm_Click);
             // 
-            // splitDireita
-            // 
-            this.splitDireita.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitDireita.Location = new System.Drawing.Point(0, 0);
-            this.splitDireita.Name = "splitDireita";
-            this.splitDireita.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitDireita.Panel1
-            // 
-            this.splitDireita.Panel1.Controls.Add(this.grpComprovante);
-            // 
-            // splitDireita.Panel2
-            // 
-            this.splitDireita.Panel2.Controls.Add(this.grpLog);
-            this.splitDireita.Size = new System.Drawing.Size(500, 617);
-            this.splitDireita.SplitterDistance = 320;
-            this.splitDireita.TabIndex = 0;
-            // 
-            // grpComprovante
-            // 
-            this.grpComprovante.Controls.Add(this.btnImprimir);
-            this.grpComprovante.Controls.Add(this.btnLimparComprovante);
-            this.grpComprovante.Controls.Add(this.txtComprovante);
-            this.grpComprovante.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpComprovante.Location = new System.Drawing.Point(0, 0);
-            this.grpComprovante.Name = "grpComprovante";
-            this.grpComprovante.Padding = new System.Windows.Forms.Padding(8);
-            this.grpComprovante.Size = new System.Drawing.Size(500, 320);
-            this.grpComprovante.TabIndex = 0;
-            this.grpComprovante.TabStop = false;
-            this.grpComprovante.Text = "Comprovante (preview)";
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnImprimir.Location = new System.Drawing.Point(392, 280);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(92, 28);
-            this.btnImprimir.TabIndex = 2;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // btnLimparComprovante
-            // 
-            this.btnLimparComprovante.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLimparComprovante.Location = new System.Drawing.Point(11, 280);
-            this.btnLimparComprovante.Name = "btnLimparComprovante";
-            this.btnLimparComprovante.Size = new System.Drawing.Size(92, 28);
-            this.btnLimparComprovante.TabIndex = 1;
-            this.btnLimparComprovante.Text = "Limpar";
-            this.btnLimparComprovante.UseVisualStyleBackColor = true;
-            this.btnLimparComprovante.Click += new System.EventHandler(this.btnLimparComprovante_Click);
-            // 
-            // txtComprovante
-            // 
-            this.txtComprovante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtComprovante.Font = new System.Drawing.Font("Consolas", 9F);
-            this.txtComprovante.Location = new System.Drawing.Point(11, 24);
-            this.txtComprovante.Multiline = true;
-            this.txtComprovante.Name = "txtComprovante";
-            this.txtComprovante.ReadOnly = true;
-            this.txtComprovante.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtComprovante.Size = new System.Drawing.Size(473, 248);
-            this.txtComprovante.TabIndex = 0;
-            // 
             // pnlQr
             // 
             this.pnlQr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -546,7 +501,6 @@ namespace ACBr.CliSiTef.Demo
             this.pnlQr.Size = new System.Drawing.Size(231, 245);
             this.pnlQr.TabIndex = 10;
             this.pnlQr.Visible = false;
-            // Posição inicial: centro da área PDV (ajuste X/Y aqui ou use CentralizarPainelQr no código).
             // 
             // lblQrCabecalho
             // 
@@ -580,6 +534,74 @@ namespace ACBr.CliSiTef.Demo
             this.lblMenuTituloQrCode.Text = "Pix";
             this.lblMenuTituloQrCode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // splitDireita
+            // 
+            this.splitDireita.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitDireita.Location = new System.Drawing.Point(0, 0);
+            this.splitDireita.Name = "splitDireita";
+            this.splitDireita.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitDireita.Panel1
+            // 
+            this.splitDireita.Panel1.Controls.Add(this.grpComprovante);
+            // 
+            // splitDireita.Panel2
+            // 
+            this.splitDireita.Panel2.Controls.Add(this.grpLog);
+            this.splitDireita.Size = new System.Drawing.Size(495, 617);
+            this.splitDireita.SplitterDistance = 320;
+            this.splitDireita.TabIndex = 0;
+            // 
+            // grpComprovante
+            // 
+            this.grpComprovante.Controls.Add(this.btnImprimir);
+            this.grpComprovante.Controls.Add(this.btnLimparComprovante);
+            this.grpComprovante.Controls.Add(this.txtComprovante);
+            this.grpComprovante.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grpComprovante.Location = new System.Drawing.Point(0, 0);
+            this.grpComprovante.Name = "grpComprovante";
+            this.grpComprovante.Padding = new System.Windows.Forms.Padding(8);
+            this.grpComprovante.Size = new System.Drawing.Size(495, 320);
+            this.grpComprovante.TabIndex = 0;
+            this.grpComprovante.TabStop = false;
+            this.grpComprovante.Text = "Comprovante (preview)";
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnImprimir.Location = new System.Drawing.Point(387, 280);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(92, 28);
+            this.btnImprimir.TabIndex = 2;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // btnLimparComprovante
+            // 
+            this.btnLimparComprovante.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLimparComprovante.Location = new System.Drawing.Point(11, 280);
+            this.btnLimparComprovante.Name = "btnLimparComprovante";
+            this.btnLimparComprovante.Size = new System.Drawing.Size(92, 28);
+            this.btnLimparComprovante.TabIndex = 1;
+            this.btnLimparComprovante.Text = "Limpar";
+            this.btnLimparComprovante.UseVisualStyleBackColor = true;
+            this.btnLimparComprovante.Click += new System.EventHandler(this.btnLimparComprovante_Click);
+            // 
+            // txtComprovante
+            // 
+            this.txtComprovante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtComprovante.Font = new System.Drawing.Font("Consolas", 9F);
+            this.txtComprovante.Location = new System.Drawing.Point(11, 24);
+            this.txtComprovante.Multiline = true;
+            this.txtComprovante.Name = "txtComprovante";
+            this.txtComprovante.ReadOnly = true;
+            this.txtComprovante.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtComprovante.Size = new System.Drawing.Size(468, 248);
+            this.txtComprovante.TabIndex = 0;
+            // 
             // grpLog
             // 
             this.grpLog.Controls.Add(this.btnLimparLog);
@@ -588,7 +610,7 @@ namespace ACBr.CliSiTef.Demo
             this.grpLog.Location = new System.Drawing.Point(0, 0);
             this.grpLog.Name = "grpLog";
             this.grpLog.Padding = new System.Windows.Forms.Padding(8);
-            this.grpLog.Size = new System.Drawing.Size(500, 293);
+            this.grpLog.Size = new System.Drawing.Size(495, 293);
             this.grpLog.TabIndex = 0;
             this.grpLog.TabStop = false;
             this.grpLog.Text = "Log de execução";
@@ -615,7 +637,7 @@ namespace ACBr.CliSiTef.Demo
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(473, 220);
+            this.txtLog.Size = new System.Drawing.Size(468, 220);
             this.txtLog.TabIndex = 0;
             // 
             // bkgInicioTef
@@ -627,7 +649,7 @@ namespace ACBr.CliSiTef.Demo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 681);
+            this.ClientSize = new System.Drawing.Size(1172, 681);
             this.Controls.Add(this.splitPrincipal);
             this.Controls.Add(this.pnlTopo);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -645,22 +667,20 @@ namespace ACBr.CliSiTef.Demo
             this.pnlPrincipal.ResumeLayout(false);
             this.tabOperacao.ResumeLayout(false);
             this.tabVenda.ResumeLayout(false);
-            this.pnlVendaRodape.ResumeLayout(false);
-            this.tblTotais.ResumeLayout(false);
-            this.tblTotais.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPagamentos)).EndInit();
             this.pnlVendaTopo.ResumeLayout(false);
             this.pnlVendaTopo.PerformLayout();
-            this.tabVenda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPagamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numValorOperacao)).EndInit();
+            this.pnlVendaRodape.ResumeLayout(false);
+            this.tblTotais.ResumeLayout(false);
             this.tabAdmin.ResumeLayout(false);
+            this.pnlQr.ResumeLayout(false);
             this.splitDireita.Panel1.ResumeLayout(false);
             this.splitDireita.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitDireita)).EndInit();
             this.splitDireita.ResumeLayout(false);
             this.grpComprovante.ResumeLayout(false);
             this.grpComprovante.PerformLayout();
-            this.pnlQr.ResumeLayout(false);
             this.grpLog.ResumeLayout(false);
             this.grpLog.PerformLayout();
             this.ResumeLayout(false);
@@ -713,5 +733,7 @@ namespace ACBr.CliSiTef.Demo
         public System.Windows.Forms.Label lblQrCode;
         private System.Windows.Forms.Label lblMenuTituloQrCode;
         private System.ComponentModel.BackgroundWorker bkgInicioTef;
+        private System.Windows.Forms.Button btnCreditoParceladoEstabelecimento;
+        private System.Windows.Forms.Button btnCreditoParceladoEmissor;
     }
 }

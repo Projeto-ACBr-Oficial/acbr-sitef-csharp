@@ -137,7 +137,7 @@ namespace ACBr.CliSiTef.Demo.Services
             Tef.gCupomVenda = CupomAtual;
         }
 
-        public int EfetuarPagamento(string documento, decimal valorPagamento, int funcao = 0)
+        public int EfetuarPagamento(string documento, decimal valorPagamento, int funcao = 0, string parametrosAdicionais = "")
         {
             PrepararCupom("Crt", documento, ValorTotalOperacao);
             bool confirmarCnfNoCrt = ConfirmacaoAutomatica
@@ -146,9 +146,10 @@ namespace ACBr.CliSiTef.Demo.Services
 
             AppendLog("Crt(" + funcao + ") doc=" + documento + " valor=" + valorPagamento.ToString("N2")
                 + " | modo=" + (ConfirmacaoAutomatica ? "automático" : "manual")
-                + (confirmarCnfNoCrt ? " | CNF no Crt=sim" : " | CNF no Crt=não (pendente)"));
+                + (confirmarCnfNoCrt ? " | CNF no Crt=sim" : " | CNF no Crt=não (pendente)")
+                + (string.IsNullOrWhiteSpace(parametrosAdicionais) ? "" : " | ParamAdic=" + parametrosAdicionais));
 
-            int sts = Tef.Crt(valorPagamento, documento, "OperadorDemo", funcao, confirmarCnfNoCrt);
+            int sts = Tef.Crt(valorPagamento, documento, "OperadorDemo", funcao, confirmarCnfNoCrt, parametrosAdicionais);
             AppendLog("Crt(" + funcao + ") retorno=" + sts + " " + Mensagem(sts));
 
             if (sts != 0)

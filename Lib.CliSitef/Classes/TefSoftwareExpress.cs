@@ -1116,9 +1116,8 @@ namespace Lib.CliSitef.Classes
                 Cnf(_documentoVinculado: _documentoVinculado);
             return sts;
         }
-        public int Crt(decimal _valor, string _documentoVinculado = "", string _operador = "", int _funcao = 0, bool _confirmarCnf = true)
+        public int Crt(decimal _valor, string _documentoVinculado = "", string _operador = "", int _funcao = 0, bool _confirmarCnf = true, string parametrosAdicionais = "")
         {
-            string parametrosAdicionais = "";
             int sts = FazerRequisicao(_funcao, "CRT", _valor, _documentoVinculado, parametrosAdicionais, _operador);
             if (sts == 10000)
             {
