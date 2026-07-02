@@ -81,8 +81,7 @@ namespace ACBr.CliSiTef.Demo.Services
                 sw.WriteLine("TempoEsperaConexao=10");
                 sw.WriteLine("");
                 sw.WriteLine("[Geral]");
-                sw.WriteLine("TransacoesAdicionaisHabilitadas=7;8;16;26;29;30;40;42;43;3014;3044;4178;");
-                sw.WriteLine("TransacoesDesabilitadas=10;11;12;13;14;17;18;19;31;27;28;32;33;36;44;45;47;3031;3084;3086;3145;3165;3227;3480;3988;3989;");
+                sw.WriteLine("TransacoesAdicionaisHabilitadas=7;8;16;26;29;30;40;42;43;58;3014;3044;3299;4178;4439;");
                 sw.WriteLine("");
                 sw.WriteLine("[SrvCliSiTef]");
                 sw.WriteLine("IpSiTef=" + config.Tef_Ip);
