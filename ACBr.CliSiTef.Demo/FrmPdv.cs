@@ -313,12 +313,14 @@ namespace ACBr.CliSiTef.Demo
 
         private void btnCreditoParceladoEstabelecimento_Click(object sender, EventArgs e)
         {
-            ExecutarPagamento(3, "Crédito Parcelado Estabelecimento", "[16;17;24;26;28;34;36;45;3004;3049;3052;3053;3480;3988]");
+            ExecutarPagamento(3, "Crédito Parcelado Estabelecimento",
+                "[16;17;24;26;28;34;36;45;3004;3049;3052;3053;3480;3988]", (int)numQtdParcelas.Value);
         }
 
         private void btnCreditoParceladoEmissor_Click(object sender, EventArgs e)
         {
-            ExecutarPagamento(3, "Crédito Parcelado Emissor", "[16;17;24;26;27;34;36;45;3004;3049;3052;3053;3480;3988]");
+            ExecutarPagamento(3, "Crédito Parcelado Emissor",
+                "[16;17;24;26;27;34;36;45;3004;3049;3052;3053;3480;3988]", (int)numQtdParcelas.Value);
         }
 
         private void btnCarteiraDigital_Click(object sender, EventArgs e)
@@ -326,7 +328,7 @@ namespace ACBr.CliSiTef.Demo
             ExecutarPagamento(122, "Carteira Digital");
         }
 
-        private void ExecutarPagamento(int funcao, string descricao, string parametrosAdicionais = "")
+        private void ExecutarPagamento(int funcao, string descricao, string parametrosAdicionais = "", int parcelas = 0)
         {
             if (_tef.VendaFinalizada)
             {
@@ -368,7 +370,7 @@ namespace ACBr.CliSiTef.Demo
             }
 
             DefinirStatusCaixa("EM PAGAMENTO", Color.DarkOrange);
-            int sts = _tef.EfetuarPagamento(documento, valorPagamento, funcao, parametrosAdicionais);
+            int sts = _tef.EfetuarPagamento(documento, valorPagamento, funcao, parametrosAdicionais, parcelas);
             if (sts == TefDemoService.CodigoPagamentoDesfeito)
             {
                 bool operacaoReiniciada = TratarDesfazimentoPagamento(documento);
@@ -496,6 +498,8 @@ namespace ACBr.CliSiTef.Demo
             btnEfetuarPagamento.Enabled = habilitar;
             btnDebito.Enabled = habilitar;
             btnCredito.Enabled = habilitar;
+            btnCreditoParceladoEstabelecimento.Enabled = habilitar;
+            btnCreditoParceladoEmissor.Enabled = habilitar;
             btnCarteiraDigital.Enabled = habilitar;
         }
 

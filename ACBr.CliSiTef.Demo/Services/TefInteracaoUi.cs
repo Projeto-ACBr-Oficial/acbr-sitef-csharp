@@ -9,7 +9,7 @@ namespace ACBr.CliSiTef.Demo.Services
 {
     public static class TefInteracaoUi
     {
-        public static void TratarCallForm(IWin32Window owner, TefFuncaoInterativa interativa, TefConfig config)
+        public static void TratarCallForm(IWin32Window owner, TefFuncaoInterativa interativa, TefConfig config, int parcelasPreDefinidas = 0)
         {
             if (interativa == null)
                 return;
@@ -45,28 +45,35 @@ namespace ACBr.CliSiTef.Demo.Services
             }
             else if (interativa.DataType == DataTypeEnum.Numeric)
             {
-                using (var frm = new FrmTefColetaDados())
+                if (interativa.TipoCampo == 505 && parcelasPreDefinidas > 1)
                 {
-                    frm.gTitulo = interativa.Titulo;
-                    frm.gTamanhoMinimo = interativa.TamanhoMinimo;
-                    frm.gTamanhoMaximo = interativa.TamanhoMaximo;
-                    frm.gTipoDeDados = DataTypeEnum.Numeric;
-                    if (interativa.TipoCampo == 500)
-                        frm.txtDados.PasswordChar = '*';
-                    frm.ShowDialog(owner);
-                    if (frm.DialogResult == DialogResult.OK)
+                    interativa.RespostaSitef = parcelasPreDefinidas.ToString();
+                }
+                else
+                {
+                    using (var frm = new FrmTefColetaDados())
                     {
-                        interativa.RespostaSitef = frm.txtDados.Text;
-                        if (interativa.TipoCampo == 500 && !frm.VoltarSelecionado &&
-                            config.Tef_SenhaCodigoSupervisor != ConvertHelper.ToInt32(frm.txtDados.Text))
+                        frm.gTitulo = interativa.Titulo;
+                        frm.gTamanhoMinimo = interativa.TamanhoMinimo;
+                        frm.gTamanhoMaximo = interativa.TamanhoMaximo;
+                        frm.gTipoDeDados = DataTypeEnum.Numeric;
+                        if (interativa.TipoCampo == 500)
+                            frm.txtDados.PasswordChar = '*';
+                        frm.ShowDialog(owner);
+                        if (frm.DialogResult == DialogResult.OK)
                         {
-                            MessageBox.Show(owner, "Senha/Código Supervisor inválido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            frm.VoltarSelecionado = true;
+                            interativa.RespostaSitef = frm.txtDados.Text;
+                            if (interativa.TipoCampo == 500 && !frm.VoltarSelecionado &&
+                                config.Tef_SenhaCodigoSupervisor != ConvertHelper.ToInt32(frm.txtDados.Text))
+                            {
+                                MessageBox.Show(owner, "Senha/Código Supervisor inválido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                frm.VoltarSelecionado = true;
+                            }
                         }
+                        else
+                            interativa.Interromper = !frm.VoltarSelecionado;
+                        interativa.Voltar = frm.VoltarSelecionado;
                     }
-                    else
-                        interativa.Interromper = !frm.VoltarSelecionado;
-                    interativa.Voltar = frm.VoltarSelecionado;
                 }
             }
             else if (interativa.DataType == DataTypeEnum.Currency &&

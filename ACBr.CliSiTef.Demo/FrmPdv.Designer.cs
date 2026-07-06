@@ -61,6 +61,8 @@ namespace ACBr.CliSiTef.Demo
             this.btnLimparLog = new System.Windows.Forms.Button();
             this.txtLog = new System.Windows.Forms.TextBox();
             this.bkgInicioTef = new System.ComponentModel.BackgroundWorker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numQtdParcelas = new System.Windows.Forms.NumericUpDown();
             this.pnlTopo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPrincipal)).BeginInit();
             this.splitPrincipal.Panel1.SuspendLayout();
@@ -82,6 +84,7 @@ namespace ACBr.CliSiTef.Demo
             this.splitDireita.SuspendLayout();
             this.grpComprovante.SuspendLayout();
             this.grpLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numQtdParcelas)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTopo
@@ -199,6 +202,8 @@ namespace ACBr.CliSiTef.Demo
             // 
             // pnlVendaTopo
             // 
+            this.pnlVendaTopo.Controls.Add(this.numQtdParcelas);
+            this.pnlVendaTopo.Controls.Add(this.label1);
             this.pnlVendaTopo.Controls.Add(this.btnCreditoParceladoEmissor);
             this.pnlVendaTopo.Controls.Add(this.btnCreditoParceladoEstabelecimento);
             this.pnlVendaTopo.Controls.Add(this.btnNovaVenda);
@@ -645,6 +650,27 @@ namespace ACBr.CliSiTef.Demo
             this.bkgInicioTef.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bkgInicioTef_DoWork);
             this.bkgInicioTef.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bkgInicioTef_RunWorkerCompleted);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 15);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Quantidade de Parcelas:";
+            // 
+            // numQtdParcelas
+            // 
+            this.numQtdParcelas.Location = new System.Drawing.Point(148, 91);
+            this.numQtdParcelas.Maximum = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
+            this.numQtdParcelas.Name = "numQtdParcelas";
+            this.numQtdParcelas.Size = new System.Drawing.Size(124, 23);
+            this.numQtdParcelas.TabIndex = 21;
+            // 
             // FrmPdv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -683,6 +709,7 @@ namespace ACBr.CliSiTef.Demo
             this.grpComprovante.PerformLayout();
             this.grpLog.ResumeLayout(false);
             this.grpLog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numQtdParcelas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -735,5 +762,7 @@ namespace ACBr.CliSiTef.Demo
         private System.ComponentModel.BackgroundWorker bkgInicioTef;
         private System.Windows.Forms.Button btnCreditoParceladoEstabelecimento;
         private System.Windows.Forms.Button btnCreditoParceladoEmissor;
+        private System.Windows.Forms.NumericUpDown numQtdParcelas;
+        private System.Windows.Forms.Label label1;
     }
 }

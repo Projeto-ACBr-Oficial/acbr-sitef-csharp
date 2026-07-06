@@ -36,6 +36,7 @@ namespace ACBr.CliSiTef.Demo.Services
 
         public decimal ValorTotalOperacao { get; set; }
         public decimal ValorPago { get; set; }
+        public int ParcelasDesejadas { get; private set; }
         public bool VendaFinalizada { get; private set; }
         public bool TefInicializado { get; private set; }
 
@@ -137,7 +138,7 @@ namespace ACBr.CliSiTef.Demo.Services
             Tef.gCupomVenda = CupomAtual;
         }
 
-        public int EfetuarPagamento(string documento, decimal valorPagamento, int funcao = 0, string parametrosAdicionais = "")
+        public int EfetuarPagamento(string documento, decimal valorPagamento, int funcao = 0, string parametrosAdicionais = "", int parcelas = 0)
         {
             PrepararCupom("Crt", documento, ValorTotalOperacao);
             bool confirmarCnfNoCrt = ConfirmacaoAutomatica
@@ -147,7 +148,10 @@ namespace ACBr.CliSiTef.Demo.Services
             AppendLog("Crt(" + funcao + ") doc=" + documento + " valor=" + valorPagamento.ToString("N2")
                 + " | modo=" + (ConfirmacaoAutomatica ? "automático" : "manual")
                 + (confirmarCnfNoCrt ? " | CNF no Crt=sim" : " | CNF no Crt=não (pendente)")
-                + (string.IsNullOrWhiteSpace(parametrosAdicionais) ? "" : " | ParamAdic=" + parametrosAdicionais));
+                + (string.IsNullOrWhiteSpace(parametrosAdicionais) ? "" : " | ParamAdic=" + parametrosAdicionais)
+                + (parcelas > 0 ? " | Parcelas=" + parcelas : ""));
+
+            ParcelasDesejadas = parcelas;
 
             int sts = Tef.Crt(valorPagamento, documento, "OperadorDemo", funcao, confirmarCnfNoCrt, parametrosAdicionais);
             AppendLog("Crt(" + funcao + ") retorno=" + sts + " " + Mensagem(sts));
@@ -483,7 +487,7 @@ namespace ACBr.CliSiTef.Demo.Services
 
         private void Tef_OnCallForm(TefFuncaoInterativa interativa)
         {
-            TefInteracaoUi.TratarCallForm(UiOwner, interativa, Config);
+            TefInteracaoUi.TratarCallForm(UiOwner, interativa, Config, ParcelasDesejadas);
         }
 
         private void Tef_OnVerifyDataCollectionInterruption(TefFuncaoInterativa interativa)
