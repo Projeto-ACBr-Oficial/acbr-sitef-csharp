@@ -4,7 +4,7 @@ using ACBr.CliSiTef.Demo.Services;
 using Lib.CliSitef.Classes;
 using Lib.FormsAuxiliares;
 using Lib.Utils.Classes;
-using Lib.Utils.Enuns;
+using Lib.Utils.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

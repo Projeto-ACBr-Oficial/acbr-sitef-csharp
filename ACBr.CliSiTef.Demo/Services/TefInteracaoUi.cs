@@ -1,7 +1,7 @@
 using Lib.CliSitef.Classes;
 using Lib.FormsAuxiliares;
 using Lib.Utils.Classes;
-using Lib.Utils.Enuns;
+using Lib.Utils.Enums;
 using System;
 using System.Windows.Forms;
 

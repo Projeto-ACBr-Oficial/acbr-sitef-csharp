@@ -1,4 +1,4 @@
-﻿using Lib.Utils.Enuns;
+﻿using Lib.Utils.Enums;
 
 namespace Lib.Utils.Classes
 {

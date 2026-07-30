@@ -1,6 +1,6 @@
 ﻿using Lib.CliSitef.ConstantValues;
 using Lib.Utils.Classes;
-using Lib.Utils.Enuns;
+using Lib.Utils.Enums;
 using Lib.Utils.Logs;
 using System;
 using System.IO;
